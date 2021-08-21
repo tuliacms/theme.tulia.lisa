@@ -1,0 +1,52 @@
+.block-services-light {
+    .services-collection {
+        margin-top: 70px;
+
+        .service-item {
+            display: block;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,.3);
+            border-radius: 3px;
+            text-align: center;
+            color: $body-color;
+
+            .service-icon {
+                font-size: 70px;
+                color: $primary;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+
+            .service-title {
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #000;
+            }
+
+            .service-description {
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+
+        .service-column {
+            position: relative;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 1px;
+                top: 30px;
+                bottom: 30px;
+                right: 0;
+                background-color: #ddd;
+            }
+
+            &:last-child:before {
+                display: none;
+            }
+        }
+    }
+}

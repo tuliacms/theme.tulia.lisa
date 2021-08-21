@@ -1,0 +1,36 @@
+.block-what-we-do {
+    .block-images {
+        position: relative;
+
+        .block-image {
+            position: absolute;
+            display: block;
+            border-radius: 6px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &.block-image-main {
+                left: 30%;
+                top: 25%;
+                right: 60px;
+                bottom: 0;
+                z-index: 2;
+            }
+
+            &.block-image-sub {
+                left: 15px;
+                top: 0;
+                right: 50%;
+                bottom: 50%;
+                z-index: 1;
+            }
+        }
+    }
+
+    .block-content {
+        p:not(.lead) {
+            font-size: 17px;
+        }
+    }
+}

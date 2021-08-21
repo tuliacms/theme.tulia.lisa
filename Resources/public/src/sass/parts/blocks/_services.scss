@@ -1,0 +1,55 @@
+.block-services {
+    background-color: #323232;
+    color: #7d7d7d;
+    padding: 100px 0;
+
+    h2 {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .lead {
+        color: #fff;
+    }
+
+    .services-slogan {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .services-collection {
+        margin-top: 70px;
+
+        .service-item {
+            display: block;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,.3);
+            border-radius: 3px;
+            color: #fff;
+
+            .service-icon {
+                font-size: 40px;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+
+            .service-title {
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .service-description {
+                margin: 0;
+                font-size: 16px;
+                color: #d7d7d7;
+            }
+
+            &:hover {
+                background-color: rgba(255,255,255,.03);
+                border: 1px solid rgba(255,255,255,.4);
+                transform: translateY(-6px) scale(1.01);
+            }
+        }
+    }
+}

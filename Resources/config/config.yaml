@@ -1,0 +1,26 @@
+framework:
+    translator:
+        paths:
+            - '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/translations'
+    public_paths:
+        '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/dist': '/theme/tulia/lisa'
+    templating:
+        paths:
+            - { name: theme/tulia/lisa, path: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/views' }
+    assetter:
+        assets:
+            tulia.lisa.main:
+                require: [ font_awesome, frontend ]
+                styles:
+                    - https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap
+                    - /assets/theme/tulia/lisa/css/bundle.min.css
+                scripts:
+                    - /assets/theme/tulia/lisa/js/bundle.min.js
+                group: head
+                included: [ bootstrap, jquery, js_cookie ]
+            tulia.lisa.customizer:
+                scripts:
+                    - /assets/theme/tulia/lisa/js/customizer.js
+            tulia.lisa.editor.plugins:
+                scripts:
+                    - /assets/theme/tulia/lisa/js/editor-plugins.js

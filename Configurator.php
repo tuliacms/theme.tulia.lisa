@@ -33,8 +33,8 @@ class Configurator extends AbstractConfigurator
             'height' => 240,
         ]);
 
-        $configuration->add('editor_asset', 'tulia.lisa.main');
-        $configuration->add('editor_plugin', 'tulia.lisa.editor.plugins');
+        $configuration->add('tulia_editor_asset', 'tulia.lisa.main');
+        $configuration->add('tulia_editor_plugin', 'tulia.lisa.editor.plugins');
     }
 
     /**

@@ -6,6 +6,7 @@ body {
 
 a {
     transition: $transition-duration all;
+    text-decoration: none;
 
     &:hover,
     &:focus {

@@ -1,0 +1,25 @@
+.block {
+    margin: #{$block-margin-base}px 0;
+    @include media-breakpoint-up(sm) {margin: #{$block-margin-base-sm}px 0;}
+    @include media-breakpoint-up(md) {margin: #{$block-margin-base-md}px 0;}
+    @include media-breakpoint-up(lg) {margin: #{$block-margin-base-lg}px 0;}
+    @include media-breakpoint-up(xl) {margin: #{$block-margin-base-xl}px 0;}
+    @include media-breakpoint-up(xxl) {margin: #{$block-margin-base-xxl}px 0;}
+
+    $max: $block-margin-base;
+    $step: $block-margin-base / 10;
+
+    @for $i from 1 through ceil($max/$step) {
+        $value: ($i - 1) * $step;
+        &.block-margin-#{$value} {
+            margin-bottom: #{$value}px !important;
+            margin-top: #{$value}px !important;
+        }
+        &.block-margin-top-#{$value} {
+            margin-top: #{$value}px !important;
+        }
+        &.block-margin-bottom-#{$value} {
+            margin-bottom: #{$value}px !important;
+        }
+    }
+}

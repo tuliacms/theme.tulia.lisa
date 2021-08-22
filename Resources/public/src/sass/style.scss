@@ -12,7 +12,8 @@
 @import 'parts/nodes';
 @import 'parts/breadcrumbs';
 @import 'parts/homepage';
-@import 'parts/block-global';
+@import 'parts/blocks-framework/blocks';
+@import 'parts/blocks/reset';
 @import 'parts/blocks/what-we-do';
 @import 'parts/blocks/call-to-action';
 @import 'parts/blocks/services';
@@ -47,8 +48,9 @@ body.body-scrolled header {
     margin-bottom: $header-margin;
 }
 
-.content-container {
-    max-width: 100%;
-    width: 1200px;
+.tulia-container-max-width {
+    max-width: $content-width + ($content-gutter * 2);
+    padding-left: $content-gutter;
+    padding-right: $content-gutter;
     margin: 0 auto;
 }

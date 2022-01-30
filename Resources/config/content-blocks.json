@@ -1,0 +1,366 @@
+{
+    "types": [
+        {
+            "code": "theme_lisa_call_to_action",
+            "type": "content_block",
+            "name": "Lisa Theme: Call to action",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "icon_bg",
+                            "type": "text",
+                            "name": "Icon on background"
+                        },
+                        {
+                            "code": "icon_btn",
+                            "type": "text",
+                            "name": "Icon on button"
+                        },
+                        {
+                            "code": "text",
+                            "type": "text",
+                            "name": "Textline"
+                        },
+                        {
+                            "code": "text_btn",
+                            "type": "text",
+                            "name": "Text on button"
+                        },
+                        {
+                            "code": "btn_url",
+                            "type": "text",
+                            "name": "Button URL"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/call-to-action.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "theme_lisa_what_we_do",
+            "type": "content_block",
+            "name": "Lisa Theme: What we do",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "intro",
+                            "type": "text",
+                            "name": "Small intro"
+                        },
+                        {
+                            "code": "headline",
+                            "type": "text",
+                            "name": "Headline"
+                        },
+                        {
+                            "code": "image_under",
+                            "type": "filepicker",
+                            "name": "Left side Small image, under"
+                        },
+                        {
+                            "code": "image_above",
+                            "type": "filepicker",
+                            "name": "Left side Big image, above"
+                        },
+                        {
+                            "code": "content",
+                            "type": "wysiwyg",
+                            "name": "Content of the block"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/what-we-do.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "theme_lisa_services",
+            "type": "content_block",
+            "name": "Lisa Theme: Services",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "intro",
+                            "type": "text",
+                            "name": "Small intro"
+                        },
+                        {
+                            "code": "headline",
+                            "type": "text",
+                            "name": "Headline"
+                        },
+                        {
+                            "code": "short_text",
+                            "type": "text",
+                            "name": "Short text near the headline"
+                        },
+                        {
+                            "code": "service_1_icon",
+                            "type": "text",
+                            "name": "Service 1 icon"
+                        },
+                        {
+                            "code": "service_1_link",
+                            "type": "text",
+                            "name": "Service 1 URL"
+                        },
+                        {
+                            "code": "service_1_content",
+                            "type": "wysiwyg",
+                            "name": "Service 1 content"
+                        },
+                        {
+                            "code": "service_2_icon",
+                            "type": "text",
+                            "name": "Service 2 icon"
+                        },
+                        {
+                            "code": "service_2_link",
+                            "type": "text",
+                            "name": "Service 2 URL"
+                        },
+                        {
+                            "code": "service_2_content",
+                            "type": "wysiwyg",
+                            "name": "Service 2 content"
+                        },
+                        {
+                            "code": "service_3_icon",
+                            "type": "text",
+                            "name": "Service 3 icon"
+                        },
+                        {
+                            "code": "service_3_link",
+                            "type": "text",
+                            "name": "Service 3 URL"
+                        },
+                        {
+                            "code": "service_3_content",
+                            "type": "wysiwyg",
+                            "name": "Service 3 content"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/services.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "theme_lisa_services_light",
+            "type": "content_block",
+            "name": "Lisa Theme: Services Light",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "service_1_icon",
+                            "type": "text",
+                            "name": "Service 1 icon"
+                        },
+                        {
+                            "code": "service_1_content",
+                            "type": "wysiwyg",
+                            "name": "Service 1 content"
+                        },
+                        {
+                            "code": "service_2_icon",
+                            "type": "text",
+                            "name": "Service 2 icon"
+                        },
+                        {
+                            "code": "service_2_content",
+                            "type": "wysiwyg",
+                            "name": "Service 2 content"
+                        },
+                        {
+                            "code": "service_3_icon",
+                            "type": "text",
+                            "name": "Service 3 icon"
+                        },
+                        {
+                            "code": "service_3_content",
+                            "type": "wysiwyg",
+                            "name": "Service 3 content"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/services-light.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "theme_lisa_company_in_numbers",
+            "type": "content_block",
+            "name": "Lisa Theme: Company in Numbers",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "intro",
+                            "type": "text",
+                            "name": "Small intro"
+                        },
+                        {
+                            "code": "headline",
+                            "type": "text",
+                            "name": "Headline"
+                        },
+                        {
+                            "code": "number_1_value",
+                            "type": "text",
+                            "name": "Number 1 - Value"
+                        },
+                        {
+                            "code": "number_1_label",
+                            "type": "text",
+                            "name": "Number 1 - Label"
+                        },
+                        {
+                            "code": "number_1_label_after",
+                            "type": "text",
+                            "name": "Number 1 - Label after sign"
+                        },
+                        {
+                            "code": "number_2_value",
+                            "type": "text",
+                            "name": "Number 2 - Value"
+                        },
+                        {
+                            "code": "number_2_label",
+                            "type": "text",
+                            "name": "Number 2 - Label"
+                        },
+                        {
+                            "code": "number_2_label_after",
+                            "type": "text",
+                            "name": "Number 2 - Label after sign"
+                        },
+                        {
+                            "code": "number_3_value",
+                            "type": "text",
+                            "name": "Number 3 - Value"
+                        },
+                        {
+                            "code": "number_3_label",
+                            "type": "text",
+                            "name": "Number 3 - Label"
+                        },
+                        {
+                            "code": "number_3_label_after",
+                            "type": "text",
+                            "name": "Number 3 - Label after sign"
+                        },
+                        {
+                            "code": "number_4_value",
+                            "type": "text",
+                            "name": "Number 4 - Value"
+                        },
+                        {
+                            "code": "number_4_label",
+                            "type": "text",
+                            "name": "Number 4 - Label"
+                        },
+                        {
+                            "code": "number_4_label_after",
+                            "type": "text",
+                            "name": "Number 4 - Label after sign"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/company-in-numbers.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": "theme_lisa_nodes_from_taxonomy",
+            "type": "content_block",
+            "name": "Lisa Theme: Nodes from Taxonomy",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "intro",
+                            "type": "text",
+                            "name": "Small intro"
+                        },
+                        {
+                            "code": "headline",
+                            "type": "text",
+                            "name": "Headline"
+                        },
+                        {
+                            "code": "taxonomy",
+                            "type": "text",
+                            "name": "Taxonomy"
+                        },
+                        {
+                            "code": "number_of_nodes",
+                            "type": "text",
+                            "name": "Number of nodes to show"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/nodes_from_taxonomy.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

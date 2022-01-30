@@ -17,8 +17,7 @@
             padding-left: 40px;
             position: relative;
 
-            &:before {
-                @include font-awesome-icon("\f53c", 100px);
+            .block-icon {
                 position: absolute;
                 z-index: 0;
                 left: 0;
@@ -26,6 +25,9 @@
                 transform: translateY(-50%);
                 color: #fff;
                 opacity: .2;
+                font-size: 100px;
+                width: 100px;
+                height: 100px;
             }
         }
 

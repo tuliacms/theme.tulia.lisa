@@ -20,6 +20,10 @@
         .block-node-image {
             position: relative;
 
+            figure {
+                margin: 0;
+            }
+
             .block-node-date {
                 display: block;
                 position: absolute;

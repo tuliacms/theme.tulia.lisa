@@ -8325,22 +8325,17 @@ footer {
       padding-right: 30px;
       padding-left: 40px;
       position: relative; }
-      .block-call-to-action .block-inner .block-text:before {
-        display: block;
-        content: "";
-        width: 100px;
-        height: 100px;
-        font-size: 100px;
-        line-height: 1;
-        font-family: "Font Awesome 5 Free", serif;
-        font-weight: bold;
+      .block-call-to-action .block-inner .block-text .block-icon {
         position: absolute;
         z-index: 0;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
         color: #fff;
-        opacity: .2; }
+        opacity: .2;
+        font-size: 100px;
+        width: 100px;
+        height: 100px; }
     .block-call-to-action .block-inner .block-button {
       text-align: right; }
       .block-call-to-action .block-inner .block-button .btn {
@@ -8373,11 +8368,11 @@ footer {
         font-size: 40px;
         line-height: 1;
         margin-bottom: 30px; }
-      .block-services .services-collection .service-item .service-title {
-        font-size: 22px;
+      .block-services .services-collection .service-item h1, .block-services .services-collection .service-item .h1, .block-services .services-collection .service-item h2, .block-services .services-collection .service-item .h2, .block-services .services-collection .service-item h3, .block-services .services-collection .service-item .h3, .block-services .services-collection .service-item h4, .block-services .services-collection .service-item .h4, .block-services .services-collection .service-item h5, .block-services .services-collection .service-item .h5, .block-services .services-collection .service-item h6, .block-services .services-collection .service-item .h6 {
         font-weight: bold;
-        margin-bottom: 20px; }
-      .block-services .services-collection .service-item .service-description {
+        margin-bottom: 20px;
+        line-height: 1.4; }
+      .block-services .services-collection .service-item p {
         margin: 0;
         font-size: 16px;
         color: #d7d7d7; }
@@ -8400,12 +8395,12 @@ footer {
       color: #0f61b9;
       line-height: 1;
       margin-bottom: 30px; }
-    .block-services-light .services-collection .service-item .service-title {
+    .block-services-light .services-collection .service-item h1, .block-services-light .services-collection .service-item .h1, .block-services-light .services-collection .service-item h2, .block-services-light .services-collection .service-item .h2, .block-services-light .services-collection .service-item h3, .block-services-light .services-collection .service-item .h3, .block-services-light .services-collection .service-item h4, .block-services-light .services-collection .service-item .h4, .block-services-light .services-collection .service-item h5, .block-services-light .services-collection .service-item .h5, .block-services-light .services-collection .service-item h6, .block-services-light .services-collection .service-item .h6 {
       font-size: 22px;
       font-weight: bold;
       margin-bottom: 20px;
       color: #000; }
-    .block-services-light .services-collection .service-item .service-description {
+    .block-services-light .services-collection .service-item p {
       margin: 0;
       font-size: 18px; }
   .block-services-light .services-collection .service-column {
@@ -8487,6 +8482,8 @@ footer {
   border-bottom: 3px solid #0f61b9; }
   .block-nodes .block-node-item .block-node-image {
     position: relative; }
+    .block-nodes .block-node-item .block-node-image figure {
+      margin: 0; }
     .block-nodes .block-node-item .block-node-image .block-node-date {
       display: block;
       position: absolute;

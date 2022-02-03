@@ -1,6 +1,42 @@
 {
     "types": [
         {
+            "code": "theme_lisa_text",
+            "type": "content_block",
+            "name": "Lisa Theme: Text block",
+            "field_groups": [
+                {
+                    "code": "fields",
+                    "name": "fields",
+                    "section": "main",
+                    "fields": [
+                        {
+                            "code": "intro",
+                            "type": "text",
+                            "name": "Small intro"
+                        },
+                        {
+                            "code": "headline",
+                            "type": "text",
+                            "name": "Headline"
+                        },
+                        {
+                            "code": "content",
+                            "type": "wysiwyg",
+                            "name": "Content"
+                        },
+                        {
+                            "code": "___content_block_icon",
+                            "type": "___content_block_icon",
+                            "name": "Block icon",
+                            "configuration": {
+                                "icon": "/assets/theme/tulia/lisa/images/content-block/icon/text-block.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },{
             "code": "theme_lisa_call_to_action",
             "type": "content_block",
             "name": "Lisa Theme: Call to action",

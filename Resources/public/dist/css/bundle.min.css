@@ -8284,6 +8284,18 @@ footer {
   color: #0f61b9;
   margin-bottom: 15px; }
 
+.block.block-bg-lightgray {
+  background-color: #f3f3f3;
+  padding: 100px 0 80px; }
+
+.block.block-bg-darkgray {
+  background-color: #323232;
+  padding: 100px 0 80px; }
+
+.block.block-bg-blue {
+  background-color: #0f61b9;
+  padding: 100px 0 80px; }
+
 .block-what-we-do .block-images {
   position: relative; }
   .block-what-we-do .block-images .block-image {

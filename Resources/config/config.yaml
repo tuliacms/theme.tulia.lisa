@@ -24,3 +24,28 @@ framework:
             tulia.lisa.editor.plugins:
                 scripts:
                     - /assets/theme/tulia/lisa/js/editor-plugins.js
+
+cms:
+    content_building:
+        content_type_entry:
+            contact_form:
+                layout:
+                    sections:
+                        main:
+                            groups:
+                                fields_group:
+                                    fields:
+                                        headline:
+                                            type: text
+                                            name: Headline
+                                        intro:
+                                            type: text
+                                            name: Small intro
+                                        background:
+                                            type: select
+                                            name: Background color
+                                            configuration:
+                                                -   code: choices
+                                                    value: |
+                                                        white: White
+                                                        lightgray: Lightgray

@@ -156,49 +156,26 @@
                             "name": "Short text near the headline"
                         },
                         {
-                            "code": "service_1_icon",
-                            "type": "text",
-                            "name": "Service 1 icon"
-                        },
-                        {
-                            "code": "service_1_link",
-                            "type": "text",
-                            "name": "Service 1 URL"
-                        },
-                        {
-                            "code": "service_1_content",
-                            "type": "wysiwyg",
-                            "name": "Service 1 content"
-                        },
-                        {
-                            "code": "service_2_icon",
-                            "type": "text",
-                            "name": "Service 2 icon"
-                        },
-                        {
-                            "code": "service_2_link",
-                            "type": "text",
-                            "name": "Service 2 URL"
-                        },
-                        {
-                            "code": "service_2_content",
-                            "type": "wysiwyg",
-                            "name": "Service 2 content"
-                        },
-                        {
-                            "code": "service_3_icon",
-                            "type": "text",
-                            "name": "Service 3 icon"
-                        },
-                        {
-                            "code": "service_3_link",
-                            "type": "text",
-                            "name": "Service 3 URL"
-                        },
-                        {
-                            "code": "service_3_content",
-                            "type": "wysiwyg",
-                            "name": "Service 3 content"
+                            "code": "services",
+                            "type": "repeatable",
+                            "name": "Services",
+                            "children": [
+                                {
+                                    "code": "service_icon",
+                                    "type": "text",
+                                    "name": "Service icon"
+                                },
+                                {
+                                    "code": "service_link",
+                                    "type": "text",
+                                    "name": "Service URL"
+                                },
+                                {
+                                    "code": "service_content",
+                                    "type": "wysiwyg",
+                                    "name": "Service content"
+                                }
+                            ]
                         },
                         {
                             "code": "___content_block_icon",
@@ -223,34 +200,21 @@
                     "section": "main",
                     "fields": [
                         {
-                            "code": "service_1_icon",
-                            "type": "text",
-                            "name": "Service 1 icon"
-                        },
-                        {
-                            "code": "service_1_content",
-                            "type": "wysiwyg",
-                            "name": "Service 1 content"
-                        },
-                        {
-                            "code": "service_2_icon",
-                            "type": "text",
-                            "name": "Service 2 icon"
-                        },
-                        {
-                            "code": "service_2_content",
-                            "type": "wysiwyg",
-                            "name": "Service 2 content"
-                        },
-                        {
-                            "code": "service_3_icon",
-                            "type": "text",
-                            "name": "Service 3 icon"
-                        },
-                        {
-                            "code": "service_3_content",
-                            "type": "wysiwyg",
-                            "name": "Service 3 content"
+                            "code": "services",
+                            "type": "repeatable",
+                            "name": "Services",
+                            "children": [
+                                {
+                                    "code": "service_icon",
+                                    "type": "text",
+                                    "name": "Service icon"
+                                },
+                                {
+                                    "code": "service_content",
+                                    "type": "wysiwyg",
+                                    "name": "Service content"
+                                }
+                            ]
                         },
                         {
                             "code": "___content_block_icon",
@@ -285,64 +249,26 @@
                             "name": "Headline"
                         },
                         {
-                            "code": "number_1_value",
-                            "type": "text",
-                            "name": "Number 1 - Value"
-                        },
-                        {
-                            "code": "number_1_label",
-                            "type": "text",
-                            "name": "Number 1 - Label"
-                        },
-                        {
-                            "code": "number_1_label_after",
-                            "type": "text",
-                            "name": "Number 1 - Label after sign"
-                        },
-                        {
-                            "code": "number_2_value",
-                            "type": "text",
-                            "name": "Number 2 - Value"
-                        },
-                        {
-                            "code": "number_2_label",
-                            "type": "text",
-                            "name": "Number 2 - Label"
-                        },
-                        {
-                            "code": "number_2_label_after",
-                            "type": "text",
-                            "name": "Number 2 - Label after sign"
-                        },
-                        {
-                            "code": "number_3_value",
-                            "type": "text",
-                            "name": "Number 3 - Value"
-                        },
-                        {
-                            "code": "number_3_label",
-                            "type": "text",
-                            "name": "Number 3 - Label"
-                        },
-                        {
-                            "code": "number_3_label_after",
-                            "type": "text",
-                            "name": "Number 3 - Label after sign"
-                        },
-                        {
-                            "code": "number_4_value",
-                            "type": "text",
-                            "name": "Number 4 - Value"
-                        },
-                        {
-                            "code": "number_4_label",
-                            "type": "text",
-                            "name": "Number 4 - Label"
-                        },
-                        {
-                            "code": "number_4_label_after",
-                            "type": "text",
-                            "name": "Number 4 - Label after sign"
+                            "code": "numbers",
+                            "type": "repeatable",
+                            "name": "Numbers",
+                            "children": [
+                                {
+                                    "code": "number_value",
+                                    "type": "text",
+                                    "name": "Number - Value"
+                                },
+                                {
+                                    "code": "number_label",
+                                    "type": "text",
+                                    "name": "Number - Label"
+                                },
+                                {
+                                    "code": "number_label_after",
+                                    "type": "text",
+                                    "name": "Number - Label after sign"
+                                }
+                            ]
                         },
                         {
                             "code": "___content_block_icon",

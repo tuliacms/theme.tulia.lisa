@@ -19,5 +19,5 @@
         </div>
     </div>
 
-    {{ node.opis|raw }}
+    {{ node.opis|default|raw }}
 {% endblock %}

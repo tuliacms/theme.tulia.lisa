@@ -14,36 +14,18 @@
                     </div>
                     <div class="services-collection">
                         <div class="row">
-                            <div class="col-4">
-                                <a href="{{ service_1_link|default|raw }}" class="service-item">
-                                    {% if service_1_icon is defined %}
-                                        <div class="service-icon">
-                                            <i class="{{ service_1_icon|default|raw }}"></i>
-                                        </div>
-                                    {% endif %}
-                                    {{ service_1_content|default|raw }}
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="{{ service_2_link|default|raw }}" class="service-item">
-                                    {% if service_2_icon is defined %}
-                                        <div class="service-icon">
-                                            <i class="{{ service_2_icon|default|raw }}"></i>
-                                        </div>
-                                    {% endif %}
-                                    {{ service_2_content|default|raw }}
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="{{ service_3_link|default|raw }}" class="service-item">
-                                    {% if service_3_icon is defined %}
-                                        <div class="service-icon">
-                                            <i class="{{ service_3_icon|default|raw }}"></i>
-                                        </div>
-                                    {% endif %}
-                                    {{ service_3_content|default|raw }}
-                                </a>
-                            </div>
+                            {% for service in services %}
+                                <div class="col-4">
+                                    <a href="{{ service.service_link|default|raw }}" class="service-item">
+                                        {% if service.service_icon is defined %}
+                                            <div class="service-icon">
+                                                <i class="{{ service.service_icon|default|raw }}"></i>
+                                            </div>
+                                        {% endif %}
+                                        {{ service.service_content|default|raw }}
+                                    </a>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

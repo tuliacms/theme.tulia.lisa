@@ -1,7 +1,7 @@
-<div class="">
-    <div class="row">
-        <div class="col">
-            <div class="block block-bg-{{ background|default('white') }} block-contact block-margin-bottom-0 block-margin-top-0">
+<div class="block block-bg-{{ background|default('white') }} block-contact">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
                 <div class="tulia-container-max-width">
                     <p class="lead">{{ intro|default|raw }}</p>
                     <h2>{{ headline|default|raw }}</h2>

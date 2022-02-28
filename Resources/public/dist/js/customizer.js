@@ -18,6 +18,10 @@ customizer.customized('lisa.footer.contact.copyrights', function (value) {
     $('.footer-copyrights').text(value);
 });
 
+customizer.customized('lisa.footer.contact.email', function (value) {
+    $('.footer-contact .contact-row.contact-email span').text(value);
+});
+
 customizer.customized('lisa.footer.contact.phone', function (value) {
     $('.footer-contact .contact-row.contact-phone span').text(value);
 });

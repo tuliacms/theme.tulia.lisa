@@ -1,7 +1,7 @@
-<div class="container-xxl">
-    <div class="row">
-        <div class="col">
-            <div class="block block-services-light">
+<div class="block block-services-light">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
                 <div class="services-collection">
                     <div class="row">
                         {% for service in services %}

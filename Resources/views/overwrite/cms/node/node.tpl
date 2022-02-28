@@ -1,11 +1,14 @@
 {% extends 'theme' %}
 
 {% block content %}
-    <div class="container-fluid">
+    <div class="page-header">
+        <div class="page-title">
+            <h1 class="m-0">{{ node.title }}</h1>
+        </div>
+    </div>
+    <div class="container-xxl">
         <div class="row">
             <div class="col">
-                <h1>{{ node.title }}</h1>
-
                 {{ edit_links(node) }}
 
                 <p class="lead node-lead">{{ node.introduction }}</p>
@@ -19,5 +22,9 @@
         </div>
     </div>
 
-    {{ node.opis|default|raw }}
+    {% if node.content is defined and not node.content|empty %}
+        {{ node.content|default|raw }}
+    {% else %}
+        <p>&nbsp;</p>
+    {% endif %}
 {% endblock %}

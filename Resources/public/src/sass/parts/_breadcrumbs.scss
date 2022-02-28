@@ -1,5 +1,4 @@
 .breadcrumbs-container {
-    margin: -$header-margin 0 $header-margin 0;
     border-bottom: 1px solid rgba(0,0,0,.08);
 }
 
@@ -16,6 +15,7 @@
     }
 
     a {
+        display: inline-block;
         padding: 10px 0;
     }
 

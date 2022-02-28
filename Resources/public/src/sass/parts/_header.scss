@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    padding: 15px;
+    background-color: $header-color-bg-filled;
+    transition: $transition;
+}
+
+body.is-homepage header {
+    background-color: transparent;
+    padding: 30px 15px;
+}
+
+body.body-scrolled header {
+    background-color: $header-color-bg-filled;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    padding: 10px 15px;
+}
+
+.header-pillow {
+    height: 90px;
+}

@@ -4,6 +4,7 @@
 
 @import 'reset';
 @import 'mixins';
+@import 'parts/header';
 @import 'parts/button';
 @import 'parts/navbar';
 @import 'parts/hero';
@@ -20,37 +21,3 @@
 @import 'parts/blocks/services-light';
 @import 'parts/blocks/company-in-numbers';
 @import 'parts/blocks/nodes';
-
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 200;
-    padding: 15px;
-    background-color: $header-color-bg;
-    transition: $transition;
-}
-
-body.homepage header {
-    background-color: transparent;
-    padding: 30px 15px;
-}
-
-body.body-scrolled header {
-    background-color: $header-color-bg-filled;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-    padding: 10px 15px;
-}
-
-.header-pillow {
-    height: 79px;
-    margin-bottom: $header-margin;
-}
-
-.tulia-container-max-width {
-    max-width: $content-width + ($content-gutter * 2);
-    padding-left: $content-gutter;
-    padding-right: $content-gutter;
-    margin: 0 auto;
-}

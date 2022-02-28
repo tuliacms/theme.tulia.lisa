@@ -4,7 +4,6 @@
         color: #000;
         font-size: 46px;
         line-height: 1;
-        margin-bottom: 80px;
     }
 
     .lead {
@@ -13,20 +12,5 @@
         font-size: 15px;
         color: $primary;
         margin-bottom: 15px;
-    }
-
-    &.block-bg-lightgray {
-        background-color: #f3f3f3;
-        padding: 100px 0 80px;
-    }
-
-    &.block-bg-darkgray {
-        background-color: #323232;
-        padding: 100px 0 80px;
-    }
-
-    &.block-bg-blue {
-        background-color: #0f61b9;
-        padding: 100px 0 80px;
     }
 }

@@ -34,7 +34,7 @@ gulp.task('js-global', function () {
 gulp.task('js-customizer', function () {
     return gulp
         .src([
-            'src/js/customizer.js',
+            //'src/js/customizer.js',
             'src/js/editor-plugins.js'
         ])
         .pipe(gulp.dest('dist/js/'));

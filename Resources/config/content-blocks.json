@@ -304,8 +304,11 @@
                         },
                         {
                             "code": "taxonomy",
-                            "type": "text",
-                            "name": "Taxonomy"
+                            "type": "taxonomy",
+                            "name": "Taxonomy",
+                            "configuration": {
+                                "taxonomy": "category"
+                            }
                         },
                         {
                             "code": "number_of_nodes",

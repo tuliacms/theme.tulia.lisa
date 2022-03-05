@@ -2,8 +2,8 @@
     <div class="container-xxl">
         <div class="row">
             <div class="col">
-                <a href="{{ term_path(taxonomy|default) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn">
-                    <span>Read More</span>
+                <a href="{{ term_path(taxonomy|default) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn d-none d-md-block">
+                    <span>{{ 'readMore'|trans({}, 'lisa-theme') }}</span>
                     <i class="btn-icon fas fa-chevron-right"></i>
                 </a>
                 <p class="lead">{{ intro|default|raw }}</p>
@@ -17,22 +17,32 @@
         }) %}
         <div class="row">
             {% for node in nodes %}
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="{{ node_path(node) }}" class="block-node-item">
                         <div class="block-node-image">
                             {% if node.thumbnail %}
-                                {{ image(node.thumbnail, { size: 'node-thumbnail' }) }}
+                                {{ image(node.thumbnail, { size: 'node_thumbnail' }) }}
+                            {% else %}
+                                <img src="{{ asset('/assets/theme/tulia/lisa/images/no-photo.node-thumbnail.png') }}" alt="" />
                             {% endif %}
                             <span class="block-node-date">{{ format_date(node.publishedAt) }}</span>
                         </div>
                         <div class="block-node-info">
                             <div class="block-node-title">{{ node.title }}</div>
                             <p class="block-node-description">{{ node.introduction }}</p>
-                            <div class="block-node-read-more">Read more</div>
+                            <div class="block-node-read-more">{{ 'readMore'|trans({}, 'lisa-theme') }}</div>
                         </div>
                     </a>
                 </div>
             {% endfor %}
+        </div>
+        <div class="row d-md-none">
+            <div class="col text-center">
+                <a href="{{ term_path(taxonomy|default) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn">
+                    <span>{{ 'readMoreNews'|trans({}, 'lisa-theme') }}</span>
+                    <i class="btn-icon fas fa-chevron-right"></i>
+                </a>
+            </div>
         </div>
     </div>
 </div>

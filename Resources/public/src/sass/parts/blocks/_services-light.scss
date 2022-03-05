@@ -2,7 +2,7 @@
     .services-collection {
         .service-item {
             display: block;
-            padding: 0 40px;
+            padding: 40px 10px;
             border: 1px solid rgba(255,255,255,.3);
             border-radius: 3px;
             text-align: center;
@@ -27,7 +27,17 @@
                 font-size: 18px;
             }
         }
+    }
+}
 
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+    .block-services-light {
         .service-column {
             position: relative;
 
@@ -44,6 +54,19 @@
 
             &:last-child:before {
                 display: none;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+}
+
+@include media-breakpoint-up(xxl) {
+    .block-services-light {
+        .services-collection {
+            .service-item {
+                padding: 0 40px;
             }
         }
     }

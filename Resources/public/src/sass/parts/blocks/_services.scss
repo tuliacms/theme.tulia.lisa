@@ -3,7 +3,7 @@
 
     h2 {
         color: #fff;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .lead {
@@ -11,24 +11,23 @@
     }
 
     .services-slogan {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1.5;
     }
 
     .services-collection {
-        margin-top: 70px;
-
         .service-item {
             display: block;
-            padding: 40px;
+            padding: 20px;
             border: 1px solid rgba(255,255,255,.3);
             border-radius: 3px;
             color: #fff;
+            margin-bottom: 15px;
 
             .service-icon {
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 1;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             h1, h2, h3, h4, h5, h6 {
@@ -47,6 +46,51 @@
                 background-color: rgba(255,255,255,.03);
                 border: 1px solid rgba(255,255,255,.4);
                 transform: translateY(-6px) scale(1.01);
+            }
+        }
+
+        .col-12:last-of-type {
+            .service-item {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.block-bg-dark {
+        h1, h2, h3, h4, h5, h6 {
+            color: #fff;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .block-services {
+        .services-slogan {
+            font-size: 23px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .block-services {
+        .services-collection {
+            margin-top: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .block-services {
+        .services-collection {
+            margin-top: 30px;
+
+            .service-item {
+                padding: 40px;
+
+                .service-icon {
+                    font-size: 50px;
+                    margin-bottom: 40px;
+                }
             }
         }
     }

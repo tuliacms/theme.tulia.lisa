@@ -1,12 +1,13 @@
 @import 'variables';
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 
 @import 'reset';
 @import 'mixins';
+@import 'layout';
 @import 'parts/header';
 @import 'parts/button';
-@import 'parts/navbar';
 @import 'parts/hero';
 @import 'parts/footer';
 @import 'parts/terms';
@@ -14,10 +15,10 @@
 @import 'parts/breadcrumbs';
 @import 'parts/homepage';
 @import 'parts/blocks-framework/blocks';
-@import 'parts/blocks/reset';
 @import 'parts/blocks/what-we-do';
 @import 'parts/blocks/call-to-action';
 @import 'parts/blocks/services';
 @import 'parts/blocks/services-light';
 @import 'parts/blocks/company-in-numbers';
 @import 'parts/blocks/nodes';
+@import 'parts/blocks/text';

@@ -4,9 +4,9 @@
             <div class="col">
                 <p class="lead">{{ intro|default|raw }}</p>
                 <h2>{{ headline|default|raw }}</h2>
-                <div class="block-numbers">
+                <div class="block-numbers row">
                     {% for number in numbers %}
-                        <div class="block-number-item">
+                        <div class="block-number-item col-12 col-sm-6 col-xl-3">
                             <div class="block-number-item-inner">
                                 <div class="block-number">
                                     <span class="block-number-counter">{{ number.number_value|default|raw }}</span>

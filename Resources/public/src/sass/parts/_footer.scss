@@ -1,33 +1,11 @@
 footer {
-    padding: 40px 0;
-    background-color: #222;
+    text-align: center;
 
     .widget-title {
         font-size: 27px;
         color: #fff;
-        margin: 20px 0;
+        margin: 0 0 20px 0;
         font-weight: 900;
-    }
-
-    .footer-inner {
-        max-width: 100%;
-        width: $content-width;
-        margin: 0 auto;
-    }
-
-    .footer-boxes {
-        display: flex;
-        justify-content: space-between;
-
-        .footer-info {
-            flex: 0 1 350px;
-        }
-        .footer-menu {
-            flex: 0 0 auto;
-        }
-        .footer-contact {
-            flex: 0 0 auto;
-        }
     }
 
     .footer-info p {
@@ -65,7 +43,7 @@ footer {
 
                 a {
                     display: inline-block;
-                    padding: 4px 25px 4px 0;
+                    padding: 4px 0;
                     color: $footer-color-text;
 
                     &:hover,
@@ -107,8 +85,8 @@ footer {
         }
 
         .socials {
-            margin: 20px 0 20px;
-            padding: 20px 0;
+            margin: 20px 0;
+            padding: 20px 0 0 0;
             font-size: 0;
 
             a.social-icon {
@@ -152,6 +130,29 @@ footer {
         .nav-item.has-children {
             .submenu {
                 display: none !important;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    footer {
+        text-align: left;
+
+        .footer-boxes {
+            display: flex;
+            justify-content: space-between;
+
+            .footer-info {
+                flex: 0 1 350px;
+            }
+
+            .footer-menu {
+                flex: 0 0 auto;
+            }
+
+            .footer-contact {
+                flex: 0 0 auto;
             }
         }
     }

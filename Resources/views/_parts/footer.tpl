@@ -1,5 +1,5 @@
-<footer>
-    <div class="footer-inner container-fluid content-container">
+<footer class="block block-footer block-bg-dark">
+    <div class="container-xxl">
         <div class="footer-boxes">
             <div class="footer-info">
                 {{ widgets_space('footer_info') }}
@@ -15,6 +15,6 @@
                 {% endif %}
             </div>
         </div>
-        <div class="copyrights"><b>Lisa Theme</b> by <a href="https://tuliacms.com/" title="Tulia CMS" target="_blank">Tulia CMS Team</a><br /> {{ 'now'|date('Y') }} &copy; <span class="footer-copyrights">{{ customizer_get('lisa.footer.contact.copyrights') }}</span></div>
+        <div class="copyrights"><b>Lisa Theme</b> by <a href="https://tuliacms.com/" title="Tulia CMS" target="_blank">Tulia CMS Team</a><br /> {{ 'now'|date('Y') }} &copy; <span class="footer-copyrights" {{ customizer_live_control('lisa.footer.contact.copyrights') }}>{{ customizer_get('lisa.footer.contact.copyrights') }}</span></div>
     </div>
 </footer>

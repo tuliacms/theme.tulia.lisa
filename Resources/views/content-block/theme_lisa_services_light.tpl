@@ -1,24 +1,18 @@
 <div class="block block-services-light">
-    <div class="container-xxl">
+    <div class="container-xxl services-collection">
         <div class="row">
-            <div class="col">
-                <div class="services-collection">
-                    <div class="row">
-                        {% for service in services %}
-                            <div class="col-4 service-column">
-                                <div class="service-item">
-                                    {% if service.service_icon is defined %}
-                                        <div class="service-icon">
-                                            <i class="{{ service.service_icon }}"></i>
-                                        </div>
-                                    {% endif %}
-                                    {{ service.service_content|default|raw }}
-                                </div>
+            {% for service in services %}
+                <div class="col-12 col-lg-4 service-column">
+                    <div class="service-item">
+                        {% if service.service_icon is defined %}
+                            <div class="service-icon">
+                                <i class="{{ service.service_icon }}"></i>
                             </div>
-                        {% endfor %}
+                        {% endif %}
+                        {{ service.service_content|default|raw }}
                     </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

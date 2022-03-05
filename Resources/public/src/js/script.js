@@ -7,6 +7,11 @@ $(function () {
     });
 
     sc.init();
+
+    $('.hamburger').click(function () {
+        $(this).find('.hamburger-box').toggleClass('is-active');
+        $('body').toggleClass('main-menu-opened');
+    });
 });
 
 let Scroller = function (breakpoint, before, after) {

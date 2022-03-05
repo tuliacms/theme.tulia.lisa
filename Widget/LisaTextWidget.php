@@ -5,10 +5,9 @@ declare(strict_types = 1);
 namespace Tulia\Theme\Tulia\Lisa\Widget;
 
 use Symfony\Component\Form\FormInterface;
-use Symfony\Component\HttpFoundation\Request;
+use Tulia\Cms\Widget\Domain\Catalog\AbstractWidget;
+use Tulia\Cms\Widget\Domain\Catalog\Configuration\ConfigurationInterface;
 use Tulia\Component\Templating\ViewInterface;
-use Tulia\Component\Widget\AbstractWidget;
-use Tulia\Component\Widget\Configuration\ConfigurationInterface;
 
 /**
  * @author Adam Banaszkiewicz

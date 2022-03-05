@@ -25,8 +25,8 @@ img {
 }
 
 h1, .h1 {
-    font-size: 60px;
-    margin-bottom: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
@@ -67,5 +67,31 @@ ul {
             color: #000;
             line-height: 1;
         }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    h1, .h1 {
+        font-size: 35px;
+    }
+}
+@include media-breakpoint-up(md) {
+    h1, .h1 {
+        font-size: 40px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    h1, .h1 {
+        font-size: 45px;
+    }
+}
+@include media-breakpoint-up(xl) {
+    h1, .h1 {
+        font-size: 55px;
+    }
+}
+@include media-breakpoint-up(xxl) {
+    h1, .h1 {
+        font-size: 60px;
     }
 }

@@ -12,7 +12,13 @@
         {% include relative(_self, '_parts/header.tpl') %}
         {% if not is_homepage() and customizer_get('lisa.layout.breadcrumbs') == 'show' %}
             <div class="breadcrumbs-container">
-                {{ breadcrumbs() }}
+                <div class="container-xxl">
+                    <div class="row">
+                        <div class="col">
+                            {{ breadcrumbs() }}
+                        </div>
+                    </div>
+                </div>
             </div>
         {% endif %}
         <div class="container-fluid content-container">

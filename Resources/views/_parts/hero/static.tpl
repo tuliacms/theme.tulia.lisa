@@ -5,8 +5,8 @@
         <a href="{{ link }}" class="hero-link-wrapper">
     {% endif %}
 
-    {% set default_bg_desktop = asset('/assets/theme/tulia/lisa/images/hero-image.jpg') %}
-    {% set default_bg_mobile = asset('/assets/theme/tulia/lisa/images/hero-image.mobile.jpg') %}
+    {% set default_bg_desktop = asset('/assets/theme/tulia/lisa/theme/images/hero-image.jpg') %}
+    {% set default_bg_mobile = asset('/assets/theme/tulia/lisa/theme/images/hero-image.mobile.jpg') %}
 
     {% set static_bg_desktop
         = customizer_get('hero.static.background')

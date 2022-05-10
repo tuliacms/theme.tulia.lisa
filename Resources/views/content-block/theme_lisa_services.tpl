@@ -13,7 +13,7 @@
             <div class="row">
                 {% for service in services %}
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <a href="{{ service.service_link|default|raw }}" class="service-item">
+                        <a href="{{ service.service_link|default|raw }}" class="service-item service-item-hoverable">
                             {% if service.service_icon is defined %}
                                 <div class="service-icon">
                                     <i class="{{ service.service_icon|default|raw }}"></i>

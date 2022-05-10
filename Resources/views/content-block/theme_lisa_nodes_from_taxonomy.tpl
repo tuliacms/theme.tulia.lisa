@@ -21,7 +21,7 @@
                     <a href="{{ node_path(node) }}" class="block-node-item">
                         <div class="block-node-image">
                             {% if node.thumbnail %}
-                                {{ image(node.thumbnail, { size: 'node_thumbnail' }) }}
+                                {{ image(node.thumbnail, { size: 'node-thumbnail' }) }}
                             {% else %}
                                 <img src="{{ asset('/assets/theme/tulia/lisa/images/no-photo.node-thumbnail.png') }}" alt="" />
                             {% endif %}

@@ -8631,14 +8631,10 @@ body header {
   background-color: #333;
   transition: 0.12s all; }
   body header .navbar {
-    width: 1320px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
     background-color: transparent; }
     body header .navbar .logo {
       position: absolute;
-      left: 25px;
+      left: 0;
       top: 25px;
       display: block;
       font-weight: 900;
@@ -8702,7 +8698,6 @@ body.body-scrolled header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   min-height: 54px; }
   body.body-scrolled header .navbar .logo {
-    left: 15px;
     top: 17px; }
   body.body-scrolled header .navbar .tulia-navbar.navbar-nav {
     margin-top: 60px; }
@@ -8755,7 +8750,6 @@ body.main-menu-opened header {
   body .header-pillow {
     height: 74px; }
   body.body-scrolled header .navbar .logo {
-    left: 25px;
     top: 22px; }
   body.body-scrolled header .navbar .tulia-navbar.navbar-nav {
     margin-top: 0; } }
@@ -9065,12 +9059,9 @@ footer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
 
 .breadcrumb {
-  width: 1320px;
-  max-width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
   background-color: transparent;
-  font-size: 14px; }
+  font-size: 14px;
+  margin: 0; }
   .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -9331,10 +9322,12 @@ footer {
       margin: 0;
       font-size: 16px;
       color: #d7d7d7; }
-    .block-services .services-collection .service-item:hover {
-      background-color: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      transform: translateY(-6px) scale(1.01); }
+    .block-services .services-collection .service-item.service-item-hoverable {
+      transition: .12s all; }
+      .block-services .services-collection .service-item.service-item-hoverable:hover {
+        background-color: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        transform: translateY(-6px) scale(1.01); }
   .block-services .services-collection .col-12:last-of-type .service-item {
     margin-bottom: 0; }
   .block-services.block-bg-dark h1, .block-services.block-bg-dark .h1, .block-services.block-bg-dark h2, .block-services.block-bg-dark .h2, .block-services.block-bg-dark h3, .block-services.block-bg-dark .h3, .block-services.block-bg-dark h4, .block-services.block-bg-dark .h4, .block-services.block-bg-dark h5, .block-services.block-bg-dark .h5, .block-services.block-bg-dark h6, .block-services.block-bg-dark .h6 {

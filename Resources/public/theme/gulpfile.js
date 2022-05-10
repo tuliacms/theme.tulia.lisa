@@ -50,7 +50,7 @@ gulp.task('js', gulp.series(['js-global', 'js-customizer']));
 
 gulp.task('publish', () => {
     return gulp.src(['dist/**/*'])
-        .pipe(gulp.dest('../../../../../../public/assets/theme/tulia/lisa'));
+        .pipe(gulp.dest('../../../../../../../public/assets/theme/tulia/lisa/theme'));
 });
 
 gulp.task('default', gulp.series(['css', 'js', 'images', 'publish'], () => {

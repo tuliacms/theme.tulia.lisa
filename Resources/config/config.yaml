@@ -3,7 +3,8 @@ framework:
         paths:
             - '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/translations'
     public_paths:
-        '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/dist': '/theme/tulia/lisa'
+        - { source: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/theme/dist', target: '/theme/tulia/lisa/theme' }
+        - { source: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/tulia-editor-blocks/dist', target: '/theme/tulia/lisa/tulia-editor-blocks' }
     templating:
         paths:
             - { name: theme/tulia/lisa, path: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/views' }
@@ -13,17 +14,18 @@ framework:
                 require: [ font_awesome, frontend ]
                 styles:
                     - https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap
-                    - /assets/theme/tulia/lisa/css/bundle.min.css
+                    - /assets/theme/tulia/lisa/theme/css/bundle.min.css
                 scripts:
-                    - /assets/theme/tulia/lisa/js/bundle.min.js
+                    - /assets/theme/tulia/lisa/theme/js/bundle.min.js
                 group: head
                 included: [ bootstrap, jquery, js_cookie ]
             tulia.lisa.customizer:
                 scripts:
-                    - /assets/theme/tulia/lisa/js/customizer.js
+                    - /assets/theme/tulia/lisa/theme/js/customizer.js
             tulia.lisa.editor.plugins:
                 scripts:
-                    - /assets/theme/tulia/lisa/js/editor-plugins.js
+                    - /assets/theme/tulia/lisa/tulia-editor-blocks/tulia-lisa-blocks.js
+                collection: tulia_editor
     theme:
         configuration:
             Tulia/Lisa:
@@ -33,17 +35,17 @@ framework:
                         assets:
                             - tulia.lisa.main
                         colors:
-                            primary: { value: '#ff0000' }
+                            - { name: primary, value: '#ff0000' }
                         widget_spaces:
-                            homepage: { label: Homepage }
-                            mainmenu: { label: Main menu }
-                            footer_info: { label: Footer - Info }
-                            footer_contact: { label: Footer - Contact }
-                            footer_quick_links: { label: Footer - Quick links }
+                            - { name: homepage, label: Homepage }
+                            - { name: mainmenu, label: Main menu }
+                            - { name: footer_info, label: Footer - Info }
+                            - { name: footer_contact, label: Footer - Contact }
+                            - { name: footer_quick_links, label: Footer - Quick links }
                         widget_styles:
-                            style_1: { label: Style 1 }
+                            - { name: style-1, label: Style 1 }
                         image_sizes:
-                            node_thumbnail: { width: 500, height: 260 }
+                            - { name: node-thumbnail, width: 500, height: 260 }
                     customizer:
                         assets:
                             - tulia.lisa.customizer
@@ -211,4 +213,4 @@ cms:
                                             name: null
                                             configuration:
                                                 -   code: icon
-                                                    value: '/assets/theme/tulia/lisa/images/content-block/icon/contact-form.png'
+                                                    value: '/assets/theme/tulia/lisa/theme/images/content-block/icon/contact-form.png'

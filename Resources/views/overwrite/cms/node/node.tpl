@@ -27,10 +27,11 @@
     {% endif %}
 
     <div class="node-content">
-        {% if node.content is defined and not node.content|empty %}
-            {{ node.content|default|raw }}
+        {% if node.tulia_editor is defined and not node.tulia_editor|empty %}
+            {{ node.tulia_editor|default|raw }}
         {% else %}
             <p>&nbsp;</p>
         {% endif %}
+        {{ node.opis|raw }}
     </div>
 {% endblock %}

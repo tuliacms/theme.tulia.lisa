@@ -10,15 +10,11 @@ body {
         transition: $transition;
 
         .navbar {
-            width: $content-width;
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 0;
             background-color: transparent;
 
             .logo {
                 position: absolute;
-                left: 25px;
+                left: 0;
                 top: 25px;
                 display: block;
                 font-weight: 900;
@@ -120,7 +116,6 @@ body {
 
             .navbar {
                 .logo {
-                    left: 15px;
                     top: 17px;
                 }
 
@@ -223,7 +218,6 @@ body {
             header {
                 .navbar {
                     .logo {
-                        left: 25px;
                         top: 22px;
                     }
 

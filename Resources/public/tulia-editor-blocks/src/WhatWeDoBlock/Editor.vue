@@ -9,15 +9,15 @@
                         <WysiwygEditor v-model="block.data.content"></WysiwygEditor>
                         <ul>
                             <li
-                                v-for="(item, key) in block.data.content_list"
-                                :key="key"
+                                v-for="item in contentList.collection"
+                                :key="item.id"
                             >
                                 <strong class="mb-2 d-block"><Contenteditable v-model="item.lead"></Contenteditable></strong>
                                 <Contenteditable v-model="item.paragraph"></Contenteditable>
-                                <button type="button" class="tued-btn" @click="block.data.content_list.splice(key, 1)">{{ translator.trans('removeItem') }}</button>
+                                <Actions actions="moveUp,moveDown,remove" :collection="contentList" :item="item"></Actions>
                             </li>
                             <li>
-                                <button type="button" class="tued-btn" @click="addItem()">{{ translator.trans('addItem') }}</button>
+                                <Actions actions="add" :collection="contentList"></Actions>
                             </li>
                         </ul>
                     </div>
@@ -48,11 +48,11 @@ const translator = inject('translator');
 const ImageEditor = block.extension('BackgroundImage');
 const WysiwygEditor = block.extension('WysiwygEditor');
 const Contenteditable = block.extension('Contenteditable');
+const Collection = block.extension('Collection');
+const Actions = block.extension('Collection.Actions');
 
-const addItem = () => {
-    block.data.content_list.push({
-        lead: 'Mauris tincidunt convallis',
-        paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
-    });
-};
+const contentList = new Collection(block.data.content_list, {
+    lead: 'Mauris tincidunt convallis',
+    paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
+});
 </script>

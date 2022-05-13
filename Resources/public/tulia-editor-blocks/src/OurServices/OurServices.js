@@ -14,16 +14,19 @@ export default {
         headline: 'Look What We Offer',
         short_text: 'Ded nec finibus nulla. Fusce rhoncus dui eu nunc molestie, eget aliquet ligula mollis.',
         services: [{
+            id: '1',
             icon: 'far fa-money-bill-alt',
             title: 'Sed tempus libero id magna mattis',
             content: 'Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis.',
             link: null,
         },{
+            id: '2',
             icon: 'fas fa-shuttle-van',
             title: 'Proin ac dolor egestas',
             content: 'Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.',
             link: null,
         },{
+            id: '3',
             icon: 'fas fa-fighter-jet',
             title: 'Mauris viverra ligula quis',
             content: 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.',

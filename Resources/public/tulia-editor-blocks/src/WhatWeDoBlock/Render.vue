@@ -26,11 +26,11 @@
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+const { defineProps, inject, watch } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').render(props);
 
 const BackgroundImage = block.extension('BackgroundImage');
-const imageAbove = new BackgroundImage(block, block.data.image_above, 'above');
-const imageUnder = new BackgroundImage(block, block.data.image_under, 'under');
+const imageAbove = new BackgroundImage(block, () => block.data.image_above, 'above');
+const imageUnder = new BackgroundImage(block, () => block.data.image_under, 'under');
 </script>

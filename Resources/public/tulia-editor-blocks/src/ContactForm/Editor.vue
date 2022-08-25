@@ -10,7 +10,7 @@
 
                         <div class="card">
                             <div class="card-body">
-                                Here will be rendered form.
+                                {{ translator.trans('Here will be rendered form.', 'TuliaLisa') }}
                             </div>
                         </div>
                     </div>
@@ -24,6 +24,7 @@
 const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
+const translator = inject('translator');
 
 const WysiwygEditor = block.extension('WysiwygEditor');
 const Contenteditable = block.extension('Contenteditable');

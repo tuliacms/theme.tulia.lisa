@@ -8,7 +8,7 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        'tulia-lisa-blocks.js': './src/blocks.js',
+        'tulia-lisa-blocks.js': './src/index.js',
     },
     output: {
         filename: '[name]',

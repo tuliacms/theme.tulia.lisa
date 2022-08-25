@@ -22,17 +22,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 order-lg-0 block-images">
-                    <ImageEditor
+                <div class="col-12 col-lg-6 order-lg-0 block-images" style="padding-top:400px">
+                    <BackgroundImage
                         class="block-image block-image-main"
                         v-model="block.data.image_above"
                         placement="above"
-                    ></ImageEditor>
-                    <ImageEditor
+                    ></BackgroundImage>
+                    <BackgroundImage
                         class="block-image block-image-sub"
                         v-model="block.data.image_under"
                         placement="under"
-                    ></ImageEditor>
+                    ></BackgroundImage>
                 </div>
             </div>
         </div>
@@ -40,12 +40,12 @@
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+const { defineProps, inject, watch } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
 
 const translator = inject('translator');
-const ImageEditor = block.extension('BackgroundImage');
+const BackgroundImage = block.extension('BackgroundImage');
 const WysiwygEditor = block.extension('WysiwygEditor');
 const Contenteditable = block.extension('Contenteditable');
 const Collection = block.extension('Collection');

@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="en" datatype="plaintext" original="lisa-theme+intl-icu.en.xlf">
+    <file source-language="en" target-language="pl" datatype="plaintext" original="lisa-theme+intl-icu.en.xlf">
         <body>
             <trans-unit id="tuliacms.lisa-theme.1">
                 <source>changesetPredefinedEmpty</source>
-                <target>Lisa - Empty changeset</target>
+                <target>Lisa - Pusty szablon</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.2">
                 <source>changesetPredefinedEmptyDescription</source>
-                <target>Empty configuration. Use it it You want to clear all theme customized fields.</target>
+                <target>Pusta konfiguracja. Użyj go Chcesz wyczyścić wszystkie pola dostosowane do motywu.</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.3">
                 <source>contactInfo</source>
-                <target>Contact Info</target>
+                <target>Informacje kontaktowe</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.4">
                 <source>footer</source>
-                <target>Footer</target>
+                <target>Stopka</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.5">
                 <source>showBreadcrumbs</source>
-                <target>Show breadcrumbs</target>
+                <target>Pokaż okruszki chleba (Breadcrumbs)</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.6">
                 <source>contactSection</source>
-                <target>Contact section</target>
+                <target>Sekcja kontaktu</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.7">
                 <source>copyrights</source>
@@ -32,39 +32,39 @@
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.8">
                 <source>contact</source>
-                <target>Contact</target>
+                <target>Kontakt</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.9">
                 <source>socialMediaIcons</source>
-                <target>Social Media Icons</target>
+                <target>Ikonki Social Media</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.10">
                 <source>phoneNumber</source>
-                <target>Phone number</target>
+                <target>Numer telefonu</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.11">
                 <source>emailAddress</source>
-                <target>E-mail address</target>
+                <target>Adres e-mail</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.12">
                 <source>companyAddess</source>
-                <target>Company address</target>
+                <target>Adres firmy</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.13">
                 <source>staticBanner</source>
-                <target>Static banner</target>
+                <target>Baner statyczny</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.14">
                 <source>headline</source>
-                <target>Headline</target>
+                <target>Nagłówek</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.15">
                 <source>description</source>
-                <target>Description</target>
+                <target>Opis</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.16">
                 <source>backgroundImage</source>
-                <target>Background image</target>
+                <target>Zdjęcie tła</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.17">
                 <source>link</source>
@@ -72,35 +72,31 @@
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.18">
                 <source>showButton</source>
-                <target>Show button</target>
+                <target>Pokaż przycisk</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.19">
                 <source>buttonLabel</source>
-                <target>Button label</target>
+                <target>Etykieta przycisku</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.20">
                 <source>readMore</source>
-                <target>Read more</target>
+                <target>Czytaj więcej</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.21">
                 <source>header</source>
-                <target>Header</target>
+                <target>Nagłówek</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.22">
                 <source>logoText</source>
-                <target>Logo text</target>
+                <target>Tekst logotypu</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.23">
                 <source>backgroundImageMobile</source>
-                <target>Background image - Mobile (520x800)</target>
+                <target>Obraz w tle – mobile (520x800)</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.24">
-                <source>readMoreNews</source>
-                <target>Read more news</target>
-            </trans-unit>
-            <trans-unit id="tuliacms.lisa-theme.25">
                 <source>showLanguageSwitcher</source>
-                <target>Show language switcher</target>
+                <target>Pokaż przełączanie języków</target>
             </trans-unit>
         </body>
     </file>

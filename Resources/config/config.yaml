@@ -2,7 +2,6 @@ framework:
     translator:
         paths:
             - '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/translations'
-
 cms:
     public_paths:
         - { source: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/theme/dist', target: '/theme/tulia/lisa/theme' }
@@ -32,12 +31,11 @@ cms:
         configuration:
             Tulia/Lisa:
                 translation_domain: lisa-theme
+                css_framework: bootstrap-5
                 configuration:
                     base:
                         assets:
                             - tulia.lisa.main
-                        colors:
-                            - { name: primary, value: '#ff0000' }
                         widget_spaces:
                             - { name: homepage, label: Homepage }
                             - { name: mainmenu, label: Main menu }

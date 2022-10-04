@@ -8,6 +8,7 @@ TuliaEditor.block(require('./CompanyInNumbers/CompanyInNumbers.js').default);
 TuliaEditor.block(require('./NodesList/NodesList.js').default);
 TuliaEditor.block(require('./Text/Text.js').default);
 TuliaEditor.block(require('./ContactForm/ContactForm.js').default);
+TuliaEditor.block(require('./Faq/Faq.js').default);
 
 TuliaEditor.trans('pl', 'TuliaLisa', {
     'Here will be rendered form.': 'Tutaj pojawi się formularz.',

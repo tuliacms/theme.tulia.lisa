@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app.request.get('_content_locale') }}">
+<html lang="{{ page_locale() }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

@@ -13,7 +13,7 @@
                         {{ widgets_space('mainmenu') }}
                         {% if customizer_get('lisa.header.show_language_switcher') == 'yes' and current_website().locales|length > 1 %}
                             <div class="dropdown language-switcher">
-                                <a href="#" class="text-white dropdown-toggle text-uppercase" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="text-white dropdown-toggle text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">
                                     {{ current_website().locale.language }}
                                 </a>
                                 <ul class="dropdown-menu">

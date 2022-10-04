@@ -10,7 +10,5 @@ const props = defineProps(['block']);
 const block = inject('blocks.instance').manager(props);
 const translator = inject('translator');
 
-block.on('created', () => {
-    block.expectsFullWidthSection();
-});
+// Your block logic here...
 </script>

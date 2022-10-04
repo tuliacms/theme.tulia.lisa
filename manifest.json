@@ -1,0 +1,9 @@
+{
+    "name": "Tulia/Lisa",
+    "version": "0.0.1",
+    "system_version": ">=0.0.1",
+    "css_framework": "bootstrap-5",
+    "supports": ["tulia-editor", "multilingual"],
+    "categories": ["corporate"],
+    "translations": ["en_US", "pl_PL"]
+}

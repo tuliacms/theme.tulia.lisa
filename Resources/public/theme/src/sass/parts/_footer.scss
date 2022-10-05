@@ -20,7 +20,7 @@ footer {
         a {
             color: $footer-color-text;
             &:hover {
-                color: $primary;
+                color: var(--bs-primary);
             }
         }
     }
@@ -48,7 +48,7 @@ footer {
 
                     &:hover,
                     &:focus {
-                        color: $primary;
+                        color: var(--bs-primary);
                     }
                 }
             }
@@ -67,7 +67,7 @@ footer {
 
                 &:hover,
                 &:focus {
-                    color: $primary;
+                    color: var(--bs-primary);
                 }
             }
 

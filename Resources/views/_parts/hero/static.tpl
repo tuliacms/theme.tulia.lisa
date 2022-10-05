@@ -8,16 +8,8 @@
     {% set default_bg_desktop = asset('/assets/theme/tulia/lisa/theme/images/hero-image.jpg') %}
     {% set default_bg_mobile = asset('/assets/theme/tulia/lisa/theme/images/hero-image.mobile.jpg') %}
 
-    {% set static_bg_desktop
-        = customizer_get('hero.static.background')
-            ? image_url(customizer_get('hero.static.background'), 'original')
-            : default_bg_desktop
-    %}
-    {% set static_bg_mobile
-        = customizer_get('hero.static.background_mobile')
-            ? image_url(customizer_get('hero.static.background_mobile'), 'mobile_banner')
-            : default_bg_mobile
-    %}
+    {% set static_bg_desktop = image_url(customizer_get('hero.static.background'), { size: 'original', default: default_bg_desktop }) %}
+    {% set static_bg_mobile = image_url(customizer_get('hero.static.background_mobile'), { size: 'mobile-banner', default: default_bg_mobile }) %}
 
     <div
         class="hero-image d-xxl-block d-xl-block d-lg-block d-md-block d-sm-none d-none"
@@ -26,7 +18,7 @@
     ></div>
     <div
         class="hero-image d-xxl-none d-xl-none d-lg-none d-md-none d-sm-block d-block"
-        {{ customizer_live_control('hero.static.background_mobile', { type: 'background-image', image_size: 'mobile_banner', default: default_bg_mobile }) }}
+        {{ customizer_live_control('hero.static.background_mobile', { type: 'background-image', image_size: 'mobile-banner', default: default_bg_mobile }) }}
         style="background-image:url('{{ static_bg_mobile }}');"
     ></div>
     <div class="hero-text">

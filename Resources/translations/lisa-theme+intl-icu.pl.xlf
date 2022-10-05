@@ -98,6 +98,18 @@
                 <source>showLanguageSwitcher</source>
                 <target>Pokaż przełączanie języków</target>
             </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.26">
+                <source>layout</source>
+                <target>Układ</target>
+            </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.27">
+                <source>colors</source>
+                <target>Kolorystyka</target>
+            </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.28">
+                <source>primaryColor</source>
+                <target>Kolor podstawowy</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

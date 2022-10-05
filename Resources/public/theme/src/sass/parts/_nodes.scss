@@ -19,7 +19,7 @@
         left: 0;
         top: -5px;
         bottom: -5px;
-        background-color: $primary;
+        background-color: var(--bs-primary);
     }
 
     &:empty {
@@ -36,7 +36,7 @@
         content: "";
         width: 40px;
         height: 3px;
-        background-color: $primary;
+        background-color: var(--bs-primary);
         margin: 10px auto 0 auto;
     }
 }

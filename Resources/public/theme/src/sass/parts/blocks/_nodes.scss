@@ -16,8 +16,8 @@
         overflow: hidden;
         background-color: #f1f1f1;
         border: 1px solid #ddd;
-        box-shadow: 0 0 0 rgba($primary,.2);
-        border-bottom: 3px solid $primary;
+        box-shadow: 0 0 0 rgba(var(--bs-primary),.2);
+        border-bottom: 3px solid var(--bs-primary);
 
         .block-node-image {
             position: relative;
@@ -100,7 +100,7 @@
 
             .block-node-info {
                 .block-node-title {
-                    color: $primary;
+                    color: var(--bs-primary);
                 }
             }
         }

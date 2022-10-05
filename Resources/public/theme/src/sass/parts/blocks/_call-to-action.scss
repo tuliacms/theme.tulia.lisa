@@ -1,5 +1,5 @@
 .block-call-to-action {
-    background-color: $primary;
+    background-color: var(--bs-primary);
 
     .block-inner {
         .block-text {
@@ -35,7 +35,7 @@
                 white-space: nowrap;
 
                 &:hover {
-                    background-color: $primary;
+                    background-color: var(--bs-primary);
                     color: #fff;
                 }
             }

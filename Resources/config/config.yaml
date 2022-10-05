@@ -39,11 +39,11 @@ cms:
                         widget_spaces:
                             - { name: homepage, label: Homepage }
                             - { name: mainmenu, label: Main menu }
-                            - { name: footer_info, label: Footer - Info (left side) }
-                            - { name: footer_contact, label: Footer - Contact (right side) }
-                            - { name: footer_quick_links, label: Footer - Quick links (middle) }
-                        widget_styles:
-                            - { name: style-1, label: Style 1 }
+                            - { name: footer-info, label: Footer - Info (left side) }
+                            - { name: footer-contact, label: Footer - Contact (right side) }
+                            - { name: footer-quick-links, label: Footer - Quick links (middle) }
+                        #widget_styles:
+                        #    - { name: style-1, label: Style 1 }
                         image_sizes:
                             - { name: node-thumbnail, width: 500, height: 260 }
                             - { name: mobile-banner, width: 800, height: 600 }
@@ -51,6 +51,15 @@ cms:
                         assets:
                             - tulia.lisa.customizer
                 customizer:
+                    variables:
+                        :root:
+                            bs-primary: lisa.color.primary
+                        .btn-primary:
+                            bs-btn-bg: lisa.color.primary
+                            bs-btn-border-color: lisa.color.primary
+                            bs-btn-hover-bg: lisa.color.primary
+                            bs-btn-hover-border-color: lisa.color.primary
+                            bs-btn-active-bg: lisa.color.primary
                     changesets:
                         lisa.empty:
                             label: changesetPredefinedEmpty
@@ -79,8 +88,16 @@ cms:
                                 hero.static.link: ''
                                 hero.static.button.label: ''
                     builder:
+                        lisa.colors:
+                            label: colors
+                            controls:
+                                lisa.color.primary:
+                                    type: colorpicker
+                                    label: primaryColor
+                                    value: '#0f61b9'
+                                    transport: postMessage
                         lisa.layout:
-                            label: Layout
+                            label: layout
                             controls:
                                 lisa.layout.breadcrumbs:
                                     type: yes_no
@@ -104,7 +121,7 @@ cms:
                                 lisa.footer.contact.type:
                                     type: select
                                     control_options:
-                                        choices: { 0: Default, 1: Widget (footer_contact) }
+                                        choices: { 0: Default, 1: Widget (footer-contact) }
                                     label: contactSection
                                     value: 0
                                 lisa.footer.contact.copyrights:

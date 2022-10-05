@@ -8,7 +8,7 @@
             transition: .12s all;
 
             &:hover {
-                color: $primary;
+                color: var(--bs-primary);
             }
         }
     }

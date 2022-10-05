@@ -13,8 +13,8 @@
 .btn {
     border-radius: 3px;
     background-color: #fff;
-    border: 2px solid $primary;
-    color: $primary;
+    border: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
     font-weight: 700;
 }
 
@@ -24,11 +24,11 @@
  */
 .btn.btn-inversed {
     background-color: #fff;
-    color: $primary;
+    color: var(--bs-primary);
     border-color: #fff;
 
     &:hover {
-        background-color: $primary;
+        background-color: var(--bs-primary);
         color: #fff;
     }
 }

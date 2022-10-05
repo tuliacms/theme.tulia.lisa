@@ -18,7 +18,7 @@
                 width: 200px;
                 max-width: 100%;
                 border: 1px solid rgba(0,0,0,.10);
-                border-bottom: 4px solid $primary;
+                border-bottom: 4px solid var(--bs-primary);
                 background-color: rgba(0,0,0,.03);
                 padding: 20px 10px 15px;
                 border-radius: 10px;
@@ -26,13 +26,13 @@
                 transition: .3s all;
 
                 &:hover {
-                    box-shadow: 0 0 20px rgba($primary,.2);
+                    box-shadow: 0 0 20px rgba(var(--bs-primary),.2);
                 }
             }
         }
 
         .block-number {
-            color: $primary;
+            color: var(--bs-primary);
             line-height: 1;
             margin-bottom: 5px;
 

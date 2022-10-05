@@ -11,7 +11,7 @@ a {
     &:hover,
     &:focus {
         text-decoration: none;
-        color: $primary;
+        color: var(--bs-primary);
     }
 }
 
@@ -57,7 +57,7 @@ ul:not(.dropdown-menu) {
             position: absolute;
             left: 0;
             top: 4px;
-            color: $primary;
+            color: var(--bs-primary);
             font-size: 20px;
             font-weight: bold;
         }

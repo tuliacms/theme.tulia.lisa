@@ -2,14 +2,14 @@
     <div class="container-xxl">
         <div class="footer-boxes">
             <div class="footer-info">
-                {{ widgets_space('footer_info') }}
+                {{ widgets_space('footer-info') }}
             </div>
             <div class="footer-menu">
-                {{ widgets_space('footer_quick_links') }}
+                {{ widgets_space('footer-quick-links') }}
             </div>
             <div class="footer-contact">
                 {% if customizer_get('lisa.footer.contact.type') == '1' %}
-                    {{ widgets_space('footer_contact') }}
+                    {{ widgets_space('footer-contact') }}
                 {% else %}
                     {% include relative(_self, 'footer-contact.tpl') %}
                 {% endif %}

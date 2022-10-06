@@ -1,3 +1,5 @@
+import '../sass/style.scss';
+
 $(function () {
     let body = $('body');
     let sc = new Scroller(10, function () {

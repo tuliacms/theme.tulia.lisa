@@ -15,14 +15,14 @@ cms:
                 require: [ font_awesome, frontend ]
                 styles:
                     - https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap
-                    - /assets/theme/tulia/lisa/theme/css/bundle.min.css
+                    - /assets/theme/tulia/lisa/theme/theme.css
                 scripts:
-                    - /assets/theme/tulia/lisa/theme/js/bundle.min.js
+                    - /assets/theme/tulia/lisa/theme/theme.js
                 group: head
                 included: [ bootstrap, jquery, js_cookie ]
-            tulia.lisa.customizer:
-                scripts:
-                    - /assets/theme/tulia/lisa/theme/js/customizer.js
+            #tulia.lisa.customizer:
+            #    scripts:
+            #        - /assets/theme/tulia/lisa/theme/customizer.js
             tulia.lisa.editor.plugins:
                 scripts:
                     - /assets/theme/tulia/lisa/tulia-editor-blocks/tulia-lisa-blocks.js
@@ -47,9 +47,9 @@ cms:
                         image_sizes:
                             - { name: node-thumbnail, width: 500, height: 260 }
                             - { name: mobile-banner, width: 800, height: 600 }
-                    customizer:
-                        assets:
-                            - tulia.lisa.customizer
+                    #customizer:
+                    #    assets:
+                    #        - tulia.lisa.customizer
                 customizer:
                     variables:
                         :root:

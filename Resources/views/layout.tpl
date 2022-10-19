@@ -8,8 +8,7 @@
         {% block head %}{% endblock %}
     </head>
     <body class="{{ body_class(app.request) }}">
-        {% block beforebody %}{% endblock %}
-        {% include relative(_self, '_parts/header.tpl') %}
+        {% include template('_parts/header.tpl') %}
         {% if not is_homepage() and customizer_get('lisa.layout.breadcrumbs') == 'yes' %}
             <div class="breadcrumbs-container">
                 <div class="container-xxl">
@@ -29,8 +28,7 @@
             </div>
         </div>
         {% block content %}{% endblock %}
-        {% include relative(_self, '_parts/footer.tpl') %}
+        {% include template('_parts/footer.tpl') %}
         {{ do_action('theme.body') }}
-        {% block afterbody %}{% endblock %}
     </body>
 </html>

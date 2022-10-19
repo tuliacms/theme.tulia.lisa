@@ -10,5 +10,5 @@ const block = inject('blocks.instance').manager(props);
 const translator = inject('translator');
 
 const TaxonomySelect = block.control('TaxonomySelect');
-const Input = block.control('Input');
+const Input = block.control('Input.Text');
 </script>

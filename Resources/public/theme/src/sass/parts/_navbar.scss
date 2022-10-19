@@ -1,0 +1,23 @@
+.tulia-navbar .navbar-nav {
+    li {
+        &.active {
+            > a {
+                color: var(--bs-primary);
+            }
+        }
+    }
+
+    .nav-link {
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: var(--bs-primary);
+        }
+    }
+
+    .submenu .nav-link {
+        padding: 8px 15px;
+    }
+}

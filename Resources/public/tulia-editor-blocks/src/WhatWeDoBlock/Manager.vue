@@ -1,12 +1,14 @@
 <template>
-    <div class="text-muted text-uppercase">
-        {{ translator.trans('noEditOptionsForThisElement') }}
-    </div>
+    <BlockOptions :block="block"></BlockOptions>
 </template>
 
 <script setup>
+const BlockOptions = require('./../shared/BlockOptions/Manager.vue').default;
 const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').manager(props);
-const translator = inject('translator');
+
+block.on('created', () => {
+    block.expectsFullWidthSection();
+});
 </script>

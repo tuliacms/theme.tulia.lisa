@@ -11,7 +11,7 @@
                 {% if customizer_get('lisa.footer.contact.type') == '1' %}
                     {{ widgets_space('footer-contact') }}
                 {% else %}
-                    {% include relative(_self, 'footer-contact.tpl') %}
+                    {% include template('_parts/footer-contact.tpl') %}
                 {% endif %}
             </div>
         </div>

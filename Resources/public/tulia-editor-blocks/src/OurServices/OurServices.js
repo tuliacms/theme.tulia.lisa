@@ -15,6 +15,8 @@ export default {
         intro: 'Our Services',
         headline: 'Look What We Offer',
         short_text: 'Ded nec finibus nulla. Fusce rhoncus dui eu nunc molestie, eget aliquet ligula mollis.',
+        bgColor: 'block-bg-dark',
+        padding: '',
         services: [{
             id: '1',
             icon: 'far fa-money-bill-alt',

@@ -12,6 +12,8 @@ export default {
     editor: Editor,
     render: Render,
     defaults: {
+        bgColor: '',
+        padding: '',
         services: [{
             id: '1',
             icon: 'far fa-money-bill-alt',

@@ -14,6 +14,8 @@ export default {
     defaults: {
         intro: 'Our history',
         headline: 'Our Company In Numbers',
+        bgColor: 'block-bg-lightgray',
+        padding: '',
         numbers: [{
             id: '1',
             number: 120,

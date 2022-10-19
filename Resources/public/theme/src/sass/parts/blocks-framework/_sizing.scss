@@ -1,25 +1,63 @@
 .block {
-    padding: #{$block-margin-base}px 0;
-    @include media-breakpoint-up(sm) {padding: #{$block-margin-base-sm}px 0;}
-    @include media-breakpoint-up(md) {padding: #{$block-margin-base-md}px 0;}
-    @include media-breakpoint-up(lg) {padding: #{$block-margin-base-lg}px 0;}
-    @include media-breakpoint-up(xl) {padding: #{$block-margin-base-xl}px 0;}
-    @include media-breakpoint-up(xxl) {padding: #{$block-margin-base-xxl}px 0;}
+    padding: #{$block-padding-base}px 0;
+    @include media-breakpoint-up(sm) {padding: #{$block-padding-base-sm}px 0;}
+    @include media-breakpoint-up(md) {padding: #{$block-padding-base-md}px 0;}
+    @include media-breakpoint-up(lg) {padding: #{$block-padding-base-lg}px 0;}
+    @include media-breakpoint-up(xl) {padding: #{$block-padding-base-xl}px 0;}
+    @include media-breakpoint-up(xxl) {padding: #{$block-padding-base-xxl}px 0;}
 
-    $max: $block-margin-base;
-    $step: $block-margin-base / 10;
+    &.block-no-padding {
+        padding: 0 !important;
+    }
 
-    @for $i from 1 through ceil($max/$step) {
-        $value: ($i - 1) * $step;
-        &.block-margin-#{$value} {
-            margin-bottom: #{$value}px !important;
-            margin-top: #{$value}px !important;
+    @include media-breakpoint-up(sm) {
+        &.block-padding-top {
+            padding-top: #{$block-padding-base-sm}px !important;
+            padding-bottom: 0 !important;
         }
-        &.block-margin-top-#{$value} {
-            margin-top: #{$value}px !important;
+        &.block-padding-bottom {
+            padding-bottom: #{$block-padding-base-sm}px !important;
+            padding-top: 0 !important;
         }
-        &.block-margin-bottom-#{$value} {
-            margin-bottom: #{$value}px !important;
+    }
+    @include media-breakpoint-up(md) {
+        &.block-padding-top {
+            padding-top: #{$block-padding-base-md}px !important;
+            padding-bottom: 0 !important;
+        }
+        &.block-padding-bottom {
+            padding-bottom: #{$block-padding-base-md}px !important;
+            padding-top: 0 !important;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        &.block-padding-top {
+            padding-top: #{$block-padding-base-lg}px !important;
+            padding-bottom: 0 !important;
+        }
+        &.block-padding-bottom {
+            padding-bottom: #{$block-padding-base-lg}px !important;
+            padding-top: 0 !important;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        &.block-padding-top {
+            padding-top: #{$block-padding-base-xl}px !important;
+            padding-bottom: 0 !important;
+        }
+        &.block-padding-bottom {
+            padding-bottom: #{$block-padding-base-xl}px !important;
+            padding-top: 0 !important;
+        }
+    }
+    @include media-breakpoint-up(xxl) {
+        &.block-padding-top {
+            padding-top: #{$block-padding-base-xxl}px !important;
+            padding-bottom: 0 !important;
+        }
+        &.block-padding-bottom {
+            padding-bottom: #{$block-padding-base-xxl}px !important;
+            padding-top: 0 !important;
         }
     }
 }

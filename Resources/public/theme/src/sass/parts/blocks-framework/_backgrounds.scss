@@ -1,11 +1,18 @@
-.block-bg-dark {
+.block.block-bg-dark {
     background-color: #323232;
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
 }
 
-.block-bg-lightgray {
+.block.block-bg-lightgray {
     background-color: #f3f3f3;
 }
 
-.block-bg-blue {
+.block.block-bg-blue {
     background-color: #0f61b9;
 }

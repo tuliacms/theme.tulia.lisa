@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
 
-var config = {
+let config = {
     mode: 'development',
     entry: {
         'theme': './src/js/script.js',
@@ -35,6 +35,9 @@ var config = {
         poll: 1000,
         ignored: ['**/dist', '**/node_modules'],
     },
+    externals: {
+        $: 'jquery',
+    },
     resolve: {
         extensions: ['.js', '.scss'],
     },
@@ -45,7 +48,8 @@ var config = {
             events: {
                 onEnd: {
                     copy: [
-                        { source: './dist/**/*', destination: './../../../../../../../public/assets/theme/tulia/lisa/theme' },
+                        { source: './src/images', destination: './dist/images' },
+                        { source: './dist', destination: './../../../../../../../public/assets/theme/tulia/lisa/theme' },
                     ],
                 },
             },

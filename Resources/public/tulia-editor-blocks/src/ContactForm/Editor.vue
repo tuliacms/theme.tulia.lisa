@@ -1,5 +1,5 @@
 <template>
-    <div class="block block-bg-lightgray block-contact">
+    <div :class="blockClassname">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
@@ -21,11 +21,15 @@
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
 const translator = inject('translator');
 
 const WysiwygEditor = block.extension('WysiwygEditor');
 const Contenteditable = block.extension('Contenteditable');
+
+const blockClassname = computed(() => {
+    return 'block block-contact ' + block.data.bgColor + ' ' + block.data.padding;
+});
 </script>

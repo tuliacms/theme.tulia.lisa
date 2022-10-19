@@ -4,22 +4,19 @@ framework:
             - '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/translations'
 cms:
     public_paths:
-        - { source: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/theme/dist', target: '/theme/tulia/lisa/theme' }
-        - { source: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/public/tulia-editor-blocks/dist', target: '/theme/tulia/lisa/tulia-editor-blocks' }
-    templating:
-        paths:
-            - { name: theme/tulia/lisa, path: '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/views' }
+        - { source: extension/theme/Tulia/Lisa/Resources/public/theme/dist, target: '/theme/tulia/lisa/theme' }
+        - { source: extension/theme/Tulia/Lisa/Resources/public/tulia-editor-blocks/dist, target: '/theme/tulia/lisa/tulia-editor-blocks' }
     assetter:
         assets:
             tulia.lisa.main:
-                require: [ font_awesome, frontend ]
+                require: [ font_awesome, frontend, jquery ]
                 styles:
                     - https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap
                     - /assets/theme/tulia/lisa/theme/theme.css
                 scripts:
                     - /assets/theme/tulia/lisa/theme/theme.js
                 group: head
-                included: [ bootstrap, jquery, js_cookie ]
+                included: [ bootstrap, js_cookie ]
             #tulia.lisa.customizer:
             #    scripts:
             #        - /assets/theme/tulia/lisa/theme/customizer.js
@@ -30,6 +27,11 @@ cms:
     theme:
         configuration:
             Tulia/Lisa:
+                imports:
+                    collections:
+                        default:
+                            name: Default homepage
+                            filepath: 'Resources/imports/sample-website-data.json'
                 translation_domain: lisa-theme
                 css_framework: bootstrap-5
                 configuration:
@@ -230,3 +232,7 @@ cms:
                                             configuration:
                                                 -   code: icon
                                                     value: '/assets/theme/tulia/lisa/theme/images/content-block/icon/contact-form.png'
+twig:
+    paths:
+        # We add this for cache warmup
+        'extension/theme/Tulia/Lisa/Resources/views': ~

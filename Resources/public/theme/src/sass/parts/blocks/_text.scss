@@ -1,11 +1,7 @@
 .block-text {
-    .container-xxl {
-        > .row {
-            > .col {
-                > :last-child {
-                    margin-bottom: 0;
-                }
-            }
+    .text-wrapper {
+        > :last-child {
+            margin-bottom: 0;
         }
     }
 }

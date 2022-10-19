@@ -1,5 +1,5 @@
 <template>
-    <div class="block block-bg-lightgray block-company-in-numbers">
+    <div :class="blockClassname">
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
 const translator = inject('translator');
@@ -46,5 +46,9 @@ const numbers = new Collection(block.data.numbers, {
     number: 120,
     label: 'Realisations',
     suffix: null,
+});
+
+const blockClassname = computed(() => {
+    return 'block block-company-in-numbers ' + block.data.bgColor + ' ' + block.data.padding;
 });
 </script>

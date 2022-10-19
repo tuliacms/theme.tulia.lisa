@@ -7,5 +7,6 @@
     "categories": ["corporate"],
     "translations": ["en_US", "pl_PL"],
     "showreel": "/Resources/public/theme/src/images/showreel.jpg",
-    "thumbnail": "/Resources/public/theme/src/images/thumbnail.jpg"
+    "thumbnail": "/Resources/public/theme/src/images/thumbnail.jpg",
+    "info": "Responsive and fully configurable Theme created for Tulia CMS"
 }

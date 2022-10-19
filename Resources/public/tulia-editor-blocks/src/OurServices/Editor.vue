@@ -1,5 +1,5 @@
 <template>
-    <div class="block block-services block-bg-dark">
+    <div :class="blockClassname">
         <div class="container-xxl">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
 const translator = inject('translator');
@@ -55,5 +55,9 @@ const services = new Collection(block.data.services, {
     title: 'Sed tempus libero id magna mattis',
     content: 'Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis.',
     link: null,
+});
+
+const blockClassname = computed(() => {
+    return 'block block-services ' + block.data.bgColor + ' ' + block.data.padding;
 });
 </script>

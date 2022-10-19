@@ -1,6 +1,6 @@
-{% include relative(_self, 'navbar.tpl') %}
+{% include template('_parts/navbar.tpl') %}
 {% if is_homepage() %}
-    {% include relative(_self, 'hero/static.tpl') %}
+    {% include template('_parts/hero/static.tpl') %}
 {% else %}
     <div class="header-pillow"></div>
 {% endif %}

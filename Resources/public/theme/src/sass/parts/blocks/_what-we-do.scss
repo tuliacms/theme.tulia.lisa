@@ -26,6 +26,15 @@
             margin-bottom: 15px;
         }
     }
+
+    &.block-bg-dark {
+        ul li {
+            color: #fff;
+            strong {
+                color: #fff;
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) {

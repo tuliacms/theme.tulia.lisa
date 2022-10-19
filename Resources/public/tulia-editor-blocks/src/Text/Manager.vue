@@ -1,9 +1,11 @@
 <template>
+    <BlockOptions :block="block"></BlockOptions>
     <Select v-model="block.data.headline_justify" :choices="choices" :label="translator.trans('Headline align', 'TuliaLisa')"></Select>
 </template>
 
 <script setup>
 const { defineProps, inject } = require('vue');
+const BlockOptions = require('./../shared/BlockOptions/Manager.vue').default;
 const props = defineProps(['block']);
 const block = inject('blocks.instance').manager(props);
 const translator = inject('translator');
@@ -14,4 +16,7 @@ const choices = {
     center: 'Center',
     right: 'Right',
 };
+block.on('created', () => {
+    block.expectsFullWidthSection();
+});
 </script>

@@ -2,7 +2,7 @@
     h2 {
         color: #000;
         text-align: center;
-        margin-bottom: $block-margin-base;
+        margin-bottom: $block-padding-base;
     }
 
     .lead {
@@ -54,6 +54,16 @@
             font-size: 20px;
             font-weight: 600;
             color: #000;
+        }
+    }
+
+    &.block-bg-dark {
+        .block-numbers {
+            .block-number-item {
+                .block-number-item-inner {
+                    background-color: #fff;
+                }
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="block block-what-we-do">
+    <div :class="blockClassname">
         <div class="container-xxl">
             <div class="row">
                 <div class="col-12 col-lg-6 order-lg-1">
@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-const { defineProps, inject, watch } = require('vue');
+const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
 
@@ -54,5 +54,9 @@ const Actions = block.extension('Collection.Actions');
 const contentList = new Collection(block.data.content_list, {
     lead: 'Mauris tincidunt convallis',
     paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
+});
+
+const blockClassname = computed(() => {
+    return 'block block-what-we-do ' + block.data.bgColor + ' ' + block.data.padding;
 });
 </script>

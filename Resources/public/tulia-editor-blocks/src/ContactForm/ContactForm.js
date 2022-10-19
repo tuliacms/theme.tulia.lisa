@@ -16,6 +16,8 @@ export default {
         headline: 'Contact us',
         headline_justify: 'left',
         content: null,
-        form_id: null
+        form_id: null,
+        bgColor: '',
+        padding: '',
     }
 };

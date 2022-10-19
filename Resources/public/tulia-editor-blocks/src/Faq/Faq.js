@@ -12,6 +12,10 @@ export default {
     editor: Editor,
     render: Render,
     defaults: {
+        intro: 'Frequently Asked Questions',
+        headline: '',
+        bgColor: '',
+        padding: '',
         entries: [
             {
                 id: '1',

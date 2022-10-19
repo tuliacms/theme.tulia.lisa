@@ -1,10 +1,12 @@
 <template>
+    <BlockOptions :block="block"></BlockOptions>
     <Select v-model="block.data.headline_justify" :choices="choices" :label="translator.trans('Headline align', 'TuliaLisa')"></Select>
     <FormSelect v-model="block.data.form_id" :label="translator.trans('Form', 'TuliaLisa')"></FormSelect>
 </template>
 
 <script setup>
 const { defineProps, inject } = require('vue');
+const BlockOptions = require('./../shared/BlockOptions/Manager.vue').default;
 const props = defineProps(['block']);
 const block = inject('blocks.instance').manager(props);
 const translator = inject('translator');

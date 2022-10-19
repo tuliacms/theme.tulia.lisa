@@ -1,16 +1,26 @@
 <template>
-    <div class="block block-text">
-        <p :class="{ 'lead': true, 'text-center': block.data.headline_justify === 'center', 'text-end': block.data.headline_justify === 'right' }"><Contenteditable v-model="block.data.intro"></Contenteditable></p>
-        <h2 :class="{ 'text-center': block.data.headline_justify === 'center', 'text-end': block.data.headline_justify === 'right' }"><Contenteditable v-model="block.data.headline"></Contenteditable></h2>
-        <WysiwygEditor v-model="block.data.content"></WysiwygEditor>
+    <div :class="blockClassname">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col">
+                    <p :class="{ 'lead': true, 'text-center': block.data.headline_justify === 'center', 'text-end': block.data.headline_justify === 'right' }"><Contenteditable v-model="block.data.intro"></Contenteditable></p>
+                    <h2 :class="{ 'text-center': block.data.headline_justify === 'center', 'text-end': block.data.headline_justify === 'right' }"><Contenteditable v-model="block.data.headline"></Contenteditable></h2>
+                    <WysiwygEditor v-model="block.data.content" class="text-wrapper"></WysiwygEditor>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
 const block = inject('blocks.instance').editor(props);
 
 const WysiwygEditor = block.extension('WysiwygEditor');
 const Contenteditable = block.extension('Contenteditable');
+
+const blockClassname = computed(() => {
+    return 'block block-text ' + block.data.bgColor + ' ' + block.data.padding;
+});
 </script>

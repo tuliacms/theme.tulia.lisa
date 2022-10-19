@@ -1,5 +1,8 @@
 import '../sass/style.scss';
 
+const $ = require('jquery');
+const bootstrap = require('bootstrap/dist/js/bootstrap.min.js');
+
 $(function () {
     let body = $('body');
     let sc = new Scroller(10, function () {

@@ -14,6 +14,8 @@ export default {
     defaults: {
         intro: 'What we do',
         headline: 'Mauris viverra ligula quis sollicitudin volutpat',
+        bgColor: '',
+        padding: '',
         image_under: {
             id: null,
             filename: null

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <nav class="navbar">
-                    <a class="logo logo-text" href="{{ path('homepage') }}"{{ customizer_live_control('lisa.header.logo.text') }}>{{ customizer_get('lisa.header.logo.text') }}</a>
+                    <a class="logo logo-text" href="{{ path('frontend.homepage') }}"{{ customizer_live_control('lisa.header.logo.text') }}>{{ customizer_get('lisa.header.logo.text') }}</a>
                     <button class="hamburger" type="button">
                         <span class="hamburger-box hamburger--squeeze">
                             <span class="hamburger-inner"></span>
@@ -18,7 +18,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     {% for locale in current_website().locales %}
-                                        <li><a href="{{ path('homepage', { _locale: locale.code }) }}" class="dropdown-item">{{ locale.code|trans_locale }}</a></li>
+                                        <li><a href="{{ path('frontend.homepage', { _locale: locale.code }) }}" class="dropdown-item">{{ locale.code|trans_locale }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </div>

@@ -7,3 +7,4 @@ services:
         resource: '../../**'
         exclude:
             - '../../Resources/**'
+            - '../../Theme.php'

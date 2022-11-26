@@ -22,7 +22,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 order-lg-0 block-images" style="padding-top:400px">
+                <div class="col-12 col-lg-6 order-lg-0 block-images">
                     <BackgroundImage
                         class="block-image block-image-main"
                         v-model="block.data.image_above"

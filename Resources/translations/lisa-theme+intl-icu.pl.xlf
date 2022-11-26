@@ -20,7 +20,7 @@
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.5">
                 <source>showBreadcrumbs</source>
-                <target>Pokaż okruszki chleba (Breadcrumbs)</target>
+                <target>Pokaż Breadcrumbs</target>
             </trans-unit>
             <trans-unit id="tuliacms.lisa-theme.6">
                 <source>contactSection</source>

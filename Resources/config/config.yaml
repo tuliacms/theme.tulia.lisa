@@ -203,35 +203,35 @@ cms:
                                     multilingual: true
                                     transport: postMessage
                                     value: Read more
-    content_building:
-        content_type_entry:
-            contact_form:
-                layout:
-                    sections:
-                        main:
-                            groups:
-                                fields_group:
-                                    fields:
-                                        headline:
-                                            type: text
-                                            name: Headline
-                                        intro:
-                                            type: text
-                                            name: Small intro
-                                        background:
-                                            type: select
-                                            name: Background color
-                                            configuration:
-                                                -   code: choices
-                                                    value: |
-                                                        white: White
-                                                        lightgray: Lightgray
-                                        ___content_block_icon:
-                                            type: ___content_block_icon
-                                            name: null
-                                            configuration:
-                                                -   code: icon
-                                                    value: '/assets/theme/tulia/lisa/theme/images/content-block/icon/contact-form.png'
+#    content_building:
+#        content_type_entry:
+#            contact_form:
+#                layout:
+#                    sections:
+#                        main:
+#                            groups:
+#                                fields_group:
+#                                    fields:
+#                                        headline:
+#                                            type: text
+#                                            name: Headline
+#                                        intro:
+#                                            type: text
+#                                            name: Small intro
+#                                        background:
+#                                            type: select
+#                                            name: Background color
+#                                            configuration:
+#                                                -   code: choices
+#                                                    value: |
+#                                                        white: White
+#                                                        lightgray: Lightgray
+#                                        ___content_block_icon:
+#                                            type: ___content_block_icon
+#                                            name: null
+#                                            configuration:
+#                                                -   code: icon
+#                                                    value: '/assets/theme/tulia/lisa/theme/images/content-block/icon/contact-form.png'
 twig:
     paths:
         # We add this for cache warmup

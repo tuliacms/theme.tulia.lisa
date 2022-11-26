@@ -1,0 +1,13 @@
+{
+    "type": "library",
+    "name": "tuliacms/theme.tulia.lisa",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tulia\\Theme\\Tulia\\Lisa\\": "/"
+        }
+    },
+    "require": {
+        "tuliacms/cms": "dev-master"
+    }
+}

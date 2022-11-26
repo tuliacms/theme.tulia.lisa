@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "autoload": {
         "psr-4": {
-            "Tulia\\Theme\\Tulia\\Lisa\\": "/"
+            "Tulia\\Theme\\Lisa\\": "/"
         }
     },
     "require": {

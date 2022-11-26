@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tulia\Theme\Tulia\Lisa;
+namespace Tulia\Theme\Lisa;
 
 use Tulia\Component\Theme\AbstractTheme;
 

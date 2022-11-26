@@ -8,6 +8,6 @@
         }
     },
     "require": {
-        "tuliacms/cms": "dev-main"
+        "tuliacms/cms": "*"
     }
 }

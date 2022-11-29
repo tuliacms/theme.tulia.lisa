@@ -1,11 +1,11 @@
 framework:
     translator:
         paths:
-            - '%kernel.project_dir%/extension/theme/Tulia/Lisa/Resources/translations'
+            - '%tuliacms/theme.tulia.lisa%/Resources/translations'
 cms:
     public_paths:
-        - { source: extension/theme/Tulia/Lisa/Resources/public/theme/dist, target: '/theme/tulia/lisa/theme' }
-        - { source: extension/theme/Tulia/Lisa/Resources/public/tulia-editor-blocks/dist, target: '/theme/tulia/lisa/tulia-editor-blocks' }
+        - { source: '%tuliacms/theme.tulia.lisa%/Resources/public/theme/dist', target: '/theme/tulia/lisa/theme' }
+        - { source: '%tuliacms/theme.tulia.lisa%/Resources/public/tulia-editor-blocks/dist', target: '/theme/tulia/lisa/tulia-editor-blocks' }
     assetter:
         assets:
             tulia.lisa.main:
@@ -235,4 +235,4 @@ cms:
 twig:
     paths:
         # We add this for cache warmup
-        'extension/theme/Tulia/Lisa/Resources/views': ~
+        '%tuliacms/theme.tulia.lisa%/Resources/views': ~

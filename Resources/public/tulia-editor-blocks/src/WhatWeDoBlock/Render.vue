@@ -33,8 +33,8 @@ const props = defineProps(['block']);
 const block = inject('blocks.instance').render(props);
 
 const BackgroundImage = block.extension('BackgroundImage');
-const imageAbove = new BackgroundImage(block, () => block.data.image_above, 'above');
-const imageUnder = new BackgroundImage(block, () => block.data.image_under, 'under');
+const imageAbove = new BackgroundImage(block, () => block.data.image_above);
+const imageUnder = new BackgroundImage(block, () => block.data.image_under);
 
 const blockClassname = computed(() => {
     return 'block block-what-we-do ' + block.data.bgColor + ' ' + block.data.padding;

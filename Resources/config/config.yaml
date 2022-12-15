@@ -29,9 +29,10 @@ cms:
             Tulia/Lisa:
                 imports:
                     collections:
-                        default:
-                            name: Default homepage
-                            filepath: 'Resources/imports/sample-website-data.json'
+                        multipage:
+                            name: Multipage website structure
+                            filepath: '/Resources/imports/multipage.json'
+                            showreel: '/Resources/public/theme/src/images/showreel.jpg'
                 translation_domain: lisa-theme
                 css_framework: bootstrap-5
                 configuration:

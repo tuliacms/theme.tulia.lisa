@@ -2,7 +2,6 @@
     "type": "library",
     "name": "tuliacms/theme.tulia.lisa",
     "license": "MIT",
-    "version": "0.0.1",
     "autoload": {
         "psr-4": {
             "Tulia\\Theme\\Lisa\\": "/"

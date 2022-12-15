@@ -3,12 +3,12 @@
         {
             "@type": "File",
             "@id": "347a3433-3cf6-4d6c-983a-3a5b4e478c25",
-            "filepath": "[[%kernel.project_dir%]]/extension/theme/Tulia/Lisa/Resources/imports/images/craig-mckay-vJwzxQK7FaE-unsplash.jpg"
+            "filepath": "./images/craig-mckay-vJwzxQK7FaE-unsplash.jpg"
         },
         {
             "@type": "File",
             "@id": "92a9744e-ebb7-4ee6-98c3-b69dae7b982f",
-            "filepath": "[[%kernel.project_dir%]]/extension/theme/Tulia/Lisa/Resources/imports/images/tj-holowaychuk-1EYMue_AwDw-unsplash.jpg"
+            "filepath": "./images/tj-holowaychuk-1EYMue_AwDw-unsplash.jpg"
         },
         {
             "@type": "ContactForm",

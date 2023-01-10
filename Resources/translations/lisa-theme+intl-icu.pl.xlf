@@ -114,6 +114,14 @@
                 <source>Responsive and fully configurable Theme created for Tulia CMS</source>
                 <target>Responsywny i w pełni konfigurowalny motyw stworzony dla Tulia CMS</target>
             </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.30">
+                <source>headerBackgroundColor</source>
+                <target>Kolor tła nagłówka</target>
+            </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.31">
+                <source>footerBackgroundColor</source>
+                <target>Kolor tła stopki</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

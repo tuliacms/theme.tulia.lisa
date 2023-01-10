@@ -1,5 +1,10 @@
+:root {
+    --tulia-lisa-footer-bg: #333;
+}
+
 footer {
     text-align: center;
+    background-color: var(--tulia-lisa-footer-bg);
 
     .widget-title {
         font-size: 27px;
@@ -8,7 +13,8 @@ footer {
         font-weight: 900;
     }
 
-    .footer-info p {
+    .footer-info p,
+    .footer-info .widget-content {
         color: $footer-color-text;
     }
 

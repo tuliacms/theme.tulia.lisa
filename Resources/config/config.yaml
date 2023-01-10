@@ -57,12 +57,21 @@ cms:
                     variables:
                         :root:
                             bs-primary: lisa.color.primary
+                            bs-link-color: lisa.color.primary
+                            tulia-lisa-header-bg: lisa.color.header
+                            tulia-lisa-footer-bg: lisa.color.footer
                         .btn-primary:
                             bs-btn-bg: lisa.color.primary
                             bs-btn-border-color: lisa.color.primary
                             bs-btn-hover-bg: lisa.color.primary
                             bs-btn-hover-border-color: lisa.color.primary
                             bs-btn-active-bg: lisa.color.primary
+                        .pagination:
+                            bs-pagination-color: lisa.color.primary
+                            bs-pagination-active-bg: lisa.color.primary
+                            bs-pagination-active-border-color: lisa.color.primary
+                            bs-pagination-hover-color: lisa.color.primary
+                            bs-pagination-focus-color: lisa.color.primary
                     changesets:
                         lisa.empty:
                             label: changesetPredefinedEmpty
@@ -98,6 +107,16 @@ cms:
                                     type: colorpicker
                                     label: primaryColor
                                     value: '#0f61b9'
+                                    transport: postMessage
+                                lisa.color.header:
+                                    type: colorpicker
+                                    label: headerBackgroundColor
+                                    value: '#333333'
+                                    transport: postMessage
+                                lisa.color.footer:
+                                    type: colorpicker
+                                    label: footerBackgroundColor
+                                    value: '#333333'
                                     transport: postMessage
                         lisa.layout:
                             label: layout

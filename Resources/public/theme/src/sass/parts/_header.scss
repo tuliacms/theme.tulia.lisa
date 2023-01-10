@@ -1,3 +1,7 @@
+:root {
+    --tulia-lisa-header-bg: #333;
+}
+
 body {
     header {
         position: fixed;
@@ -6,7 +10,7 @@ body {
         right: 0;
         min-height: 70px;
         z-index: 200;
-        background-color: $header-color-bg-filled;
+        background-color: var(--tulia-lisa-header-bg);
         transition: $transition;
 
         .navbar {
@@ -116,7 +120,7 @@ body {
 
     &.body-scrolled {
         header {
-            background-color: $header-color-bg-filled;
+            background-color: var(--tulia-lisa-header-bg);
             box-shadow: 0 0 10px rgba(0,0,0,.5);
             min-height: 54px;
 
@@ -131,7 +135,7 @@ body {
             }
 
             .tulia-navbar-layout-horizontal .submenu {
-                background-color: $header-color-bg-filled;
+                background-color: var(--tulia-lisa-header-bg);
             }
 
             .hamburger {
@@ -143,7 +147,7 @@ body {
 
     &.main-menu-opened {
         header {
-            background-color: $header-color-bg-filled;
+            background-color: var(--tulia-lisa-header-bg);
             box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
             .header-menu {

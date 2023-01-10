@@ -14,12 +14,6 @@
                     {% if not node.introduction|empty %}
                         <p class="lead node-lead">{{ node.introduction }}</p>
                     {% endif %}
-
-                    {% if node.thumbnail %}
-                        <div class="node-thumbnail">
-                            {{ image(node.thumbnail, { size: 'node-thumbnail' }) }}
-                        </div>
-                    {% endif %}
                 </div>
             </div>
         </div>
@@ -39,6 +33,5 @@
         {% else %}
             <p>&nbsp;</p>
         {% endif %}
-        {{ node.opis|raw }}
     </div>
 {% endblock %}

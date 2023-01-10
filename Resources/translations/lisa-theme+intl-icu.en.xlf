@@ -114,6 +114,14 @@
                 <source>primaryColor</source>
                 <target>Primary color</target>
             </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.30">
+                <source>headerBackgroundColor</source>
+                <target>Header background color</target>
+            </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.31">
+                <source>footerBackgroundColor</source>
+                <target>Footer background color</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

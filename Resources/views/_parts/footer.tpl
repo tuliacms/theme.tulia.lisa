@@ -1,4 +1,4 @@
-<footer class="block block-footer block-bg-dark">
+<footer class="block block-footer">
     <div class="container-xxl">
         <div class="footer-boxes">
             <div class="footer-info">

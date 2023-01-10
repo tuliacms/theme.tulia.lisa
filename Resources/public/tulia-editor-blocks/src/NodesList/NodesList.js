@@ -14,10 +14,10 @@ export default {
     defaults: {
         intro: 'Recent news',
         headline: 'Read What We Do Recent',
-        taxonomy: null,
+        term: null,
         number_of_nodes: 3,
         node_readmore: 'Read more',
-        taxonomy_readmore: 'Read more',
-        taxonomy_icon: 'fas fa-chevron-right',
+        term_readmore: 'Read more',
+        term_icon: 'fas fa-chevron-right',
     }
 };

@@ -1,5 +1,5 @@
 <template>
-    <TaxonomySelect v-model="block.data.taxonomy" :label="translator.trans('Category of nodes', 'TuliaLisa')"></TaxonomySelect>
+    <TaxonomySelect v-model="block.data.term" :label="translator.trans('Category of nodes', 'TuliaLisa')"></TaxonomySelect>
     <Input v-model="block.data.number_of_nodes" :label="translator.trans('Number of nodes', 'TuliaLisa')"></Input>
 </template>
 

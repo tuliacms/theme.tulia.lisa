@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col">
                     <div class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn d-none d-md-block">
-                        <Contenteditable v-model="block.data.taxonomy_readmore"></Contenteditable>
-                        <FontIcon class="btn-icon" v-model="block.data.taxonomy_icon"></FontIcon>
+                        <Contenteditable v-model="block.data.term_readmore"></Contenteditable>
+                        <FontIcon class="btn-icon" v-model="block.data.term_icon"></FontIcon>
                     </div>
                     <p class="lead"><Contenteditable v-model="block.data.intro"></Contenteditable></p>
                     <h2><Contenteditable v-model="block.data.headline"></Contenteditable></h2>
@@ -29,8 +29,8 @@
             <div class="row d-md-none">
                 <div class="col text-center">
                     <div class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn">
-                        <span><Contenteditable v-model="block.data.taxonomy_readmore"></Contenteditable></span>
-                        <FontIcon v-model="block.data.taxonomy_icon"></FontIcon>
+                        <span><Contenteditable v-model="block.data.term_readmore"></Contenteditable></span>
+                        <FontIcon v-model="block.data.term_icon"></FontIcon>
                     </div>
                 </div>
             </div>

@@ -37,6 +37,6 @@
             </div>
         </div>
 
-        {{ paginator.position('center')|raw }}
+        {{ paginator.position('center').addClass('py-0 mt-2 mb-5')|raw }}
     </div>
 {% endblock %}

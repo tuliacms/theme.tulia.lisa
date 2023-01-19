@@ -11,4 +11,8 @@ const translator = inject('translator');
 
 const TaxonomySelect = block.control('TaxonomySelect');
 const Input = block.control('Input.Text');
+
+block.on('created', () => {
+    block.expectsFullWidthSection();
+});
 </script>

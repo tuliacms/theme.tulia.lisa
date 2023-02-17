@@ -2,5 +2,5 @@
 {% if is_homepage() %}
     {% include template('_parts/hero/static.tpl') %}
 {% else %}
-    <div class="header-pillow"></div>
+    <div class="header-pillow d-none d-md-block"></div>
 {% endif %}

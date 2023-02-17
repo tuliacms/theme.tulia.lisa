@@ -487,6 +487,12 @@
                     "code": "menu_id",
                     "uri": "menu_id",
                     "value": "[[@Menu:41149cde-e74f-4e36-b716-0eac9a8b68ca]]"
+                },
+                {
+                    "@type": "Attribute",
+                    "code": "layout",
+                    "uri": "layout",
+                    "value": "horizontal"
                 }
             ]
         },

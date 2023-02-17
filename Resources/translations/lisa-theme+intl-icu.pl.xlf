@@ -122,6 +122,10 @@
                 <source>footerBackgroundColor</source>
                 <target>Kolor tła stopki</target>
             </trans-unit>
+            <trans-unit id="tuliacms.lisa-theme.32">
+                <source>quickLinks</source>
+                <target>Szybkie linki</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

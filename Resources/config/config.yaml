@@ -9,7 +9,7 @@ cms:
     assetter:
         assets:
             tulia.lisa.main:
-                require: [ font_awesome, frontend, jquery ]
+                require: [ font_awesome, jquery ]
                 styles:
                     - https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap
                     - /assets/theme/tulia/lisa/theme/theme.css
@@ -41,9 +41,11 @@ cms:
                             - tulia.lisa.main
                         widget_spaces:
                             - { name: homepage, label: Homepage }
-                            - { name: mainmenu, label: Main menu }
                             - { name: footer-info, label: Footer - Info (left side) }
                             - { name: footer-contact, label: Footer - Contact (right side) }
+                            - { name: footer-quick-links, label: Footer - Quick links (middle) }
+                        menu_spaces:
+                            - { name: mainmenu, label: Main menu }
                             - { name: footer-quick-links, label: Footer - Quick links (middle) }
                         #widget_styles:
                         #    - { name: style-1, label: Style 1 }
@@ -72,6 +74,8 @@ cms:
                             bs-pagination-active-border-color: lisa.color.primary
                             bs-pagination-hover-color: lisa.color.primary
                             bs-pagination-focus-color: lisa.color.primary
+                        .tulia-navbar.navbar-nav:
+                            tulia-navbar-horizontal-submenu-bg: lisa.color.header
                     changesets:
                         lisa.empty:
                             label: changesetPredefinedEmpty

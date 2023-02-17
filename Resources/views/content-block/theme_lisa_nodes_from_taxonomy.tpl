@@ -5,7 +5,7 @@
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <a href="{{ term_path(termObject) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn d-none d-md-block">
+                    <a href="{{ term_path(termObject) }}" title="{{ taxonomy_readmore|default('readMore'|trans({}, 'lisa-theme')) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn d-none d-md-block">
                         <span>{{ taxonomy_readmore|default('readMore'|trans({}, 'lisa-theme')) }}</span>
                         <i class="btn-icon {{ taxonomy_icon|default('fas fa-chevron-right') }}"></i>
                     </a>
@@ -14,7 +14,7 @@
                 </div>
             </div>
             {% set nodes = find_nodes({
-                category : term|default(0),
+                term     : term|default(0),
                 page     : 1,
                 per_page : number_of_nodes|default(3)
             }) %}
@@ -41,7 +41,7 @@
             </div>
             <div class="row d-md-none">
                 <div class="col text-center">
-                    <a href="{{ term_path(termObject) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn">
+                    <a href="{{ term_path(termObject) }}" title="{{ taxonomy_readmore|default('readMore'|trans({}, 'lisa-theme')) }}" class="btn btn-primary btn-lg btn-icon-right block-news-read-more-btn">
                         <span>{{ taxonomy_readmore|default('readMore'|trans({}, 'lisa-theme')) }}</span>
                         <i class="btn-icon {{ taxonomy_icon|default('fas fa-chevron-right') }}"></i>
                     </a>

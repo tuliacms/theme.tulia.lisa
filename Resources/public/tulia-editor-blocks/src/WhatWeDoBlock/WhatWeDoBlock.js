@@ -32,6 +32,6 @@ export default {
             id: '2',
             lead: 'Mauris tincidunt convallis',
             paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
-        },]
+        }]
     }
 };

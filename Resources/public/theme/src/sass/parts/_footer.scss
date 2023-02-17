@@ -30,36 +30,6 @@ footer {
             }
         }
     }
-    .footer-menu {
-        .tulia-navbar.navbar-nav {
-            display: block;
-            padding: 0;
-            list-style: none;
-            margin: 20px 0;
-
-            .nav-item {
-                display: block;
-                margin: 0;
-                padding: 0;
-                list-style: none;
-
-                &:before {
-                    display: none;
-                }
-
-                a {
-                    display: inline-block;
-                    padding: 4px 0;
-                    color: $footer-color-text;
-
-                    &:hover,
-                    &:focus {
-                        color: var(--bs-primary);
-                    }
-                }
-            }
-        }
-    }
 
     .footer-contact {
         .contact-row {
@@ -132,13 +102,13 @@ footer {
         }
     }
 
-    .navbar-nav {
+    /*.navbar-nav {
         .nav-item.has-children {
             .submenu {
                 display: none !important;
             }
         }
-    }
+    }*/
 }
 
 @include media-breakpoint-up(lg) {

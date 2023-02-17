@@ -1,4 +1,8 @@
-.tulia-navbar .navbar-nav {
+.navbar {
+    --bs-navbar-nav-link-padding-x: 10px;
+}
+
+.tulia-navbar.navbar-nav {
     li {
         &.active {
             > a {
@@ -16,8 +20,14 @@
             color: var(--bs-primary);
         }
     }
+}
 
-    .submenu .nav-link {
-        padding: 8px 15px;
+.tulia-navbar-layout-horizontal .submenu {
+    background-color: var(--tulia-lisa-header-bg);
+}
+
+@include media-breakpoint-up(md) {
+    .navbar {
+        --bs-navbar-nav-link-padding-x: 22px;
     }
 }

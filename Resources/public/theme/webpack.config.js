@@ -36,7 +36,7 @@ let config = {
         ignored: ['**/dist', '**/node_modules'],
     },
     externals: {
-        $: 'jquery',
+        $: '$',
     },
     resolve: {
         extensions: ['.js', '.scss'],

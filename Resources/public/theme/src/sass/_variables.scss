@@ -20,9 +20,13 @@ $hamburger-layer-color: #fff;
 $transition-duration: .12s;
 $footer-color-text: #ddd;
 $transition: .12s all;
-$header-color-bg: rgba(0,0,0,.4);
 $header-margin: 40px;
 $element-margin-bottom: 40px;
 
 $btn-icon-size: 1rem;
 $btn-icon-size-lg: 1.5rem;
+
+/**
+ * Tulia Default frontend stylesheet
+ */
+$tulia-default-navbar-mobile-width: 767px;

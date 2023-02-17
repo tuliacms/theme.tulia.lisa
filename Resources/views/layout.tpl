@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        {% block content %}{% endblock %}
+        <main>{% block content %}{% endblock %}</main>
         {% include template('_parts/footer.tpl') %}
         {{ do_action('theme.body') }}
     </body>

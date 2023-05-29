@@ -1,22 +1,29 @@
 <template>
     <BlockOptions :block="block"></BlockOptions>
-    <Select v-model="block.data.headline_justify" :choices="choices" :label="translator.trans('Headline align', 'TuliaLisa')"></Select>
+    <Select v-model="block.config.headline_justify" :choices="choices" :label="translator.trans('Headline align', 'TuliaLisa')"></Select>
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+import { defineProps, inject, onMounted } from "vue";
 const BlockOptions = require('./../shared/BlockOptions/Manager.vue').default;
 const props = defineProps(['block']);
-const block = inject('blocks.instance').manager(props);
+const block = inject('structure').block(props.block);
 const translator = inject('translator');
+const controls = inject('controls.registry');
+const sectionConfigurator = inject('configurator.section');
 
-const Select = block.control('Select');
+const Select = controls.manager('Select');
 const choices = {
     left: translator.trans('Left', 'TuliaLisa'),
     center: translator.trans('Center', 'TuliaLisa'),
     right: translator.trans('Right', 'TuliaLisa'),
 };
-block.on('created', () => {
-    block.expectsFullWidthSection();
+onMounted(() => {
+    sectionConfigurator
+        .ofBlock(block)
+        .fullWidthNoPadding();
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.Text.Manager' }
 </script>

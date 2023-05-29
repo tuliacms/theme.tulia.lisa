@@ -11,22 +11,34 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        intro: 'Frequently Asked Questions',
-        headline: '',
-        bgColor: '',
-        padding: '',
-        entries: [
-            {
-                id: '1',
-                question: 'Morbi sagittis tortor dapibus elit accumsan?',
-                answer: 'Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.',
+    store: {
+        data: {
+            state: () => {
+                return {
+                    intro: 'Frequently Asked Questions',
+                    headline: '',
+                    entries: [
+                        {
+                            id: '1',
+                            question: 'Morbi sagittis tortor dapibus elit accumsan?',
+                            answer: 'Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.',
+                        },
+                        {
+                            id: '2',
+                            question: 'Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?',
+                            answer: 'Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.',
+                        },
+                    ],
+                };
             },
-            {
-                id: '2',
-                question: 'Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?',
-                answer: 'Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.',
-            }
-        ]
-    }
+        },
+        config: {
+            state: () => {
+                return {
+                    bgColor: '',
+                    padding: '',
+                };
+            },
+        },
+    },
 };

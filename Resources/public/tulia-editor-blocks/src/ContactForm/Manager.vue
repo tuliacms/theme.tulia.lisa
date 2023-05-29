@@ -1,25 +1,32 @@
 <template>
     <BlockOptions :block="block"></BlockOptions>
-    <Select v-model="block.data.headline_justify" :choices="choices" :label="translator.trans('Headline align', 'TuliaLisa')"></Select>
-    <FormSelect v-model="block.data.form_id" :label="translator.trans('Form', 'TuliaLisa')"></FormSelect>
+    <Select v-model="block.config.headline_justify" :choices="choices" :label="translator.trans('Headline align', 'TuliaLisa')"></Select>
+    <FormSelect v-model="block.config.form_id" :label="translator.trans('Form', 'TuliaLisa')"></FormSelect>
 </template>
-
 <script setup>
-const { defineProps, inject } = require('vue');
+import { defineProps, inject, onMounted } from "vue";
 const BlockOptions = require('./../shared/BlockOptions/Manager.vue').default;
 const props = defineProps(['block']);
-const block = inject('blocks.instance').manager(props);
+const structure = inject('structure');
 const translator = inject('translator');
+const controls = inject('controls.registry');
+const sectionConfigurator = inject('configurator.section');
+const block = structure.block(props.block);
 
-const Select = block.control('Select');
-const FormSelect = block.control('FormSelect');
+const Select = controls.manager('Select');
+const FormSelect = controls.manager('FormSelect');
 const choices = {
     left: 'Left',
     center: 'Center',
     right: 'Right',
 };
 
-block.on('created', () => {
-    block.expectsFullWidthSection();
+onMounted(() => {
+    sectionConfigurator
+        .ofBlock(block)
+        .fullWidthNoPadding();
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.ContactForm.Manager' }
 </script>

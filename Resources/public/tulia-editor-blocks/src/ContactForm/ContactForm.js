@@ -11,13 +11,25 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        intro: 'Any questions?',
-        headline: 'Contact us',
-        headline_justify: 'left',
-        content: null,
-        form_id: null,
-        bgColor: '',
-        padding: '',
-    }
+    store: {
+        data: {
+            state: () => {
+                return {
+                    intro: 'Any questions?',
+                    headline: 'Contact us',
+                    content: null,
+                };
+            },
+        },
+        config: {
+            state: () => {
+                return {
+                    headline_justify: 'left',
+                    form_id: null,
+                    bgColor: '',
+                    padding: '',
+                };
+            },
+        },
+    },
 };

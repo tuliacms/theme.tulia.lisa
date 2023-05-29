@@ -11,31 +11,43 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        intro: 'Our history',
-        headline: 'Our Company In Numbers',
-        bgColor: 'block-bg-lightgray',
-        padding: '',
-        numbers: [{
-            id: '1',
-            number: 120,
-            label: 'Realisations',
-            suffix: null,
-        },{
-            id: '2',
-            number: 50,
-            label: 'Workers',
-            suffix: null,
-        },{
-            id: '3',
-            number: 5,
-            label: 'Years experience',
-            suffix: null,
-        },{
-            id: '4',
-            number: 10,
-            label: 'Countries',
-            suffix: null,
-        }]
-    }
+    store: {
+        data: {
+            state: () => {
+                return {
+                    intro: 'Our history',
+                    headline: 'Our Company In Numbers',
+                    numbers: [{
+                        id: '1',
+                        number: 120,
+                        label: 'Realisations',
+                        suffix: null,
+                    },{
+                        id: '2',
+                        number: 50,
+                        label: 'Workers',
+                        suffix: null,
+                    },{
+                        id: '3',
+                        number: 5,
+                        label: 'Years experience',
+                        suffix: null,
+                    },{
+                        id: '4',
+                        number: 10,
+                        label: 'Countries',
+                        suffix: null,
+                    }]
+                };
+            },
+        },
+        config: {
+            state: () => {
+                return {
+                    bgColor: 'block-bg-lightgray',
+                    padding: '',
+                };
+            },
+        },
+    },
 };

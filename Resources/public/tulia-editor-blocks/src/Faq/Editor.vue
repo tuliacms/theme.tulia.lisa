@@ -29,18 +29,22 @@
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
+const block = inject('structure').block(props.block);
+const extensions = inject('extensions.registry');
 
-const Collection = block.extension('Collection');
-const Actions = block.extension('Collection.Actions');
-const Contenteditable = block.extension('Contenteditable');
+const Collection = extensions.editor('Collection');
+const Actions = extensions.editor('Collection.Actions');
+const Contenteditable = extensions.editor('Contenteditable');
 
-const entries = new Collection(block.data.entries, {
+const entries = new Collection(block, 'entries', {
     question: 'Morbi  convallis mattis vel bibendum orci?',
     answer: 'Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.',
 });
 
 const blockClassname = computed(() => {
-    return 'block block-faq ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-faq ' + block.config.bgColor + ' ' + block.config.padding;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.Faq.Editor' }
 </script>

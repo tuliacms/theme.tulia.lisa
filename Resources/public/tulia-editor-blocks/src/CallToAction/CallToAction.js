@@ -11,12 +11,18 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        content: 'Vivamus non sapien eu nibh semper dignissim a non purus.',
-        bgIcon: 'fas fa-credit-card',
-        btn: {
-            icon: 'fas fa-headphones',
-            label: 'Call to Action'
-        }
-    }
+    store: {
+        data: {
+            state: () => {
+                return {
+                    content: 'Vivamus non sapien eu nibh semper dignissim a non purus.',
+                    bgIcon: 'fas fa-credit-card',
+                    btn: {
+                        icon: 'fas fa-headphones',
+                        label: 'Call to Action'
+                    }
+                };
+            },
+        },
+    },
 };

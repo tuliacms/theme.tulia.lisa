@@ -41,13 +41,17 @@
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
+const block = inject('structure').block(props.block);
+const extensions = inject('extensions.registry');
 
-const Contenteditable = block.extension('Contenteditable');
-const FontIcon = block.extension('FontIcon');
+const Contenteditable = extensions.editor('Contenteditable');
+const FontIcon = extensions.editor('FontIcon');
 const nodesNumber = computed(() => {
-    let number = parseInt(block.data.number_of_nodes);
+    let number = parseInt(block.config.number_of_nodes);
     number = number ? number : 3;
     return number >= 12 ? 12 : number;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.NodesList.Editor' }
 </script>

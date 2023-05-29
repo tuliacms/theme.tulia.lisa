@@ -24,8 +24,12 @@
 <script setup>
 const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
+const block = inject('structure').block(props.block);
+const extensions = inject('extensions.registry');
 
-const Contenteditable = block.extension('Contenteditable');
-const FontIcon = block.extension('FontIcon');
+const Contenteditable = extensions.editor('Contenteditable');
+const FontIcon = extensions.editor('FontIcon');
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.CallToAction.Editor' }
 </script>

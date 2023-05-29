@@ -25,16 +25,19 @@
 const { defineProps, inject, onMounted, computed } = require('vue');
 const _ = require('lodash');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').render(props);
+const block = inject('structure').block(props.block);
 
 let blockId = null;
 const entryId = entry => {
     return 'accordion-entry-' + blockId + entry.id;
 };
 const blockClassname = computed(() => {
-    return 'block block-faq ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-faq ' + block.config.bgColor + ' ' + block.config.padding;
 });
 onMounted(() => {
     blockId = _.uniqueId();
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.Faq.Render' }
 </script>

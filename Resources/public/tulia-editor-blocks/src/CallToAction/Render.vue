@@ -20,9 +20,11 @@
         </div>
     </div>
 </template>
-
 <script setup>
 const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').render(props);
+const block = inject('structure').block(props.block);
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.CallToAction.Render' }
 </script>

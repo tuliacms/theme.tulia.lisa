@@ -5,12 +5,18 @@
 </template>
 
 <script setup>
-const { defineProps, inject } = require('vue');
+import { defineProps, inject, onMounted } from "vue";
 const props = defineProps(['block']);
-const block = inject('blocks.instance').manager(props);
+const block = inject('structure').block(props.block);
 const translator = inject('translator');
+const sectionConfigurator = inject('configurator.section');
 
-block.on('created', () => {
-    block.expectsFullWidthSection();
+onMounted(() => {
+    sectionConfigurator
+        .ofBlock(block)
+        .fullWidthNoPadding();
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.CallToAction.Manager' }
 </script>

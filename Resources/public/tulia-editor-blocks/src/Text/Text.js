@@ -11,12 +11,24 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        intro: 'What we do?',
-        headline: 'See what we do',
-        headline_justify: 'left',
-        content: '<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.</p>',
-        bgColor: '',
-        padding: '',
-    }
+    store: {
+        data: {
+            state: () => {
+                return {
+                    intro: 'What we do?',
+                    headline: 'See what we do',
+                    content: '<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.</p>',
+                };
+            },
+        },
+        config: {
+            state: () => {
+                return {
+                    bgColor: '',
+                    padding: '',
+                    headline_justify: 'left',
+                };
+            },
+        },
+    },
 };

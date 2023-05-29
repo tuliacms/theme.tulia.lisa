@@ -29,9 +29,12 @@
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').render(props);
+const block = inject('structure').block(props.block);
 
 const blockClassname = computed(() => {
-    return 'block block-company-in-numbers ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-company-in-numbers ' + block.config.bgColor + ' ' + block.config.padding;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.CompanyInNumbers.Render' }
 </script>

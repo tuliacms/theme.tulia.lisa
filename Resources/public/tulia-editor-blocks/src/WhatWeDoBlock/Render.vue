@@ -19,24 +19,27 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 order-lg-0 block-images">
-                    <div class="block-image block-image-main" :id="imageAbove.id"></div>
-                    <div class="block-image block-image-sub" :id="imageUnder.id"></div>
+                    <div class="block-image block-image-main" :style="{ backgroundImage: imageAbove.backgroundImage }"></div>
+                    <div class="block-image block-image-sub" :style="{ backgroundImage: imageUnder.backgroundImage }"></div>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').render(props);
+const block = inject('structure').block(props.block);
 
-const BackgroundImage = block.extension('BackgroundImage');
-const imageAbove = new BackgroundImage(block, () => block.data.image_above);
-const imageUnder = new BackgroundImage(block, () => block.data.image_under);
+const extensions = inject('extensions.registry');
+const BackgroundImage = extensions.render('BackgroundImage');
+const imageAbove = BackgroundImage.of(block, () => block.data.image_above);
+const imageUnder = BackgroundImage.of(block, () => block.data.image_under);
 
 const blockClassname = computed(() => {
-    return 'block block-what-we-do ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-what-we-do ' + block.config.bgColor + ' ' + block.config.margin;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.WhatWeDoBlock.Render' }
 </script>

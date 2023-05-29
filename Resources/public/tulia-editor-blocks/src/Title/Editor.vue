@@ -3,8 +3,8 @@
         <div class="container-xxl">
             <div class="row">
                 <div class="col">
-                    <p :class="{ 'lead': true, 'text-center': block.data.headline_justify === 'center', 'text-end': block.data.headline_justify === 'right' }"><Contenteditable v-model="block.data.intro"></Contenteditable></p>
-                    <h2 :class="{ 'mb-0': true, 'text-center': block.data.headline_justify === 'center', 'text-end': block.data.headline_justify === 'right' }"><Contenteditable v-model="block.data.headline"></Contenteditable></h2>
+                    <p :class="{ 'lead': true, 'text-center': block.config.headline_justify === 'center', 'text-end': block.config.headline_justify === 'right' }"><Contenteditable v-model="block.data.intro"></Contenteditable></p>
+                    <h2 :class="{ 'mb-0': true, 'text-center': block.config.headline_justify === 'center', 'text-end': block.config.headline_justify === 'right' }"><Contenteditable v-model="block.data.headline"></Contenteditable></h2>
                 </div>
             </div>
         </div>
@@ -14,8 +14,12 @@
 <script setup>
 const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
+const block = inject('structure').block(props.block);
+const extensions = inject('extensions.registry');
 
-const WysiwygEditor = block.extension('WysiwygEditor');
-const Contenteditable = block.extension('Contenteditable');
+const WysiwygEditor = extensions.editor('WysiwygEditor');
+const Contenteditable = extensions.editor('Contenteditable');
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.Title.Editor' }
 </script>

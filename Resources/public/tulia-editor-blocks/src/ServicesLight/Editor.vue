@@ -29,20 +29,24 @@
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
+const block = inject('structure').block(props.block);
 const translator = inject('translator');
+const extensions = inject('extensions.registry');
 
-const Contenteditable = block.extension('Contenteditable');
-const FontIcon = block.extension('FontIcon');
-const Collection = block.extension('Collection');
-const Actions = block.extension('Collection.Actions');
+const Contenteditable = extensions.editor('Contenteditable');
+const FontIcon = extensions.editor('FontIcon');
+const Collection = extensions.editor('Collection');
+const Actions = extensions.editor('Collection.Actions');
 
-const services = new Collection(block.data.services, {
+const services = new Collection(block, 'services', {
     icon: 'far fa-money-bill-alt',
     title: 'Sed tempus libero',
     content: 'Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.',
 });
 const blockClassname = computed(() => {
-    return 'block block-services-light ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-services-light ' + block.config.bgColor + ' ' + block.config.padding;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.ServicesLight.Editor' }
 </script>

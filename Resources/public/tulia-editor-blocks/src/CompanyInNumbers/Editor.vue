@@ -35,20 +35,24 @@
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
+const block = inject('structure').block(props.block);
 const translator = inject('translator');
+const extensions = inject('extensions.registry');
 
-const Contenteditable = block.extension('Contenteditable');
-const Collection = block.extension('Collection');
-const Actions = block.extension('Collection.Actions');
+const Contenteditable = extensions.editor('Contenteditable');
+const Collection = extensions.editor('Collection');
+const Actions = extensions.editor('Collection.Actions');
 
-const numbers = new Collection(block.data.numbers, {
+const numbers = new Collection(block, 'numbers', {
     number: 120,
     label: 'Realisations',
     suffix: null,
 });
 
 const blockClassname = computed(() => {
-    return 'block block-company-in-numbers ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-company-in-numbers ' + block.config.bgColor + ' ' + block.config.padding;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.CompanyInNumbers.Editor' }
 </script>

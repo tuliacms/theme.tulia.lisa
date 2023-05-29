@@ -42,21 +42,25 @@
 <script setup>
 const { defineProps, inject, computed } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').editor(props);
-
+const block = inject('structure').block(props.block);
 const translator = inject('translator');
-const BackgroundImage = block.extension('BackgroundImage');
-const WysiwygEditor = block.extension('WysiwygEditor');
-const Contenteditable = block.extension('Contenteditable');
-const Collection = block.extension('Collection');
-const Actions = block.extension('Collection.Actions');
+const extensions = inject('extensions.registry');
 
-const contentList = new Collection(block.data.content_list, {
+const BackgroundImage = extensions.editor('BackgroundImage');
+const WysiwygEditor = extensions.editor('WysiwygEditor');
+const Contenteditable = extensions.editor('Contenteditable');
+const Collection = extensions.editor('Collection');
+const Actions = extensions.editor('Collection.Actions');
+
+const contentList = new Collection(block, 'content_list', {
     lead: 'Mauris tincidunt convallis',
     paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
 });
 
 const blockClassname = computed(() => {
-    return 'block block-what-we-do ' + block.data.bgColor + ' ' + block.data.padding;
+    return 'block block-what-we-do ' + block.config.bgColor + ' ' + block.config.padding;
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.WhatWeDoBlock.Editor' }
 </script>

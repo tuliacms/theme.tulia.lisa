@@ -3,11 +3,18 @@
 </template>
 
 <script setup>
+import { defineProps, inject, onMounted } from "vue";
 const BlockOptions = require('./../shared/BlockOptions/Manager.vue').default;
-const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
-const block = inject('blocks.instance').manager(props);
-block.on('created', () => {
-    block.expectsFullWidthSection();
+const block = inject('structure').block(props.block);
+const sectionConfigurator = inject('configurator.section');
+
+onMounted(() => {
+    sectionConfigurator
+        .ofBlock(block)
+        .fullWidthNoPadding();
 });
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Block.ServicesLight.Manager' }
 </script>

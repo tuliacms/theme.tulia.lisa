@@ -11,27 +11,39 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        intro: 'What we do',
-        headline: 'Mauris viverra ligula quis sollicitudin volutpat',
-        bgColor: '',
-        padding: '',
-        image_under: {
-            id: null,
-            filename: null
+    store: {
+        data: {
+            state: () => {
+                return {
+                    intro: 'What we do',
+                    headline: 'Mauris viverra ligula quis sollicitudin volutpat',
+                    image_under: {
+                        id: null,
+                        filename: null
+                    },
+                    image_above: {
+                        id: null,
+                        filename: null
+                    },
+                    content_list: [{
+                        id: '1',
+                        lead: 'Phasellus tellus arcu',
+                        paragraph: 'Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis sollicitudin eu.',
+                    },{
+                        id: '2',
+                        lead: 'Mauris tincidunt convallis',
+                        paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
+                    }],
+                };
+            },
         },
-        image_above: {
-            id: null,
-            filename: null
+        config: {
+            state: () => {
+                return {
+                    bgColor: '',
+                    padding: '',
+                };
+            },
         },
-        content_list: [{
-            id: '1',
-            lead: 'Phasellus tellus arcu',
-            paragraph: 'Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis sollicitudin eu.',
-        },{
-            id: '2',
-            lead: 'Mauris tincidunt convallis',
-            paragraph: 'Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.',
-        }]
-    }
+    },
 };

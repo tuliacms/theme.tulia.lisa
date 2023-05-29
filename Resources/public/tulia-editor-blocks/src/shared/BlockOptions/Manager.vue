@@ -1,14 +1,15 @@
 <template>
-    <Select v-model="block.data.bgColor" :label="translator.trans('Background color', 'TuliaLisa')" :choices="options.bgColor"></Select>
-    <Select v-model="block.data.padding" :label="translator.trans('Margins', 'TuliaLisa')" :choices="options.padding"></Select>
+    <Select v-model="block.config.bgColor" :label="translator.trans('Background color', 'TuliaLisa')" :choices="options.bgColor"></Select>
+    <Select v-model="block.config.padding" :label="translator.trans('Margins', 'TuliaLisa')" :choices="options.padding"></Select>
 </template>
 
 <script setup>
 const { defineProps, inject } = require('vue');
 const props = defineProps(['block']);
 const translator = inject('translator');
+const controls = inject('controls.registry');
 
-const Select = props.block.control('Select');
+const Select = controls.manager('Select');
 
 const options = {
     bgColor: {
@@ -23,4 +24,7 @@ const options = {
         'block-padding-bottom': translator.trans('Margin on bottom', 'TuliaLisa'),
     }
 };
+</script>
+<script>
+export default { name: 'TuliaLisaTheme.Shared.BlockOptions.Manager' }
 </script>

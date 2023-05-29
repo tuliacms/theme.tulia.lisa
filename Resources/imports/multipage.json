@@ -1,549 +1,723 @@
 {
     "objects": [
         {
-            "@type": "File",
-            "@id": "347a3433-3cf6-4d6c-983a-3a5b4e478c25",
-            "filepath": "./images/craig-mckay-vJwzxQK7FaE-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "92a9744e-ebb7-4ee6-98c3-b69dae7b982f",
-            "filepath": "./images/tj-holowaychuk-1EYMue_AwDw-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "6ababdf3-78ed-4b3f-800b-e74feb7cb2a4",
-            "filepath": "./images/artem-kovalev-fk3XUcfTAvk-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "a4b3bf45-b04d-4321-8d6e-b5efc04287d0",
-            "filepath": "./images/david-marcu-78A265wPiO4-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "4033b8c7-ddc8-4e94-b530-5916269d059a",
-            "filepath": "./images/kevin-schmid-TU21HjN9dwo-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "31d21d82-069f-49e7-a224-b3b6011e4244",
-            "filepath": "./images/konstantin-dyadyun-_GC96Gee-v4-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "7794f1da-31f6-47a0-85c3-1c9ec0840685",
-            "filepath": "./images/luiza-braun-zyLo210ujFA-unsplash.jpg"
-        },
-        {
-            "@type": "File",
-            "@id": "d0e57e7c-3d12-4495-8316-2426f977a444",
-            "filepath": "./images/sasha-freemind-nXo2ZsKHTHg-unsplash.jpg"
-        },
-        {
             "@type": "ContactForm",
-            "@id": "538ea013-d5b2-447f-91fc-c2e6318e0668",
+            "@id": "15c9372d-4348-4831-8911-c1dace71bcff",
             "name": "Contact form",
-            "receivers": ["contact@gmail.com"],
+            "receivers": [
+                "contact@gmail.com"
+            ],
             "sender_name": "Jonh Snow",
             "sender_email": "contact@gmail.com",
             "subject": "Contact form",
             "message_template": "{{ contact_form_fields() }}",
-            "fields_template": "<div class=\"mb-3\">\n    [email]\n</div>\n<div class=\"mb-3\">\n    [message]\n</div>\n[submit]",
+            "fields_template": "<div class=\"mb-3\">\n    [email]\n<\/div>\n<div class=\"mb-3\">\n    [message]\n<\/div>\n[submit]",
             "fields": [
                 {
-                    "@type": "ContactFormField",
                     "type": "email",
                     "name": "email",
-                    "options": {"label": "Email address", "constraints": "required"}
+                    "options": {
+                        "help": null,
+                        "label": "Email address",
+                        "sender": null,
+                        "constraints": "required",
+                        "placeholder": null
+                    },
+                    "@type": "ContactFormField",
+                    "@id": "9ae3b875-eaf3-4d9e-a707-1404809f3b99"
                 },
                 {
-                    "@type": "ContactFormField",
                     "type": "textarea",
                     "name": "message",
-                    "options": {"label": "Message", "constraints": "required"}
+                    "options": {
+                        "help": null,
+                        "label": "Message",
+                        "constraints": "required",
+                        "placeholder": null
+                    },
+                    "@type": "ContactFormField",
+                    "@id": "583bb4f5-69d1-41c9-b0ac-73f96636f5d7"
                 },
                 {
-                    "@type": "ContactFormField",
                     "type": "submit",
                     "name": "submit",
-                    "options": {"label": "Submit"}
+                    "options": {
+                        "label": "Submit",
+                        "htmlclass": null
+                    },
+                    "@type": "ContactFormField",
+                    "@id": "74d183f2-7c94-4adf-a7f0-08b2351613ca"
                 }
             ]
         },
         {
-            "@type": "Node",
-            "@id": "2ad36515-c742-4d4d-9c12-40f051c0c858",
-            "type": "page",
-            "title": "Homepage",
-            "purposes": ["page:homepage"],
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-0900a2c8-453a-47c2-b1fb-22c5a132e463\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-5d868435-cc29-468b-9940-0b68e8057d12\"><div class=\"tued-column col\" id=\"tued-column-8571629a-224e-4bc9-96df-890a88109c12\"><div class=\"block block-what-we-do\" id=\"tued-block-02976837-7d06-444e-bd36-28e6d76616c3\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col-12 col-lg-6 order-lg-1\"><div class=\"block-content\"><p class=\"lead\">What we do</p><h2>Mauris viverra ligula quis sollicitudin volutpat</h2><ul><li><strong>Phasellus tellus arcu</strong><br> Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis sollicitudin eu.</li><li><strong>Mauris tincidunt convallis</strong><br> Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.</li></ul></div></div><div class=\"col-12 col-lg-6 order-lg-0 block-images\"><div class=\"block-image block-image-main\" id=\"tued-element-style-11\"></div><div class=\"block-image block-image-sub\" id=\"tued-element-style-12\"></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-4d29b632-1e68-4dd4-8b94-1759021b3dc9\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-a208236b-29f5-40d8-bb15-f93e5f95b071\"><div class=\"tued-column col\" id=\"tued-column-1620cc56-5c4e-4703-ab65-aae6f53b7f6b\"><div class=\"block block-services block-bg-dark\" id=\"tued-block-179d14ed-a2a6-4d1a-9753-dc1fff75b065\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col-12 col-lg-6\"><p class=\"lead\">Our Services</p><h2>Look What We Offer</h2></div><div class=\"col-12 col-lg-6\"><p class=\"services-slogan\">Ded nec finibus nulla. Fusce rhoncus dui eu nunc molestie, eget aliquet ligula mollis.</p></div></div><div class=\"services-collection\"><div class=\"row\"><div class=\"col-12 col-sm-12 col-md-6 col-lg-4\"><div class=\"service-item service-item-hoverable\"><div class=\"service-icon\"><i class=\"far fa-money-bill-alt\"></i></div><h3>Sed tempus libero id magna mattis</h3><p class=\"mb-3\">Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis.</p></div></div><div class=\"col-12 col-sm-12 col-md-6 col-lg-4\"><div class=\"service-item service-item-hoverable\"><div class=\"service-icon\"><i class=\"fas fa-shuttle-van\"></i></div><h3>Proin ac dolor egestas</h3><p class=\"mb-3\">Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.</p></div></div><div class=\"col-12 col-sm-12 col-md-6 col-lg-4\"><div class=\"service-item service-item-hoverable\"><div class=\"service-icon\"><i class=\"fas fa-fighter-jet\"></i></div><h3>Mauris viverra ligula quis</h3><p class=\"mb-3\">Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.</p></div></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-daa6824a-2837-48c5-8d3b-0a197c7927d2\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-7e695ec4-14b5-4334-8b50-ea7c59fff076\"><div class=\"tued-column col\" id=\"tued-column-8ab6063e-6ded-4bee-a1c1-fd01a6a093a7\"><div class=\"block block-call-to-action\" id=\"tued-block-491c56e9-7cbc-405e-b604-f32c7dab2112\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><div class=\"block-inner\"><div class=\"block-text\"><span class=\"block-icon fas fa-credit-card\"></span> Vivamus non sapien eu nibh semper dignissim a non purus.</div><div class=\"block-button\"><a href=\"#\" class=\"btn btn-primary btn-lg btn-inversed btn-icon-right\">Call to Action <span class=\"btn-icon fas fa-headphones\"></span></a></div></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-b399dc07-68b4-4055-9974-12bb80d84e9c\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-c672e7e0-5ac1-4786-9ffe-3da6ef75d86e\"><div class=\"tued-column col\" id=\"tued-column-850c85fb-e544-4970-a71b-da05481e7d3b\"><div class=\"block block-services-light\" id=\"tued-block-8a27e241-753b-44f9-8308-07f8fe6831bf\"><div class=\"services-collection\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col-12 col-lg-4 service-column\"><div class=\"service-item\"><div class=\"service-icon\"><i class=\"far fa-money-bill-alt\"></i></div><h3>Sed tempus libero</h3><p>Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.</p></div></div><div class=\"col-12 col-lg-4 service-column\"><div class=\"service-item\"><div class=\"service-icon\"><i class=\"fas fa-shuttle-van\"></i></div><h3>Proin ac dolor egestas</h3><p>Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.</p></div></div><div class=\"col-12 col-lg-4 service-column\"><div class=\"service-item\"><div class=\"service-icon\"><i class=\"fas fa-fighter-jet\"></i></div><h3>Mauris viverra ligula quis</h3><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.</p></div></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-3a7329fe-0c2b-4273-977f-6bba0ef7ba45\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-c237e20f-40b8-4f6c-bfdb-728497528714\"><div class=\"tued-column col\" id=\"tued-column-136e0d21-b156-41b2-9115-423d75be9728\"><div class=\"block block-company-in-numbers block-bg-lightgray\" id=\"tued-block-fab0246b-2929-4c78-8922-6054dc3de85d\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">Our history</p><h2>Our Company In Numbers</h2><div class=\"block-numbers row\"><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">120</span><!--v-if--></div><div class=\"block-number-label\">Realisations</div></div></div><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">50</span><!--v-if--></div><div class=\"block-number-label\">Workers</div></div></div><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">5</span><!--v-if--></div><div class=\"block-number-label\">Years experience</div></div></div><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">10</span><!--v-if--></div><div class=\"block-number-label\">Countries</div></div></div></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-52c37072-b465-4218-a2ad-a510493d6f78\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-78c021fa-ee02-49af-9d68-489221248e21\"><div class=\"tued-column col\" id=\"tued-column-424f191f-38c3-4430-bb70-8db67b3b4eb6\"><div class=\"tued-dynamic-block\" id=\"tued-block-b7287971-35e1-4b9d-84e6-375fe8dcbbaa\">[dynamic_block type=\"theme_lisa_nodes_from_taxonomy\" intro=\"Recent news\" headline=\"Read What We Do Recent\" term=\"[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]\" number_of_nodes=\"3\" node_readmore=\"Read more\" term_readmore=\"Read more\" term_icon=\"fas fa-chevron-right\"]</div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-df9e7447-fdb2-46f2-a827-9314d2f7d017\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-cb94d31b-d0a7-4541-9d36-176947a66c8f\"><div class=\"tued-column col\" id=\"tued-column-b456c8f0-c422-4fe6-98c4-4d5ed98718fb\"><div class=\"block block-text block-bg-lightgray\" id=\"tued-block-5a65b1db-25a6-4d0c-b97d-ef4bb3428843\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">What we do?</p><h2 class=\"\">See what we do</h2><div class=\"text-wrapper\"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.</p></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-0b33aea7-0974-41fd-a387-b6e3b2f73cd3\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-d5b05d65-1273-4568-99d6-cedc4223bfdd\"><div class=\"tued-column col\" id=\"tued-column-e3563f17-4864-4d27-a5cf-36c342044771\"><div class=\"block block-contact\" id=\"tued-block-1764d317-4658-4dee-a450-0a8851f3a8a0\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><div class=\"tulia-container-max-width\"><p class=\"lead\">Any questions?</p><h2 class=\"\">Contact us</h2><!--v-if--><div class=\"tued-dynamic-block\">[contact_form id=\"[[@ContactForm:538ea013-d5b2-447f-91fc-c2e6318e0668]]\"]</div></div></div></div></div></div></div></div></div></section><style>#tued-block-02976837-7d06-444e-bd36-28e6d76616c3 #tued-element-style-11 {background-image:url('[image_url id=\"[[@File:347a3433-3cf6-4d6c-983a-3a5b4e478c25]]\" size=\"original\"]')}#tued-block-02976837-7d06-444e-bd36-28e6d76616c3 #tued-element-style-12 {background-image:url('[image_url id=\"[[@File:92a9744e-ebb7-4ee6-98c3-b69dae7b982f]]\" size=\"original\"]')}</style>",
-                    "payload": "a:2:{s:8:\"sections\";a:8:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"8571629a-224e-4bc9-96df-890a88109c12\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:35:\"Tulia/Lisa:tulia-lisa-whatwedoblock\";s:4:\"data\";a:8:{s:5:\"intro\";s:10:\"What we do\";s:8:\"headline\";s:48:\"Mauris viverra ligula quis sollicitudin volutpat\";s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:11:\"image_under\";a:2:{s:2:\"id\";s:36:\"[[@File:92a9744e-ebb7-4ee6-98c3-b69dae7b982f]]\";s:8:\"filename\";s:37:\"kevin-schmid-tu21hjn9dwo-unsplash.jpg\";}s:11:\"image_above\";a:2:{s:2:\"id\";s:36:\"[[@File:347a3433-3cf6-4d6c-983a-3a5b4e478c25]]\";s:8:\"filename\";s:41:\"tj-holowaychuk-1eymue-awdw-unsplash-6.jpg\";}s:12:\"content_list\";a:2:{i:0;a:3:{s:2:\"id\";s:1:\"1\";s:4:\"lead\";s:21:\"Phasellus tellus arcu\";s:9:\"paragraph\";s:94:\"Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis sollicitudin eu.\";}i:1;a:3:{s:2:\"id\";s:1:\"2\";s:4:\"lead\";s:26:\"Mauris tincidunt convallis\";s:9:\"paragraph\";s:67:\"Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.\";}}s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"02976837-7d06-444e-bd36-28e6d76616c3\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:4:{s:20:\"tued-element-style-1\";a:0:{}s:20:\"tued-element-style-2\";a:0:{}s:21:\"tued-element-style-11\";a:0:{}s:21:\"tued-element-style-12\";a:0:{}}}}}}s:2:\"id\";s:36:\"5d868435-cc29-468b-9940-0b68e8057d12\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"0900a2c8-453a-47c2-b1fb-22c5a132e463\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:1;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"1620cc56-5c4e-4703-ab65-aae6f53b7f6b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:22:\"Tulia/Lisa:OurServices\";s:4:\"data\";a:7:{s:5:\"intro\";s:12:\"Our Services\";s:8:\"headline\";s:18:\"Look What We Offer\";s:10:\"short_text\";s:86:\"Ded nec finibus nulla. Fusce rhoncus dui eu nunc molestie, eget aliquet ligula mollis.\";s:7:\"bgColor\";s:13:\"block-bg-dark\";s:7:\"padding\";s:0:\"\";s:8:\"services\";a:3:{i:0;a:5:{s:2:\"id\";s:1:\"1\";s:4:\"icon\";s:21:\"far fa-money-bill-alt\";s:5:\"title\";s:33:\"Sed tempus libero id magna mattis\";s:7:\"content\";s:78:\"Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis.\";s:4:\"link\";N;}i:1;a:5:{s:2:\"id\";s:1:\"2\";s:4:\"icon\";s:18:\"fas fa-shuttle-van\";s:5:\"title\";s:22:\"Proin ac dolor egestas\";s:7:\"content\";s:78:\"Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.\";s:4:\"link\";N;}i:2;a:5:{s:2:\"id\";s:1:\"3\";s:4:\"icon\";s:18:\"fas fa-fighter-jet\";s:5:\"title\";s:26:\"Mauris viverra ligula quis\";s:7:\"content\";s:83:\"Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.\";s:4:\"link\";N;}}s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"179d14ed-a2a6-4d1a-9753-dc1fff75b065\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"a208236b-29f5-40d8-bb15-f93e5f95b071\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"4d29b632-1e68-4dd4-8b94-1759021b3dc9\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:2;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"8ab6063e-6ded-4bee-a1c1-fd01a6a093a7\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:23:\"Tulia/Lisa:CallToAction\";s:4:\"data\";a:4:{s:7:\"content\";s:56:\"Vivamus non sapien eu nibh semper dignissim a non purus.\";s:6:\"bgIcon\";s:18:\"fas fa-credit-card\";s:3:\"btn\";a:2:{s:4:\"icon\";s:17:\"fas fa-headphones\";s:5:\"label\";s:14:\"Call to Action\";}s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"491c56e9-7cbc-405e-b604-f32c7dab2112\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"7e695ec4-14b5-4334-8b50-ea7c59fff076\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"daa6824a-2837-48c5-8d3b-0a197c7927d2\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:3;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"850c85fb-e544-4970-a71b-da05481e7d3b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:24:\"Tulia/Lisa:ServicesLight\";s:4:\"data\";a:4:{s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:8:\"services\";a:3:{i:0;a:4:{s:2:\"id\";s:1:\"1\";s:4:\"icon\";s:21:\"far fa-money-bill-alt\";s:5:\"title\";s:17:\"Sed tempus libero\";s:7:\"content\";s:78:\"Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.\";}i:1;a:4:{s:2:\"id\";s:1:\"2\";s:4:\"icon\";s:18:\"fas fa-shuttle-van\";s:5:\"title\";s:22:\"Proin ac dolor egestas\";s:7:\"content\";s:78:\"Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.\";}i:2;a:4:{s:2:\"id\";s:1:\"3\";s:4:\"icon\";s:18:\"fas fa-fighter-jet\";s:5:\"title\";s:26:\"Mauris viverra ligula quis\";s:7:\"content\";s:83:\"Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.\";}}s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8a27e241-753b-44f9-8308-07f8fe6831bf\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"c672e7e0-5ac1-4786-9ffe-3da6ef75d86e\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"b399dc07-68b4-4055-9974-12bb80d84e9c\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:4;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"136e0d21-b156-41b2-9115-423d75be9728\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:27:\"Tulia/Lisa:CompanyInNumbers\";s:4:\"data\";a:6:{s:5:\"intro\";s:11:\"Our history\";s:8:\"headline\";s:22:\"Our Company In Numbers\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";s:7:\"numbers\";a:4:{i:0;a:4:{s:2:\"id\";s:1:\"1\";s:6:\"number\";i:120;s:5:\"label\";s:12:\"Realisations\";s:6:\"suffix\";N;}i:1;a:4:{s:2:\"id\";s:1:\"2\";s:6:\"number\";i:50;s:5:\"label\";s:7:\"Workers\";s:6:\"suffix\";N;}i:2;a:4:{s:2:\"id\";s:1:\"3\";s:6:\"number\";i:5;s:5:\"label\";s:16:\"Years experience\";s:6:\"suffix\";N;}i:3;a:4:{s:2:\"id\";s:1:\"4\";s:6:\"number\";i:10;s:5:\"label\";s:9:\"Countries\";s:6:\"suffix\";N;}}s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"fab0246b-2929-4c78-8922-6054dc3de85d\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"c237e20f-40b8-4f6c-bfdb-728497528714\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"3a7329fe-0c2b-4273-977f-6bba0ef7ba45\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:5;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"424f191f-38c3-4430-bb70-8db67b3b4eb6\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:20:\"Tulia/Lisa:NodesList\";s:4:\"data\";a:8:{s:5:\"intro\";s:11:\"Recent news\";s:8:\"headline\";s:22:\"Read What We Do Recent\";s:4:\"term\";s:36:\"[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]\";s:15:\"number_of_nodes\";i:3;s:13:\"node_readmore\";s:9:\"Read more\";s:13:\"term_readmore\";s:9:\"Read more\";s:9:\"term_icon\";s:20:\"fas fa-chevron-right\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"b7287971-35e1-4b9d-84e6-375fe8dcbbaa\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"78c021fa-ee02-49af-9d68-489221248e21\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"52c37072-b465-4218-a2ad-a510493d6f78\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:6;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"b456c8f0-c422-4fe6-98c4-4d5ed98718fb\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:15:\"Tulia/Lisa:Text\";s:4:\"data\";a:7:{s:5:\"intro\";s:11:\"What we do?\";s:8:\"headline\";s:14:\"See what we do\";s:16:\"headline_justify\";s:4:\"left\";s:7:\"content\";s:525:\"<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.</p>\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"5a65b1db-25a6-4d0c-b97d-ef4bb3428843\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"cb94d31b-d0a7-4541-9d36-176947a66c8f\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"df9e7447-fdb2-46f2-a827-9314d2f7d017\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:7;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"e3563f17-4864-4d27-a5cf-36c342044771\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:22:\"Tulia/Lisa:ContactForm\";s:4:\"data\";a:8:{s:5:\"intro\";s:14:\"Any questions?\";s:8:\"headline\";s:10:\"Contact us\";s:16:\"headline_justify\";s:4:\"left\";s:7:\"content\";N;s:7:\"form_id\";s:36:\"[[@ContactForm:538ea013-d5b2-447f-91fc-c2e6318e0668]]\";s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"1764d317-4658-4dee-a450-0a8851f3a8a0\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"d5b05d65-1273-4568-99d6-cedc4223bfdd\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"0b33aea7-0974-41fd-a387-b6e3b2f73cd3\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                }
-            ]
+            "@type": "File",
+            "@id": "5972ffa2-f106-447c-ad62-12dcd8af5ddc",
+            "filepath": ".\/sasha-freemind-nxo2zskhthg-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "@id": "b2b8ba14-657e-4bab-be03-406958d59af3",
-            "type": "page",
-            "title": "About us",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-b920cdb0-4c84-411d-9e52-d97aadd0c69b\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-ef5e8e03-b258-41b6-91aa-5d64f885970f\"><div class=\"tued-column col\" id=\"tued-column-c2029c6f-2392-482a-a128-90f1a9c9185c\"><div class=\"tued-block\" id=\"tued-block-7f6372f2-b31f-4c13-893f-c87a5e877426\"><div class=\"block block-text block-bg-lightgray\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">What we do?</p><h2 class=\"\">See what we do</h2><div class=\"text-wrapper\"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.</p></div></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-adc15f6e-37aa-499d-a581-ef266ab5667a\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-dc74cae8-ea48-4d20-89a6-a978c95964a0\"><div class=\"tued-column col\" id=\"tued-column-1ebc9618-bc11-4451-b424-9d2523e710b6\"><div class=\"tued-block\" id=\"tued-block-1a65286d-e2de-4987-9fd8-88020df16965\"><div class=\"block block-faq\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">Frequently Asked Questions</p><!--v-if--><div class=\"accordion\"><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-11\">Morbi sagittis tortor dapibus elit accumsan?</button></div><div id=\"accordion-entry-11\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.</div></div></div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-1tued-collection-1\">Morbi  convallis mattis vel bibendum orci?</button></div><div id=\"accordion-entry-1tued-collection-1\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.</div></div></div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-12\">Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?</button></div><div id=\"accordion-entry-12\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.</div></div></div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-1tued-collection-2\">Morbi  convallis mattis vel bibendum orci?</button></div><div id=\"accordion-entry-1tued-collection-2\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.</div></div></div></div></div></div></div></div></div></div></div></div></section><style></style>",
-                    "payload": "a:1:{s:8:\"sections\";a:2:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"c2029c6f-2392-482a-a128-90f1a9c9185c\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:15:\"Tulia/Lisa:Text\";s:4:\"data\";a:6:{s:5:\"intro\";s:11:\"What we do?\";s:8:\"headline\";s:14:\"See what we do\";s:16:\"headline_justify\";s:4:\"left\";s:7:\"content\";s:525:\"<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.</p>\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";}s:2:\"id\";s:36:\"7f6372f2-b31f-4c13-893f-c87a5e877426\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"ef5e8e03-b258-41b6-91aa-5d64f885970f\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"b920cdb0-4c84-411d-9e52-d97aadd0c69b\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:1;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"1ebc9618-bc11-4451-b424-9d2523e710b6\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"Tulia/Lisa:Faq\";s:4:\"data\";a:5:{s:7:\"entries\";a:4:{i:0;a:3:{s:2:\"id\";s:1:\"1\";s:8:\"question\";s:44:\"Morbi sagittis tortor dapibus elit accumsan?\";s:6:\"answer\";s:104:\"Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.\";}i:1;a:3:{s:8:\"question\";s:42:\"Morbi  convallis mattis vel bibendum orci?\";s:6:\"answer\";s:78:\"Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.\";s:2:\"id\";s:17:\"tued-collection-1\";}i:2;a:3:{s:2:\"id\";s:1:\"2\";s:8:\"question\";s:96:\"Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?\";s:6:\"answer\";s:202:\"Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.\";}i:3;a:3:{s:8:\"question\";s:42:\"Morbi  convallis mattis vel bibendum orci?\";s:6:\"answer\";s:78:\"Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.\";s:2:\"id\";s:17:\"tued-collection-2\";}}s:5:\"intro\";s:26:\"Frequently Asked Questions\";s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:8:\"headline\";s:0:\"\";}s:2:\"id\";s:36:\"1a65286d-e2de-4987-9fd8-88020df16965\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"dc74cae8-ea48-4d20-89a6-a978c95964a0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"adc15f6e-37aa-499d-a581-ef266ab5667a\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}}}"
-                }
-            ]
+            "@type": "File",
+            "@id": "d445f866-d3c3-4893-856a-801681333259",
+            "filepath": ".\/luiza-braun-zylo210ujfa-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "@id": "38dba32d-aa85-4bf4-88c1-2a738f7699d2",
-            "type": "page",
-            "title": "Contact",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-b17d784a-d302-4594-8718-e748cc4a25cf\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-ff5dada0-e96e-4421-b99b-fd5ed28b6298\"><div class=\"tued-column col\" id=\"tued-column-79dd4b86-9e79-4fc1-8637-a3fb121960b0\"><div class=\"tued-block\" id=\"tued-block-d077cc46-0ba6-4a46-9e64-c6fa1a336429\"><div class=\"block block-contact block-bg-lightgray\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><div class=\"tulia-container-max-width\"><p class=\"lead\">Any questions?</p><h2 class=\"\">Contact us</h2><div><p><br></p></div><div class=\"tued-dynamic-block\">[contact_form id=\"[[@ContactForm:538ea013-d5b2-447f-91fc-c2e6318e0668]]\"]</div></div></div></div></div></div></div></div></div></div></section><section class=\"tued-section\" id=\"tued-section-ce28d7da-1d69-46e9-b3dd-66428832399d\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-076f98e9-890e-44a5-8bfc-e4dcaa2d4d47\"><div class=\"tued-column col\" id=\"tued-column-ea5cd128-bf6c-4098-970e-5a961f5d737d\"><div class=\"tued-block\" id=\"tued-block-c0f197d6-f144-4855-a6c7-76c013918dc5\"><div class=\"tued-dynamic-block\">[map height=\"450\" lat=\"52.258491624428245\" lng=\"21.022081375122074\" zoom=\"16\"]</div></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:2:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"79dd4b86-9e79-4fc1-8637-a3fb121960b0\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:22:\"Tulia/Lisa:ContactForm\";s:4:\"data\";a:7:{s:5:\"intro\";s:14:\"Any questions?\";s:8:\"headline\";s:10:\"Contact us\";s:16:\"headline_justify\";s:4:\"left\";s:7:\"content\";s:11:\"<p><br></p>\";s:7:\"form_id\";s:36:\"[[@ContactForm:538ea013-d5b2-447f-91fc-c2e6318e0668]]\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";}s:2:\"id\";s:36:\"d077cc46-0ba6-4a46-9e64-c6fa1a336429\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"ff5dada0-e96e-4421-b99b-fd5ed28b6298\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"b17d784a-d302-4594-8718-e748cc4a25cf\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:1;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"ea5cd128-bf6c-4098-970e-5a961f5d737d\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:13:\"core-mapblock\";s:4:\"data\";a:3:{s:8:\"position\";a:2:{s:3:\"lat\";d:52.258491624428245;s:3:\"lng\";d:21.022081375122074;}s:4:\"zoom\";i:16;s:6:\"height\";i:450;}s:2:\"id\";s:36:\"c0f197d6-f144-4855-a6c7-76c013918dc5\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"076f98e9-890e-44a5-8bfc-e4dcaa2d4d47\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"ce28d7da-1d69-46e9-b3dd-66428832399d\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                }
-            ]
+            "@type": "File",
+            "@id": "9d66d0f3-8e64-4ac7-aa3a-9a248c8c55eb",
+            "filepath": ".\/konstantin-dyadyun-gc96gee-v4-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "@id": "20897475-aad4-4166-995e-4121e3495dee",
-            "type": "page",
-            "title": "Lorem ipsum dolor sit amet",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius. Nam pharetra quam est. Vestibulum venenatis leo sed quam mollis, vel dictum quam mattis. Nullam id erat a sem lobortis elementum."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:6ababdf3-78ed-4b3f-800b-e74feb7cb2a4]]"
-                }
-            ]
+            "@type": "File",
+            "@id": "f56b613f-9a34-405f-aa23-8c321a35d44d",
+            "filepath": ".\/kevin-schmid-tu21hjn9dwo-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "type": "page",
-            "title": "Proin a tincidunt odio, ac aliquam nisi",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Aliquam tincidunt mollis erat in eleifend. Proin a tincidunt odio, ac aliquam nisi. Ut mi diam, laoreet vestibulum dolor id, iaculis consequat nibh."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:a4b3bf45-b04d-4321-8d6e-b5efc04287d0]]"
-                }
-            ]
+            "@type": "File",
+            "@id": "24996677-fef6-4ff8-9a08-1c51dac5f4e1",
+            "filepath": ".\/david-marcu-78a265wpio4-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "type": "page",
-            "title": "Donec est sem, lobortis vel sem a",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Aliquam malesuada metus eget lectus elementum, sed mattis leo euismod. Donec est sem, lobortis vel sem a, elementum vehicula ipsum."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:4033b8c7-ddc8-4e94-b530-5916269d059a]]"
-                }
-            ]
+            "@type": "File",
+            "@id": "abe9e415-689f-490e-80ca-a02ee1271bd2",
+            "filepath": ".\/artem-kovalev-fk3xucftavk-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "type": "page",
-            "title": "Curabitur cursus sapien felis",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Curabitur cursus sapien felis, dapibus posuere dolor ultrices quis. Nullam sagittis lectus neque, eu finibus massa varius sed."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:31d21d82-069f-49e7-a224-b3b6011e4244]]"
-                }
-            ]
+            "@type": "File",
+            "@id": "64348191-fff6-4a3c-839f-8b6c4348edbd",
+            "filepath": ".\/tj-holowaychuk-1eymue-awdw-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "type": "page",
-            "title": "Duis sollicitudin aliquam orci, ac rhoncus enim",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Aliquam erat volutpat. Curabitur at lectus enim. Duis sollicitudin aliquam orci, ac rhoncus enim blandit at. Curabitur posuere sem placerat dui ullamcorper lobortis."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:7794f1da-31f6-47a0-85c3-1c9ec0840685]]"
-                }
-            ]
+            "@type": "File",
+            "@id": "ae92be33-52e5-4968-8f8e-b228ddabc110",
+            "filepath": ".\/craig-mckay-vjwzxqk7fae-unsplash-7.jpg"
         },
         {
-            "@type": "Node",
-            "type": "page",
-            "title": "Vestibulum nisi nisi, suscipit fringilla felis sed",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
+            "@type": "Menu",
+            "@id": "935cade5-5d31-48e9-b13f-b11a1c79f4de",
+            "name": "Footer quick links",
+            "spaces": [
+                "footer-quick-links"
+            ],
+            "items": [
                 {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Vestibulum nisi nisi, suscipit fringilla felis sed, blandit faucibus turpis. Quisque congue pretium volutpat. Praesent faucibus tellus arcu, nec commodo urna vehicula quis."
+                    "@id": "cc36ac8c-5817-4dcf-8294-bd101d6ffc5f",
+                    "link_type": "simple:homepage",
+                    "link_identity": "",
+                    "name": "Lorem Ipsum",
+                    "hash": "",
+                    "position": 1,
+                    "children": [],
+                    "@type": "MenuItem"
                 },
                 {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
+                    "@id": "8d83b37e-db5d-4b6f-8a08-09e21e2a8275",
+                    "link_type": "simple:homepage",
+                    "link_identity": "",
+                    "name": "Dolor sit amet",
+                    "hash": "",
+                    "position": 2,
+                    "children": [],
+                    "@type": "MenuItem"
                 },
                 {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:d0e57e7c-3d12-4495-8316-2426f977a444]]"
-                }
-            ]
-        },
-        {
-            "@type": "Node",
-            "type": "page",
-            "title": "Ut varius consectetur nisi, eu pretium justo dapibus et",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Vestibulum accumsan molestie rutrum. Ut varius consectetur nisi, eu pretium justo dapibus et. In dictum ultrices sem, in dignissim elit viverra id. Fusce ullamcorper a elit eget molestie. Sed a placerat tortor. Proin sit amet est nunc."
+                    "@id": "d11b0c6e-b1de-44e1-b09f-7b118af6e3fc",
+                    "link_type": "simple:homepage",
+                    "link_identity": "",
+                    "name": "Consecteur sit delit",
+                    "hash": "",
+                    "position": 3,
+                    "children": [],
+                    "@type": "MenuItem"
                 },
                 {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:6ababdf3-78ed-4b3f-800b-e74feb7cb2a4]]"
-                }
-            ]
-        },
-        {
-            "@type": "Node",
-            "type": "page",
-            "title": "Duis tempus ultrices lacinia",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Duis tempus ultrices lacinia. In consectetur vulputate leo id condimentum. Sed sapien elit, molestie vitae lacus in, suscipit mattis orci. Vivamus vitae lacus sed ipsum dapibus pellentesque."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:a4b3bf45-b04d-4321-8d6e-b5efc04287d0]]"
-                }
-            ]
-        },
-        {
-            "@type": "Node",
-            "type": "page",
-            "title": "Sed condimentum sapien purus",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Sed condimentum sapien purus, sed sodales justo vestibulum blandit. Etiam aliquam urna ut felis convallis, vel mollis elit semper."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:4033b8c7-ddc8-4e94-b530-5916269d059a]]"
-                }
-            ]
-        },
-        {
-            "@type": "Node",
-            "type": "page",
-            "title": "Phasellus suscipit sed felis at varius",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Vivamus a ipsum in mauris ultricies dictum. Phasellus suscipit sed felis at varius. Duis dictum odio ac lectus iaculis dignissim. Cras sed elit tempus."
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:31d21d82-069f-49e7-a224-b3b6011e4244]]"
-                }
-            ]
-        },
-        {
-            "@type": "Node",
-            "type": "page",
-            "title": "Cras sed elit tempus, malesuada ipsum eget",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Cras sed elit tempus, malesuada ipsum eget, blandit turpis. Nullam accumsan dui at libero dignissim, nec rutrum lectus laoreet. Etiam ultricies neque ut massa ultricies finibus"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:7794f1da-31f6-47a0-85c3-1c9ec0840685]]"
-                }
-            ]
-        },
-        {
-            "@type": "Node",
-            "type": "page",
-            "title": "Sed rhoncus non orci nec consectetur",
-            "main_category": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
-            "attributes": [
-                {
-                    "@type": "Attribute",
-                    "code": "introduction",
-                    "uri": "introduction",
-                    "value": "Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius. Nam pharetra quam est"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "content",
-                    "uri": "content",
-                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p></div></div></div></div></section><style></style>",
-                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.</p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}"
-                },
-                {
-                    "@type": "Attribute",
-                    "code": "thumbnail",
-                    "uri": "thumbnail",
-                    "value": "[[@File:a4b3bf45-b04d-4321-8d6e-b5efc04287d0]]"
+                    "@id": "06be7f49-ab3e-43ef-8f49-f750c7cbf5f3",
+                    "link_type": "simple:homepage",
+                    "link_identity": "",
+                    "name": "Aenean sollicitudin",
+                    "hash": "",
+                    "position": 4,
+                    "children": [],
+                    "@type": "MenuItem"
                 }
             ]
         },
         {
             "@type": "Menu",
-            "@id": "41149cde-e74f-4e36-b716-0eac9a8b68ca",
+            "@id": "b60e3c0e-5f3f-48a9-b821-a909b2d40055",
             "name": "Main menu",
+            "spaces": [
+                "mainmenu"
+            ],
             "items": [
                 {
-                    "@type": "MenuItem",
+                    "@id": "20e47f4b-f2ce-4780-ae8d-44affd7fd7e4",
                     "link_type": "simple:homepage",
+                    "link_identity": "",
                     "name": "Homepage",
-                    "position": 1
+                    "hash": "",
+                    "position": 1,
+                    "children": [],
+                    "@type": "MenuItem"
                 },
                 {
-                    "@type": "MenuItem",
+                    "@id": "1acde182-32ee-4c0c-a313-8dbe6b57ee6e",
                     "link_type": "node:page",
-                    "link_identity": "[[@Node:b2b8ba14-657e-4bab-be03-406958d59af3]]",
+                    "link_identity": "[[@Node:8e714730-d492-4dd6-bdad-2a61b9542b23]]",
                     "name": "About us",
-                    "position": 2
+                    "hash": "",
+                    "position": 2,
+                    "children": [],
+                    "@type": "MenuItem"
                 },
                 {
-                    "@type": "MenuItem",
+                    "@id": "2a81d726-c45e-451a-9935-cbbed55a92dd",
                     "link_type": "taxonomy:category",
-                    "link_identity": "[[@Term:1cd02114-13d1-49a8-b3f8-ac2e830aa487]]",
+                    "link_identity": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
                     "name": "News",
-                    "position": 3
+                    "hash": "",
+                    "position": 3,
+                    "children": [],
+                    "@type": "MenuItem"
                 },
                 {
-                    "@type": "MenuItem",
+                    "@id": "02693e08-6cb9-4d8f-9a6f-f0b348d862f1",
                     "link_type": "node:page",
-                    "link_identity": "[[@Node:38dba32d-aa85-4bf4-88c1-2a738f7699d2]]",
+                    "link_identity": "[[@Node:2125e825-331d-4370-9c34-29eb65f75b8c]]",
                     "name": "Contact",
-                    "position": 4
+                    "hash": "",
+                    "position": 4,
+                    "children": [],
+                    "@type": "MenuItem"
                 }
             ]
         },
         {
-            "@type": "Widget",
-            "type": "internal.menu",
-            "space": "mainmenu",
-            "name": "Main menu",
+            "@type": "Node",
+            "@id": "e56592d6-f0cd-4455-90f6-c1041aaea434",
+            "type": "page",
+            "title": "Duis sollicitudin aliquam orci, ac rhoncus enim",
+            "slug": "duis-sollicitudin-aliquam-orci-ac-rhoncus-enim",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
             "attributes": [
                 {
                     "@type": "Attribute",
-                    "code": "menu_id",
-                    "uri": "menu_id",
-                    "value": "[[@Menu:41149cde-e74f-4e36-b716-0eac9a8b68ca]]"
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Aliquam erat volutpat. Curabitur at lectus enim. Duis sollicitudin aliquam orci, ac rhoncus enim blandit at. Curabitur posuere sem placerat dui ullamcorper lobortis.",
+                    "@id": "4dc73ad2-52cc-42e3-9d90-41413376dd9a"
                 },
                 {
                     "@type": "Attribute",
-                    "code": "layout",
-                    "uri": "layout",
-                    "value": "horizontal"
-                }
-            ]
-        },
-        {
-            "@type": "Widget",
-            "type": "internal.text",
-            "space": "footer-info",
-            "name": "Text in footer",
-            "title": "Event Agency",
-            "attributes": [
-                {
-                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
                     "code": "content",
                     "uri": "content",
-                    "value": "Nunc efficitur massa semper tristique facilisis. Aliquam imperdiet, sapien a luctus suscipit, tellus risus aliquet ex, ac hendrerit urna urna nec lacus. Suspendisse a dui laoreet, consequat erat id, ultrices turpis. Aenean sollicitudin dignissim turpis eu commodo. Sed pellentesque, sapien sit amet blandit ornare, elit libero mollis libero, in vulputate metus nisl eget urna."
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "d88b8ef4-f9da-4785-8638-0b49553efc27"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:d445f866-d3c3-4893-856a-801681333259]]",
+                    "@id": "775070dc-e17c-483d-9510-828ca3abf360"
                 }
             ]
         },
         {
-            "@type": "Widget",
-            "type": "internal.menu",
-            "space": "footer-quick-links",
-            "name": "Menu in footer",
-            "title": "Quick links",
+            "@type": "Node",
+            "@id": "8680249f-a959-49dd-9ed1-0c24f03afa93",
+            "type": "page",
+            "title": "Proin a tincidunt odio, ac aliquam nisi",
+            "slug": "proin-a-tincidunt-odio-ac-aliquam-nisi",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
             "attributes": [
                 {
                     "@type": "Attribute",
-                    "code": "menu_id",
-                    "uri": "menu_id",
-                    "value": "[[@Menu:41149cde-e74f-4e36-b716-0eac9a8b68ca]]"
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Aliquam tincidunt mollis erat in eleifend. Proin a tincidunt odio, ac aliquam nisi. Ut mi diam, laoreet vestibulum dolor id, iaculis consequat nibh.",
+                    "@id": "03a81270-0ec6-4e97-a74c-7d7f5dd7df54"
                 },
                 {
                     "@type": "Attribute",
-                    "code": "layout",
-                    "uri": "layout",
-                    "value": "vertical"
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "464a9c31-f24c-49ed-b164-52bed7a5a267"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:24996677-fef6-4ff8-9a08-1c51dac5f4e1]]",
+                    "@id": "245e2896-07c0-4ef6-8266-45702af2a940"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "2d152584-d692-4ffa-99f7-c3d689c5310b",
+            "type": "page",
+            "title": "Sed condimentum sapien purus",
+            "slug": "sed-condimentum-sapien-purus",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Sed condimentum sapien purus, sed sodales justo vestibulum blandit. Etiam aliquam urna ut felis convallis, vel mollis elit semper.",
+                    "@id": "01e01a3a-4792-456b-a44e-57eab51dbe7d"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "3f45a14b-25f7-49d3-bc11-df05dcbac676"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:f56b613f-9a34-405f-aa23-8c321a35d44d]]",
+                    "@id": "160e5a3d-e925-42aa-bf39-97734a5b8a96"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "6ae07c67-8354-41e6-8c9f-61d825b939f5",
+            "type": "page",
+            "title": "Curabitur cursus sapien felis",
+            "slug": "curabitur-cursus-sapien-felis",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Curabitur cursus sapien felis, dapibus posuere dolor ultrices quis. Nullam sagittis lectus neque, eu finibus massa varius sed.",
+                    "@id": "c46daa5b-1c19-4c77-a332-51e8e58f636d"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "2371fbbe-044f-44e5-9055-c89d1385108f"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:9d66d0f3-8e64-4ac7-aa3a-9a248c8c55eb]]",
+                    "@id": "c7191e95-e4ad-430e-9d52-6cc2f84e268e"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "8e714730-d492-4dd6-bdad-2a61b9542b23",
+            "type": "page",
+            "title": "About us",
+            "slug": "about-us",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:1:{s:8:\"sections\";a:2:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"c2029c6f-2392-482a-a128-90f1a9c9185c\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:15:\"Tulia\/Lisa:Text\";s:4:\"data\";a:6:{s:5:\"intro\";s:11:\"What we do?\";s:8:\"headline\";s:14:\"See what we do\";s:16:\"headline_justify\";s:4:\"left\";s:7:\"content\";s:525:\"<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.<\/p>\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";}s:2:\"id\";s:36:\"7f6372f2-b31f-4c13-893f-c87a5e877426\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"ef5e8e03-b258-41b6-91aa-5d64f885970f\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"b920cdb0-4c84-411d-9e52-d97aadd0c69b\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:1;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"1ebc9618-bc11-4451-b424-9d2523e710b6\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"Tulia\/Lisa:Faq\";s:4:\"data\";a:5:{s:7:\"entries\";a:4:{i:0;a:3:{s:2:\"id\";s:1:\"1\";s:8:\"question\";s:44:\"Morbi sagittis tortor dapibus elit accumsan?\";s:6:\"answer\";s:104:\"Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.\";}i:1;a:3:{s:8:\"question\";s:42:\"Morbi  convallis mattis vel bibendum orci?\";s:6:\"answer\";s:78:\"Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.\";s:2:\"id\";s:17:\"tued-collection-1\";}i:2;a:3:{s:2:\"id\";s:1:\"2\";s:8:\"question\";s:96:\"Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?\";s:6:\"answer\";s:202:\"Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.\";}i:3;a:3:{s:8:\"question\";s:42:\"Morbi  convallis mattis vel bibendum orci?\";s:6:\"answer\";s:78:\"Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.\";s:2:\"id\";s:17:\"tued-collection-2\";}}s:5:\"intro\";s:26:\"Frequently Asked Questions\";s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:8:\"headline\";s:0:\"\";}s:2:\"id\";s:36:\"1a65286d-e2de-4987-9fd8-88020df16965\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"dc74cae8-ea48-4d20-89a6-a978c95964a0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"adc15f6e-37aa-499d-a581-ef266ab5667a\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-b920cdb0-4c84-411d-9e52-d97aadd0c69b\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-ef5e8e03-b258-41b6-91aa-5d64f885970f\"><div class=\"tued-column col\" id=\"tued-column-c2029c6f-2392-482a-a128-90f1a9c9185c\"><div class=\"tued-block\" id=\"tued-block-7f6372f2-b31f-4c13-893f-c87a5e877426\"><div class=\"block block-text block-bg-lightgray\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">What we do?<\/p><h2 class=\"\">See what we do<\/h2><div class=\"text-wrapper\"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.<\/p><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-adc15f6e-37aa-499d-a581-ef266ab5667a\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-dc74cae8-ea48-4d20-89a6-a978c95964a0\"><div class=\"tued-column col\" id=\"tued-column-1ebc9618-bc11-4451-b424-9d2523e710b6\"><div class=\"tued-block\" id=\"tued-block-1a65286d-e2de-4987-9fd8-88020df16965\"><div class=\"block block-faq\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">Frequently Asked Questions<\/p><!--v-if--><div class=\"accordion\"><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-11\">Morbi sagittis tortor dapibus elit accumsan?<\/button><\/div><div id=\"accordion-entry-11\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.<\/div><\/div><\/div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-1tued-collection-1\">Morbi  convallis mattis vel bibendum orci?<\/button><\/div><div id=\"accordion-entry-1tued-collection-1\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.<\/div><\/div><\/div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-12\">Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?<\/button><\/div><div id=\"accordion-entry-12\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.<\/div><\/div><\/div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-1tued-collection-2\">Morbi  convallis mattis vel bibendum orci?<\/button><\/div><div id=\"accordion-entry-1tued-collection-2\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum efficitur malesuada. Quisque non pretium enim. Suspendisse potenti.<\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "ea396f67-a17e-40a9-8f71-082cebefb2c6"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "2125e825-331d-4370-9c34-29eb65f75b8c",
+            "type": "page",
+            "title": "Contact",
+            "slug": "contact",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:2:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"79dd4b86-9e79-4fc1-8637-a3fb121960b0\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:22:\"Tulia\/Lisa:ContactForm\";s:4:\"data\";a:7:{s:5:\"intro\";s:14:\"Any questions?\";s:8:\"headline\";s:10:\"Contact us\";s:16:\"headline_justify\";s:4:\"left\";s:7:\"content\";s:11:\"<p><br><\/p>\";s:7:\"form_id\";s:36:\"[[@ContactForm:15c9372d-4348-4831-8911-c1dace71bcff]]\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";}s:2:\"id\";s:36:\"d077cc46-0ba6-4a46-9e64-c6fa1a336429\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"ff5dada0-e96e-4421-b99b-fd5ed28b6298\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"b17d784a-d302-4594-8718-e748cc4a25cf\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}i:1;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"ea5cd128-bf6c-4098-970e-5a961f5d737d\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:13:\"core-mapblock\";s:4:\"data\";a:3:{s:8:\"position\";a:2:{s:3:\"lat\";d:52.258491624428245;s:3:\"lng\";d:21.022081375122074;}s:4:\"zoom\";i:16;s:6:\"height\";i:450;}s:2:\"id\";s:36:\"c0f197d6-f144-4855-a6c7-76c013918dc5\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"076f98e9-890e-44a5-8bfc-e4dcaa2d4d47\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"ce28d7da-1d69-46e9-b3dd-66428832399d\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:21:\"full-width-no-padding\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-b17d784a-d302-4594-8718-e748cc4a25cf\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-ff5dada0-e96e-4421-b99b-fd5ed28b6298\"><div class=\"tued-column col\" id=\"tued-column-79dd4b86-9e79-4fc1-8637-a3fb121960b0\"><div class=\"tued-block\" id=\"tued-block-d077cc46-0ba6-4a46-9e64-c6fa1a336429\"><div class=\"block block-contact block-bg-lightgray\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><div class=\"tulia-container-max-width\"><p class=\"lead\">Any questions?<\/p><h2 class=\"\">Contact us<\/h2><div><p><br><\/p><\/div><div class=\"tued-dynamic-block\">[contact_form id=\"[[@ContactForm:15c9372d-4348-4831-8911-c1dace71bcff]]\"]<\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-ce28d7da-1d69-46e9-b3dd-66428832399d\"><div class=\"tued-container\"><div class=\"tued-row row g-0\" id=\"tued-row-076f98e9-890e-44a5-8bfc-e4dcaa2d4d47\"><div class=\"tued-column col\" id=\"tued-column-ea5cd128-bf6c-4098-970e-5a961f5d737d\"><div class=\"tued-block\" id=\"tued-block-c0f197d6-f144-4855-a6c7-76c013918dc5\"><div class=\"tued-dynamic-block\">[map height=\"450\" lat=\"52.258491624428245\" lng=\"21.022081375122074\" zoom=\"16\"]<\/div><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "fd7856d5-58a7-42b9-a3b0-9f4e7c6756ce"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "ef45de50-9492-4def-9a9d-6c6bf9e1d9cd",
+            "type": "page",
+            "title": "Vestibulum nisi nisi, suscipit fringilla felis sed",
+            "slug": "vestibulum-nisi-nisi-suscipit-fringilla-felis-sed",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Vestibulum nisi nisi, suscipit fringilla felis sed, blandit faucibus turpis. Quisque congue pretium volutpat. Praesent faucibus tellus arcu, nec commodo urna vehicula quis.",
+                    "@id": "5e59dcb2-8b1f-42fe-ba57-f8b80475cdda"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "83b0501a-1958-4db8-9e19-d311da6486c1"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:5972ffa2-f106-447c-ad62-12dcd8af5ddc]]",
+                    "@id": "3362df9f-d0ab-4a93-9a34-04c5612d600c"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "b4b21e9c-8489-4d3e-8219-6a7678628f2f",
+            "type": "page",
+            "title": "Phasellus suscipit sed felis at varius",
+            "slug": "phasellus-suscipit-sed-felis-at-varius",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Vivamus a ipsum in mauris ultricies dictum. Phasellus suscipit sed felis at varius. Duis dictum odio ac lectus iaculis dignissim. Cras sed elit tempus.",
+                    "@id": "c585b1f9-89cf-4e6d-80bb-e960f4a01990"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "b246265a-b24d-40e9-9994-da3a4607047a"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:9d66d0f3-8e64-4ac7-aa3a-9a248c8c55eb]]",
+                    "@id": "39187bfe-f57d-4126-8b23-30c7bc2b30a6"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "75e780e5-1da4-4bb0-a193-62de01222984",
+            "type": "page",
+            "title": "Homepage",
+            "slug": "homepage",
+            "purposes": [
+                "page:homepage"
+            ],
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:1:{s:8:\"sections\";a:9:{i:0;a:3:{s:2:\"id\";s:36:\"c1d1869e-3d6d-4ede-9be7-869146a9c31a\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"3fa383b2-7ca1-4320-b936-4f20146ff725\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"fc695083-1a54-4840-a229-14cd25878033\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"713fd12f-ad64-4812-87c3-2d2099a32455\";s:4:\"code\";s:35:\"Tulia\/Lisa:tulia-lisa-whatwedoblock\";s:5:\"store\";a:2:{s:4:\"data\";a:5:{s:5:\"intro\";s:10:\"What we do\";s:8:\"headline\";s:48:\"Mauris viverra ligula quis sollicitudin volutpat\";s:11:\"image_under\";a:2:{s:2:\"id\";s:36:\"[[@File:24996677-fef6-4ff8-9a08-1c51dac5f4e1]]\";s:8:\"filename\";s:38:\"david-marcu-78a265wpio4-unsplash-7.jpg\";}s:11:\"image_above\";a:2:{s:2:\"id\";s:36:\"[[@File:ae92be33-52e5-4968-8f8e-b228ddabc110]]\";s:8:\"filename\";s:38:\"craig-mckay-vjwzxqk7fae-unsplash-7.jpg\";}s:12:\"content_list\";a:2:{i:0;a:3:{s:2:\"id\";s:1:\"1\";s:4:\"lead\";s:21:\"Phasellus tellus arcu\";s:9:\"paragraph\";s:94:\"Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis sollicitudin eu.\";}i:1;a:3:{s:2:\"id\";s:1:\"2\";s:4:\"lead\";s:26:\"Mauris tincidunt convallis\";s:9:\"paragraph\";s:67:\"Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.\";}}}s:6:\"config\";a:5:{s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:1;a:3:{s:2:\"id\";s:36:\"be124889-f626-427d-81ff-48651bb8a918\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"2e3e5959-7b17-4f62-8f2c-4343a6fed90c\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"7e7f39b7-597a-4fc6-89e4-af4e954ed7eb\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"a16e6e2c-f6e5-4f7b-8a21-e1626e5a01b2\";s:4:\"code\";s:22:\"Tulia\/Lisa:OurServices\";s:5:\"store\";a:2:{s:4:\"data\";a:4:{s:5:\"intro\";s:12:\"Our Services\";s:8:\"headline\";s:18:\"Look What We Offer\";s:10:\"short_text\";s:86:\"Ded nec finibus nulla. Fusce rhoncus dui eu nunc molestie, eget aliquet ligula mollis.\";s:8:\"services\";a:3:{i:0;a:5:{s:2:\"id\";s:1:\"1\";s:4:\"icon\";s:21:\"far fa-money-bill-alt\";s:5:\"title\";s:33:\"Sed tempus libero id magna mattis\";s:7:\"content\";s:78:\"Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis.\";s:4:\"link\";N;}i:1;a:5:{s:2:\"id\";s:1:\"2\";s:4:\"icon\";s:18:\"fas fa-shuttle-van\";s:5:\"title\";s:22:\"Proin ac dolor egestas\";s:7:\"content\";s:78:\"Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.\";s:4:\"link\";N;}i:2;a:5:{s:2:\"id\";s:1:\"3\";s:4:\"icon\";s:18:\"fas fa-fighter-jet\";s:5:\"title\";s:26:\"Mauris viverra ligula quis\";s:7:\"content\";s:83:\"Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.\";s:4:\"link\";N;}}}s:6:\"config\";a:5:{s:7:\"bgColor\";s:13:\"block-bg-dark\";s:7:\"padding\";s:0:\"\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:2;a:3:{s:2:\"id\";s:36:\"701cdf7a-2958-4f3f-928a-da556c7979fb\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"ce142523-d46f-412c-a42d-73345460614b\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"54002774-001b-4f9a-830f-16fc82cbd92f\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"93d44fd5-68db-49db-b12a-031a249cd4c2\";s:4:\"code\";s:23:\"Tulia\/Lisa:CallToAction\";s:5:\"store\";a:2:{s:4:\"data\";a:3:{s:7:\"content\";s:56:\"Vivamus non sapien eu nibh semper dignissim a non purus.\";s:6:\"bgIcon\";s:18:\"fas fa-credit-card\";s:3:\"btn\";a:2:{s:4:\"icon\";s:17:\"fas fa-headphones\";s:5:\"label\";s:14:\"Call to Action\";}}s:6:\"config\";a:3:{s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:3;a:3:{s:2:\"id\";s:36:\"77856716-bace-474c-8b68-ed6d29dc666c\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"59cb2426-aac4-4419-a3c8-aaa4823004ae\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"20bfcb70-1a1a-494c-baa1-b9a753d25a5d\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"cf1e31b2-2f1b-404d-9f36-6c1992524261\";s:4:\"code\";s:24:\"Tulia\/Lisa:ServicesLight\";s:5:\"store\";a:2:{s:4:\"data\";a:1:{s:8:\"services\";a:3:{i:0;a:4:{s:2:\"id\";s:1:\"1\";s:4:\"icon\";s:21:\"far fa-money-bill-alt\";s:5:\"title\";s:17:\"Sed tempus libero\";s:7:\"content\";s:78:\"Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.\";}i:1;a:4:{s:2:\"id\";s:1:\"2\";s:4:\"icon\";s:18:\"fas fa-shuttle-van\";s:5:\"title\";s:22:\"Proin ac dolor egestas\";s:7:\"content\";s:78:\"Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.\";}i:2;a:4:{s:2:\"id\";s:1:\"3\";s:4:\"icon\";s:18:\"fas fa-fighter-jet\";s:5:\"title\";s:26:\"Mauris viverra ligula quis\";s:7:\"content\";s:83:\"Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.\";}}}s:6:\"config\";a:5:{s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:4;a:3:{s:2:\"id\";s:36:\"3e12cc2d-054a-4a8f-a201-b15017b83b43\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"d5bdc87c-d12d-4ec5-bb3f-617afd19ef1a\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"2e8aff23-9c64-4751-a3f1-f0cffd389ec6\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"1a080d12-f4bf-43f4-8d0b-cfabfeac8df9\";s:4:\"code\";s:27:\"Tulia\/Lisa:CompanyInNumbers\";s:5:\"store\";a:2:{s:4:\"data\";a:3:{s:5:\"intro\";s:11:\"Our history\";s:8:\"headline\";s:22:\"Our Company In Numbers\";s:7:\"numbers\";a:4:{i:0;a:4:{s:2:\"id\";s:1:\"1\";s:6:\"number\";i:120;s:5:\"label\";s:12:\"Realisations\";s:6:\"suffix\";N;}i:1;a:4:{s:2:\"id\";s:1:\"2\";s:6:\"number\";i:50;s:5:\"label\";s:7:\"Workers\";s:6:\"suffix\";N;}i:2;a:4:{s:2:\"id\";s:1:\"3\";s:6:\"number\";i:5;s:5:\"label\";s:16:\"Years experience\";s:6:\"suffix\";N;}i:3;a:4:{s:2:\"id\";s:1:\"4\";s:6:\"number\";i:10;s:5:\"label\";s:9:\"Countries\";s:6:\"suffix\";N;}}}s:6:\"config\";a:5:{s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:5;a:3:{s:2:\"id\";s:36:\"dcfab0af-f8b4-4482-94c1-62616f8459d9\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"e3bda481-6763-4bb0-8589-3559b82120cc\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"85bfb6bc-b888-4d6c-929a-f63baacc620a\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"a2ea8e4f-f506-4dd5-8141-bb2995e8c64b\";s:4:\"code\";s:20:\"Tulia\/Lisa:NodesList\";s:5:\"store\";a:2:{s:4:\"data\";a:5:{s:5:\"intro\";s:11:\"Recent news\";s:8:\"headline\";s:22:\"Read What We Do Recent\";s:13:\"node_readmore\";s:9:\"Read more\";s:13:\"term_readmore\";s:9:\"Read more\";s:9:\"term_icon\";s:20:\"fas fa-chevron-right\";}s:6:\"config\";a:5:{s:4:\"term\";s:36:\"[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]\";s:15:\"number_of_nodes\";i:3;s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:6;a:3:{s:2:\"id\";s:36:\"2131c9ba-0e98-4d0a-bb11-00cb343bb96e\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"33f03408-5d8b-4122-aa25-a863ff9489aa\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"4b9b1724-d415-4e7b-b2f7-a5c6ffb641c8\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"f7ec7807-018a-41e9-b493-2148eae22e17\";s:4:\"code\";s:15:\"Tulia\/Lisa:Text\";s:5:\"store\";a:2:{s:4:\"data\";a:3:{s:5:\"intro\";s:11:\"What we do?\";s:8:\"headline\";s:14:\"See what we do\";s:7:\"content\";s:525:\"<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.<\/p>\";}s:6:\"config\";a:6:{s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";s:16:\"headline_justify\";s:4:\"left\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:7;a:3:{s:2:\"id\";s:36:\"8fa7bd91-e6dc-4874-b0f0-31930c848c55\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"46023e45-8656-4674-9720-38ad3b6ad594\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"c751d560-d3c8-4800-8db7-ed4899653a52\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"704f93ac-d96c-4bab-b99f-918683f7dc7f\";s:4:\"code\";s:14:\"Tulia\/Lisa:Faq\";s:5:\"store\";a:2:{s:4:\"data\";a:3:{s:5:\"intro\";s:26:\"Frequently Asked Questions\";s:8:\"headline\";s:0:\"\";s:7:\"entries\";a:2:{i:0;a:3:{s:2:\"id\";s:1:\"1\";s:8:\"question\";s:44:\"Morbi sagittis tortor dapibus elit accumsan?\";s:6:\"answer\";s:104:\"Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.\";}i:1;a:3:{s:2:\"id\";s:1:\"2\";s:8:\"question\";s:96:\"Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?\";s:6:\"answer\";s:202:\"Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.\";}}}s:6:\"config\";a:5:{s:7:\"bgColor\";s:0:\"\";s:7:\"padding\";s:0:\"\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}i:8;a:3:{s:2:\"id\";s:36:\"8e2971ad-08fb-4187-bca5-0b29d070db77\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:4:\"rows\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"42167d28-89d2-46d0-aa7a-a26088545b9c\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:7:\"columns\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"1b79e886-e21e-46af-b07c-ca924e8ed6ba\";s:5:\"store\";a:2:{s:4:\"data\";a:0:{}s:6:\"config\";a:0:{}}s:6:\"blocks\";a:1:{i:0;a:3:{s:2:\"id\";s:36:\"77dec309-5add-4187-bc15-40ca8b820cf3\";s:4:\"code\";s:22:\"Tulia\/Lisa:ContactForm\";s:5:\"store\";a:2:{s:4:\"data\";a:3:{s:5:\"intro\";s:14:\"Any questions?\";s:8:\"headline\";s:10:\"Contact us\";s:7:\"content\";N;}s:6:\"config\";a:7:{s:16:\"headline_justify\";s:4:\"left\";s:7:\"form_id\";s:36:\"[[@ContactForm:15c9372d-4348-4831-8911-c1dace71bcff]]\";s:7:\"bgColor\";s:18:\"block-bg-lightgray\";s:7:\"padding\";s:0:\"\";s:12:\"__visibility\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:8:\"__margin\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}s:9:\"__padding\";a:4:{s:4:\"left\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:3:\"top\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:5:\"right\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}s:6:\"bottom\";a:6:{s:3:\"xxl\";N;s:2:\"xl\";N;s:2:\"lg\";N;s:2:\"md\";N;s:2:\"sm\";N;s:2:\"xs\";N;}}}}}}}}}}}}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-c1d1869e-3d6d-4ede-9be7-869146a9c31a\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-3fa383b2-7ca1-4320-b936-4f20146ff725\"><div class=\"tued-column col\" id=\"tued-column-fc695083-1a54-4840-a229-14cd25878033\"><div class=\"block block-what-we-do  undefined\" id=\"tued-block-713fd12f-ad64-4812-87c3-2d2099a32455\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col-12 col-lg-6 order-lg-1\"><div class=\"block-content\"><p class=\"lead\">What we do<\/p><h2>Mauris viverra ligula quis sollicitudin volutpat<\/h2><ul><li><strong>Phasellus tellus arcu<\/strong><br> Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis sollicitudin eu.<\/li><li><strong>Mauris tincidunt convallis<\/strong><br> Nunc ut dictum quam. Mauris tincidunt convallis lectus sed lacinia.<\/li><\/ul><\/div><\/div><div class=\"col-12 col-lg-6 order-lg-0 block-images\"><div class=\"block-image block-image-main\" style=\"background-image: url(&quot;\/media\/resolve\/image\/original\/[[@File:ae92be33-52e5-4968-8f8e-b228ddabc110]]\/craig-mckay-vjwzxqk7fae-unsplash-7.jpg&quot;);\"><\/div><div class=\"block-image block-image-sub\" style=\"background-image: url(&quot;\/media\/resolve\/image\/original\/[[@File:24996677-fef6-4ff8-9a08-1c51dac5f4e1]]\/david-marcu-78a265wpio4-unsplash-7.jpg&quot;);\"><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-be124889-f626-427d-81ff-48651bb8a918\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-2e3e5959-7b17-4f62-8f2c-4343a6fed90c\"><div class=\"tued-column col\" id=\"tued-column-7e7f39b7-597a-4fc6-89e4-af4e954ed7eb\"><div class=\"block block-services block-bg-dark\" id=\"tued-block-a16e6e2c-f6e5-4f7b-8a21-e1626e5a01b2\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col-12 col-lg-6\"><p class=\"lead\">Our Services<\/p><h2>Look What We Offer<\/h2><\/div><div class=\"col-12 col-lg-6\"><p class=\"services-slogan\">Ded nec finibus nulla. Fusce rhoncus dui eu nunc molestie, eget aliquet ligula mollis.<\/p><\/div><\/div><div class=\"services-collection\"><div class=\"row\"><div class=\"col-12 col-sm-12 col-md-6 col-lg-4\"><div class=\"service-item service-item-hoverable\"><div class=\"service-icon\"><i class=\"far fa-money-bill-alt\"><\/i><\/div><h3>Sed tempus libero id magna mattis<\/h3><p class=\"mb-3\">Sed interdum augue sed laoreet malesuada. Phasellus tellus arcu, aliquam quis.<\/p><\/div><\/div><div class=\"col-12 col-sm-12 col-md-6 col-lg-4\"><div class=\"service-item service-item-hoverable\"><div class=\"service-icon\"><i class=\"fas fa-shuttle-van\"><\/i><\/div><h3>Proin ac dolor egestas<\/h3><p class=\"mb-3\">Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.<\/p><\/div><\/div><div class=\"col-12 col-sm-12 col-md-6 col-lg-4\"><div class=\"service-item service-item-hoverable\"><div class=\"service-icon\"><i class=\"fas fa-fighter-jet\"><\/i><\/div><h3>Mauris viverra ligula quis<\/h3><p class=\"mb-3\">Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.<\/p><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-701cdf7a-2958-4f3f-928a-da556c7979fb\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-ce142523-d46f-412c-a42d-73345460614b\"><div class=\"tued-column col\" id=\"tued-column-54002774-001b-4f9a-830f-16fc82cbd92f\"><div class=\"block block-call-to-action\" id=\"tued-block-93d44fd5-68db-49db-b12a-031a249cd4c2\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><div class=\"block-inner\"><div class=\"block-text\"><span class=\"block-icon fas fa-credit-card\"><\/span> Vivamus non sapien eu nibh semper dignissim a non purus.<\/div><div class=\"block-button\"><a href=\"#\" class=\"btn btn-primary btn-lg btn-inversed btn-icon-right\">Call to Action <span class=\"btn-icon fas fa-headphones\"><\/span><\/a><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-77856716-bace-474c-8b68-ed6d29dc666c\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-59cb2426-aac4-4419-a3c8-aaa4823004ae\"><div class=\"tued-column col\" id=\"tued-column-20bfcb70-1a1a-494c-baa1-b9a753d25a5d\"><div class=\"block block-services-light\" id=\"tued-block-cf1e31b2-2f1b-404d-9f36-6c1992524261\"><div class=\"services-collection\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col-12 col-lg-4 service-column\"><div class=\"service-item\"><div class=\"service-icon\"><i class=\"far fa-money-bill-alt\"><\/i><\/div><h3>Sed tempus libero<\/h3><p>Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.<\/p><\/div><\/div><div class=\"col-12 col-lg-4 service-column\"><div class=\"service-item\"><div class=\"service-icon\"><i class=\"fas fa-shuttle-van\"><\/i><\/div><h3>Proin ac dolor egestas<\/h3><p>Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.<\/p><\/div><\/div><div class=\"col-12 col-lg-4 service-column\"><div class=\"service-item\"><div class=\"service-icon\"><i class=\"fas fa-fighter-jet\"><\/i><\/div><h3>Mauris viverra ligula quis<\/h3><p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.<\/p><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-3e12cc2d-054a-4a8f-a201-b15017b83b43\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-d5bdc87c-d12d-4ec5-bb3f-617afd19ef1a\"><div class=\"tued-column col\" id=\"tued-column-2e8aff23-9c64-4751-a3f1-f0cffd389ec6\"><div class=\"block block-company-in-numbers block-bg-lightgray\" id=\"tued-block-1a080d12-f4bf-43f4-8d0b-cfabfeac8df9\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">Our history<\/p><h2>Our Company In Numbers<\/h2><div class=\"block-numbers row\"><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">120<\/span><!--v-if--><\/div><div class=\"block-number-label\">Realisations<\/div><\/div><\/div><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">50<\/span><!--v-if--><\/div><div class=\"block-number-label\">Workers<\/div><\/div><\/div><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">5<\/span><!--v-if--><\/div><div class=\"block-number-label\">Years experience<\/div><\/div><\/div><div class=\"block-number-item col-12 col-sm-6 col-xl-3\"><div class=\"block-number-item-inner\"><div class=\"block-number\"><span class=\"block-number-counter\">10<\/span><!--v-if--><\/div><div class=\"block-number-label\">Countries<\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-dcfab0af-f8b4-4482-94c1-62616f8459d9\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-e3bda481-6763-4bb0-8589-3559b82120cc\"><div class=\"tued-column col\" id=\"tued-column-85bfb6bc-b888-4d6c-929a-f63baacc620a\"><div class=\"tued-dynamic-block\" id=\"tued-block-a2ea8e4f-f506-4dd5-8141-bb2995e8c64b\">[dynamic_block type=\"theme_lisa_nodes_from_taxonomy\" intro=\"Recent news\" headline=\"Read What We Do Recent\" node_readmore=\"Read more\" term_readmore=\"Read more\" term_icon=\"fas fa-chevron-right\" term=\"[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]\" number_of_nodes=\"3\"]<\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-2131c9ba-0e98-4d0a-bb11-00cb343bb96e\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-33f03408-5d8b-4122-aa25-a863ff9489aa\"><div class=\"tued-column col\" id=\"tued-column-4b9b1724-d415-4e7b-b2f7-a5c6ffb641c8\"><div class=\"block block-text block-bg-lightgray\" id=\"tued-block-f7ec7807-018a-41e9-b493-2148eae22e17\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">What we do?<\/p><h2 class=\"\">See what we do<\/h2><div class=\"text-wrapper\"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/h3><p>Nam feugiat convallis elit eget auctor. Praesent mi nisi, tempus at varius ac, fringilla eu neque. Maecenas vitae massa dapibus, mollis elit eu, condimentum magna. Cras non justo et dui sagittis viverra non non est. Donec scelerisque interdum neque, ac semper mi fermentum et. Quisque porta dolor quis efficitur venenatis. Morbi mattis mattis magna, vel euismod sapien blandit non. Integer eu eleifend diam. Nam ullamcorper sem sed enim iaculis posuere.<\/p><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-8fa7bd91-e6dc-4874-b0f0-31930c848c55\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-46023e45-8656-4674-9720-38ad3b6ad594\"><div class=\"tued-column col\" id=\"tued-column-c751d560-d3c8-4800-8db7-ed4899653a52\"><div class=\"block block-faq\" id=\"tued-block-704f93ac-d96c-4bab-b99f-918683f7dc7f\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><p class=\"lead\">Frequently Asked Questions<\/p><!--v-if--><div class=\"accordion\"><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-11\">Morbi sagittis tortor dapibus elit accumsan?<\/button><\/div><div id=\"accordion-entry-11\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Phasellus lobortis tortor pretium, sodales magna at, ullamcorper lorem. Duis porttitor convallis mattis.<\/div><\/div><\/div><div class=\"accordion-item\"><div class=\"accordion-header\"><button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#accordion-entry-12\">Morbi pulvinar lobortis rhoncus. Fusce vel sapien sed tellus convallis mattis vel bibendum orci?<\/button><\/div><div id=\"accordion-entry-12\" class=\"accordion-collapse collapse\"><div class=\"accordion-body\">Vestibulum feugiat, lectus viverra vulputate fermentum, ex magna sollicitudin libero, et efficitur urna mi id dolor. Sed sagittis nec tellus nec malesuada. Quisque non pretium enim. Suspendisse potenti.<\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section><section class=\"tued-section\" id=\"tued-section-8e2971ad-08fb-4187-bca5-0b29d070db77\"><!--v-if--><div class=\"\"><div class=\"tued-row row g-0\" id=\"tued-row-42167d28-89d2-46d0-aa7a-a26088545b9c\"><div class=\"tued-column col\" id=\"tued-column-1b79e886-e21e-46af-b07c-ca924e8ed6ba\"><div class=\"block block-contact block-bg-lightgray\" id=\"tued-block-77dec309-5add-4187-bc15-40ca8b820cf3\"><div class=\"container-xxl\"><div class=\"row\"><div class=\"col\"><div class=\"tulia-container-max-width\"><p class=\"lead\">Any questions?<\/p><h2 class=\"\">Contact us<\/h2><!--v-if--><div class=\"tued-dynamic-block\">[contact_form id=\"[[@ContactForm:15c9372d-4348-4831-8911-c1dace71bcff]]\"]<\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/div><\/section>",
+                    "@id": "be825f10-8943-498f-a9a1-b6b17cc50503"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "99cbf9b7-82c8-420e-89ea-c580345a28ac",
+            "type": "page",
+            "title": "Ut varius consectetur nisi, eu pretium justo dapibus et",
+            "slug": "ut-varius-consectetur-nisi-eu-pretium-justo-dapibus-et",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Vestibulum accumsan molestie rutrum. Ut varius consectetur nisi, eu pretium justo dapibus et. In dictum ultrices sem, in dignissim elit viverra id. Fusce ullamcorper a elit eget molestie. Sed a placerat tortor. Proin sit amet est nunc.",
+                    "@id": "591ef7bc-1a4e-436c-8714-dd4ca6d3b47b"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "618f0db9-74e2-4684-92ff-429f23078674"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:abe9e415-689f-490e-80ca-a02ee1271bd2]]",
+                    "@id": "45fbbcf0-b224-40cd-be90-8d8a824d8633"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "a101fe80-0df7-436e-a552-234d40ebdc60",
+            "type": "page",
+            "title": "Sed rhoncus non orci nec consectetur",
+            "slug": "sed-rhoncus-non-orci-nec-consectetur",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius. Nam pharetra quam est",
+                    "@id": "6571ab29-0456-4e61-ab8b-6913eee227b0"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "517136a8-34f9-40ee-8e7d-44609a38c7bd"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:24996677-fef6-4ff8-9a08-1c51dac5f4e1]]",
+                    "@id": "8705e799-e101-486b-a50e-7ce2a65e9c58"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "7e43ecd0-e894-44b2-a048-e5582dda3079",
+            "type": "page",
+            "title": "Donec est sem, lobortis vel sem a",
+            "slug": "donec-est-sem-lobortis-vel-sem-a",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Aliquam malesuada metus eget lectus elementum, sed mattis leo euismod. Donec est sem, lobortis vel sem a, elementum vehicula ipsum.",
+                    "@id": "14b859cd-df2d-4b76-a653-ee07a0b326e6"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "a8a7c09f-7f4a-4386-a695-c5883ee88053"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:f56b613f-9a34-405f-aa23-8c321a35d44d]]",
+                    "@id": "29ac45d7-871b-4152-8f92-213c39364938"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "00460a98-b02b-49f2-936a-a517f4fdd4bc",
+            "type": "page",
+            "title": "Cras sed elit tempus, malesuada ipsum eget",
+            "slug": "cras-sed-elit-tempus-malesuada-ipsum-eget",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Cras sed elit tempus, malesuada ipsum eget, blandit turpis. Nullam accumsan dui at libero dignissim, nec rutrum lectus laoreet. Etiam ultricies neque ut massa ultricies finibus",
+                    "@id": "f70875de-00ba-4ce4-aafd-99b800b20fb0"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "88ff21df-d0e2-4e89-be81-74c5fe655fd4"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:d445f866-d3c3-4893-856a-801681333259]]",
+                    "@id": "ac9d3392-ffe0-43f2-b744-6f6c01b83465"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "1eadc8d7-2d15-4cae-a282-6837a988bdb5",
+            "type": "page",
+            "title": "Lorem ipsum dolor sit amet",
+            "slug": "lorem-ipsum-dolor-sit-amet",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius. Nam pharetra quam est. Vestibulum venenatis leo sed quam mollis, vel dictum quam mattis. Nullam id erat a sem lobortis elementum.",
+                    "@id": "7915e880-de5c-4057-9ca4-c36f4a0ccaae"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "21512f8a-23e0-4ae9-8657-35487014d16e"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:abe9e415-689f-490e-80ca-a02ee1271bd2]]",
+                    "@id": "4142b14a-7082-40fc-a50e-382e73b30265"
+                }
+            ]
+        },
+        {
+            "@type": "Node",
+            "@id": "de7f643e-4b50-4d35-b8ea-ff0cc855b14d",
+            "type": "page",
+            "title": "Duis tempus ultrices lacinia",
+            "slug": "duis-tempus-ultrices-lacinia",
+            "main_category": "[[@Term:a02a7095-7dd4-4802-90f1-e026edd22834]]",
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "introduction",
+                    "uri": "introduction",
+                    "value": "Duis tempus ultrices lacinia. In consectetur vulputate leo id condimentum. Sed sapien elit, molestie vitae lacus in, suscipit mattis orci. Vivamus vitae lacus sed ipsum dapibus pellentesque.",
+                    "@id": "3e418176-8718-45e0-9b88-c5ecf0133886"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:2:{s:8:\"sections\";a:1:{i:0;a:6:{s:4:\"rows\";a:1:{i:0;a:6:{s:7:\"columns\";a:1:{i:0;a:7:{s:2:\"id\";s:36:\"7825e0eb-1187-4431-a84c-0b32bf8aa09b\";s:4:\"type\";s:6:\"column\";s:5:\"sizes\";a:6:{s:3:\"xxl\";a:1:{s:4:\"size\";N;}s:2:\"xl\";a:1:{s:4:\"size\";N;}s:2:\"lg\";a:1:{s:4:\"size\";N;}s:2:\"md\";a:1:{s:4:\"size\";N;}s:2:\"sm\";a:1:{s:4:\"size\";N;}s:2:\"xs\";a:1:{s:4:\"size\";N;}}s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:3:\"row\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:0:{}s:6:\"blocks\";a:1:{i:0;a:6:{s:4:\"code\";s:14:\"core-textblock\";s:4:\"data\";a:2:{s:4:\"text\";s:306:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p>\";s:9:\"_internal\";a:0:{}}s:2:\"id\";s:36:\"8b899fda-2d04-43e6-a968-d8acd9f87b63\";s:4:\"type\";s:5:\"block\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:1;s:6:\"parent\";a:1:{s:4:\"type\";s:6:\"column\";}}s:5:\"style\";a:0:{}}}}}s:2:\"id\";s:36:\"b92f3f41-7c76-41fc-9053-c6e0021e49f0\";s:4:\"type\";s:3:\"row\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:1:{s:4:\"type\";s:7:\"section\";}}s:5:\"style\";a:0:{}s:4:\"data\";a:1:{s:7:\"gutters\";s:7:\"default\";}}}s:2:\"id\";s:36:\"51906001-5e22-4d60-b05d-2b55aa013546\";s:4:\"type\";s:7:\"section\";s:8:\"metadata\";a:3:{s:7:\"hovered\";b:0;s:8:\"selected\";b:0;s:6:\"parent\";a:2:{s:4:\"type\";N;s:2:\"id\";N;}}s:4:\"data\";a:1:{s:14:\"containerWidth\";s:7:\"default\";}s:5:\"style\";a:0:{}}}s:6:\"assets\";a:0:{}}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "<section class=\"tued-section\" id=\"tued-section-51906001-5e22-4d60-b05d-2b55aa013546\"><div class=\"tued-container container-xxl\"><div class=\"tued-row row\" id=\"tued-row-b92f3f41-7c76-41fc-9053-c6e0021e49f0\"><div class=\"tued-column col\" id=\"tued-column-7825e0eb-1187-4431-a84c-0b32bf8aa09b\"><div id=\"tued-block-8b899fda-2d04-43e6-a968-d8acd9f87b63\" class=\"\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor a diam eget faucibus. Suspendisse placerat augue id ultrices dignissim. Sed rutrum lectus ullamcorper, fermentum ligula non, eleifend metus. Sed rhoncus non orci nec consectetur. Ut quis arcu sit amet felis volutpat varius.<\/p><\/div><\/div><\/div><\/div><\/section><style><\/style>",
+                    "@id": "bae8b1ab-6d20-4d43-866f-93dafd643805"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "thumbnail",
+                    "uri": "thumbnail",
+                    "value": "[[@File:24996677-fef6-4ff8-9a08-1c51dac5f4e1]]",
+                    "@id": "7af56c69-0e2a-4b70-bc49-e4e390cc0b9b"
                 }
             ]
         },
         {
             "@type": "Term",
-            "@id": "1cd02114-13d1-49a8-b3f8-ac2e830aa487",
+            "@id": "a02a7095-7dd4-4802-90f1-e026edd22834",
             "type": "category",
             "name": "News",
             "slug": "news",
+            "parent_id": null,
+            "position": 0,
             "attributes": [
                 {
                     "@type": "Attribute",
+                    "payload": "a:0:{}",
                     "code": "thumbnail",
                     "uri": "thumbnail",
-                    "value": "[[@File:347a3433-3cf6-4d6c-983a-3a5b4e478c25]]"
+                    "value": "[[@File:ae92be33-52e5-4968-8f8e-b228ddabc110]]",
+                    "@id": "56d262b1-e247-4949-8733-49690688d563"
+                }
+            ]
+        },
+        {
+            "@type": "Widget",
+            "@id": "61b57912-5ef8-4b93-8583-59edfe6acd1d",
+            "title": "Event Agency",
+            "type": "internal.text",
+            "space": "footer-info",
+            "name": "Text in footer",
+            "html_class": "",
+            "html_id": "",
+            "styles": [],
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "content",
+                    "uri": "content",
+                    "value": "Nunc efficitur massa semper tristique facilisis. Aliquam imperdiet, sapien a luctus suscipit, tellus risus aliquet ex, ac hendrerit urna urna nec lacus. Suspendisse a dui laoreet, consequat erat id, ultrices turpis. Aenean sollicitudin dignissim turpis eu commodo. Sed pellentesque, sapien sit amet blandit ornare, elit libero mollis libero, in vulputate metus nisl eget urna.",
+                    "@id": "487d3820-05ff-4164-a601-d6401988e783"
+                }
+            ]
+        },
+        {
+            "@type": "Widget",
+            "@id": "0a7706fc-28c4-47ca-9459-7fae83f8da27",
+            "title": "Quick links",
+            "type": "internal.menu",
+            "space": "footer-quick-links",
+            "name": "Menu in footer",
+            "html_class": "",
+            "html_id": "",
+            "styles": [],
+            "attributes": [
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "menu_id",
+                    "uri": "menu_id",
+                    "value": "[[@Menu:b60e3c0e-5f3f-48a9-b821-a909b2d40055]]",
+                    "@id": "07e4a124-06bb-400e-9279-6189c9116690"
+                },
+                {
+                    "@type": "Attribute",
+                    "payload": "a:0:{}",
+                    "code": "layout",
+                    "uri": "layout",
+                    "value": "vertical",
+                    "@id": "f154f66d-da27-4f8c-bfaf-32f6cc3abce2"
                 }
             ]
         }

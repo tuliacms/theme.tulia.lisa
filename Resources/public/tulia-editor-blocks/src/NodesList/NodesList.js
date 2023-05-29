@@ -11,13 +11,25 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        intro: 'Recent news',
-        headline: 'Read What We Do Recent',
-        term: null,
-        number_of_nodes: 3,
-        node_readmore: 'Read more',
-        term_readmore: 'Read more',
-        term_icon: 'fas fa-chevron-right',
-    }
+    store: {
+        data: {
+            state: () => {
+                return {
+                    intro: 'Recent news',
+                    headline: 'Read What We Do Recent',
+                    node_readmore: 'Read more',
+                    term_readmore: 'Read more',
+                    term_icon: 'fas fa-chevron-right',
+                };
+            },
+        },
+        config: {
+            state: () => {
+                return {
+                    term: null,
+                    number_of_nodes: 3,
+                };
+            },
+        },
+    },
 };

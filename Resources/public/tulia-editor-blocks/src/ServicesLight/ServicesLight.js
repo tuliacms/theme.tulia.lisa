@@ -11,24 +11,36 @@ export default {
     manager: Manager,
     editor: Editor,
     render: Render,
-    defaults: {
-        bgColor: '',
-        padding: '',
-        services: [{
-            id: '1',
-            icon: 'far fa-money-bill-alt',
-            title: 'Sed tempus libero',
-            content: 'Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.',
-        },{
-            id: '2',
-            icon: 'fas fa-shuttle-van',
-            title: 'Proin ac dolor egestas',
-            content: 'Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.',
-        },{
-            id: '3',
-            icon: 'fas fa-fighter-jet',
-            title: 'Mauris viverra ligula quis',
-            content: 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.',
-        }]
-    }
+    store: {
+        data: {
+            state: () => {
+                return {
+                    services: [{
+                        id: '1',
+                        icon: 'far fa-money-bill-alt',
+                        title: 'Sed tempus libero',
+                        content: 'Sed augue sed laoreet malesuada. Phasellus tellus arcu, aliquam interdum quis.',
+                    },{
+                        id: '2',
+                        icon: 'fas fa-shuttle-van',
+                        title: 'Proin ac dolor egestas',
+                        content: 'Nunc ut quam. Mauris tincidunt convallis sed lacinia. Mauris viverra volutpat.',
+                    },{
+                        id: '3',
+                        icon: 'fas fa-fighter-jet',
+                        title: 'Mauris viverra ligula quis',
+                        content: 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque iaculis.',
+                    }]
+                };
+            },
+        },
+        config: {
+            state: () => {
+                return {
+                    bgColor: '',
+                    padding: '',
+                };
+            },
+        },
+    },
 };
